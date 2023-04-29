@@ -1,0 +1,18 @@
+
+
+@font-face {
+    font-family: 'Cooper Black Regular';
+    src: url('../fonts/Cooper Black Regular.ttf');
+}
+
+.funete-practica {
+    font-family: 'Cooper Black Regular';
+    font-size:60px;
+    color: #FEDF4E;
+    background-color: #428C53;
+    width: 20vw;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 0.7;
+    
+}
