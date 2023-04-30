@@ -9,8 +9,13 @@ import ResponsiveAppBar from './components/NavBar'
 import NotFound from './sections/NotFound';
 
 
+
+
 const App = () => {
   return(
+    
+    
+    
     <>
     <ResponsiveAppBar />
     

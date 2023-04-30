@@ -1,5 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import Nsvg from '../components/Nsvg';
+
 
 
 const Nosotros = () => {
@@ -9,7 +11,10 @@ const Nosotros = () => {
                     exit={{ opacity: 0 }} 
                     transition={{ duration: 1.5 }}>
         <ChakraProvider>
-        <div>    
+        <div style={ {height:"100vh"}}>
+        </div>    
+        <div> 
+        <Nsvg />
         <img style={ {width:"300px"}} src="https://i.ibb.co/ZfdGSMR/HOME.png" alt="HOME" border="0" />
         </div>
         </ChakraProvider>
