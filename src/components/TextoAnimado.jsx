@@ -19,7 +19,7 @@ const AnimatedTypingH1 = () => {
         return () => clearInterval(intervalId)
     } else {
         const intervalId = setInterval(() => {
-        const fullText = '😍 HOLAAA MI NOMBRE ES DAMIAN, DISEÑADOR UX/UI.'
+        const fullText = '😍 HOLAAA MI NOMBRE ES DAMIAN, DISEÑADOR UX/UI. Y BAILO ASI COMO ESTA CHICA 👉'
         setText(fullText.substring(0, text.length + 1))
         setShowCursor(!showCursor)
 
@@ -34,7 +34,8 @@ const AnimatedTypingH1 = () => {
 
     const textProps = useSpring({
     fontWeight: 'bold',
-    fontSize: '30px',
+    fontSize: '1.5rem',
+    lineHeight: '2rem',
     color: 'pink',   
     opacity: 1,
     from: { opacity: 0 },
