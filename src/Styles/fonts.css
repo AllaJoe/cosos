@@ -4,6 +4,17 @@
     font-family: 'Cooper Black Regular';
     src: url('../fonts/Cooper Black Regular.ttf');
 }
+@font-face {
+    font-family: 'ITC Pioneer Regular';
+    src: url('../fonts/ITC Pioneer Regular.otf');
+}
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/Gilroy-ExtraBold.ttf');
+}
+
+
+
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

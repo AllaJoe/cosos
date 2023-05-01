@@ -1,61 +1,76 @@
 
+import { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
+import PropTypes from 'prop-types';
 
-import { useState, useEffect } from 'react'
-import { useSpring, animated } from 'react-spring'
-
-const AnimatedTypingH1 = () => {
-    const [text, setText] = useState('')
-    const [animationComplete, setAnimationComplete] = useState(false)
-    const [showCursor, setShowCursor] = useState(true)
-
+const AnimatedTypingH1 = ({ text, duration, element, style }) => {
+    const [animatedText, setAnimatedText] = useState('');
+    const [animationComplete, setAnimationComplete] = useState(false);
+    const [showCursor, setShowCursor] = useState(true);
+  
     useEffect(() => {
-    if (animationComplete) {
-        const intervalId = setInterval(() => {
-        setText('')
-        setAnimationComplete(false)
-        setShowCursor(true)
-        }, 2000)
-
-        return () => clearInterval(intervalId)
-    } else {
-        const intervalId = setInterval(() => {
-        const fullText = '😍 HOLAAA MI NOMBRE ES DAMIAN, DISEÑADOR UX/UI. Y BAILO ASI COMO ESTA CHICA 👉'
-        setText(fullText.substring(0, text.length + 1))
-        setShowCursor(!showCursor)
-
-        if (text === fullText) {
-            setAnimationComplete(true)
-        }
-        }, 100)
-
-        return () => clearInterval(intervalId)
-    }
-    }, [text, animationComplete, showCursor])
-
+      const fullText = text;
+      let intervalId;
+  
+      if (animationComplete) {
+        intervalId = setInterval(() => {
+          setAnimatedText('');
+          setAnimationComplete(false);
+          setShowCursor(true);
+        }, duration);
+      } else {
+        intervalId = setInterval(() => {
+          setAnimatedText((prevText) => {
+            if (prevText === fullText) {
+              setAnimationComplete(true);
+              return prevText;
+            } else {
+              return fullText.substring(0, prevText.length + 1);
+            }
+          });
+          setShowCursor((prevShowCursor) => !prevShowCursor);
+        }, 50);
+      }
+  
+      return () => clearInterval(intervalId);
+    }, [text, duration, animationComplete]);
+  
     const textProps = useSpring({
-    fontWeight: 'bold',
-    fontSize: '1.5rem',
-    lineHeight: '2rem',
-    color: 'pink',   
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 1000 },
-    })
-
+      opacity: 1,
+      from: { opacity: 0 },
+      config: { duration: 1000 },
+      fontSize: 20,
+      color: '#FFE8FE',
+      ...style,
+    });
+  
     const cursorProps = useSpring({
-    opacity: showCursor ? 1 : 0,
-    from: { opacity: 0 },
-    config: { duration: 300 },
-    delay: 500,
-    loop: true,
-    })
+      opacity: showCursor ? 1 : 0,
+      from: { opacity: 0 },
+      config: { duration: 300, /* easing: "easeOut" */ },
+      delay: 500,
+      loop: true,
+    });
+  
+    const Element = element || 'h1';
+  
+    const AnimatedElement = animated[Element];
 
-    return (
-    <animated.h1 style={textProps}>
-        {text}
-        <animated.span style={cursorProps}>|</animated.span>
-    </animated.h1>
-    )
+  return (
+    <AnimatedElement style={textProps}>
+      {animatedText}
+      <animated.span style={cursorProps}>|</animated.span>
+    </AnimatedElement>
+  );
+};
+
+AnimatedTypingH1.propTypes = {
+    text: PropTypes.string.isRequired,
+    duration: PropTypes.number.isRequired,
+    element: PropTypes.string,
+    style: PropTypes.object,
 }
 
+
 export default AnimatedTypingH1;
+
