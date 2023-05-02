@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import TextoAnimado from '../components/TextoAnimado';
-
+import glichWeb from '../assets/glichWeb.webm'
 
 
 
@@ -16,23 +16,25 @@ const Nosotros = () => {
         >
             <div style={{ position: "relative" }}>
             {/* Este es el gif animado que quiero usar de fondo */}
-            <img
+            {/* <img
                 style={{ width: "100vw" }}
                 src="https://i.ibb.co/Y2058f1/Screen-Recorder-Project3-2.gif"
                 alt="222222"
                 border="0"
-            />
+            /> */}
+            <video src={glichWeb} autoPlay loop muted style={ {width:"100%", opacity:"90%", objectFit:"cover"}}></video>
 
             {/* Este es el contenedor donde adentro tengo mi texto animado */}
+            
             <div
                 style={{
                 position: "absolute",
-                top: "50%",
+                top: "40%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                backgroundColor: "rgba(30, 30, 30, 90%)",
+                backgroundColor: "rgba(30, 30, 30,70%)",
                 width: "40vw",
-                height: "60vh",
+                height: "80vh",
                 border: "solid 3px #FF58F8",
                 borderRadius: "10px",
                 display: "flex",
@@ -44,11 +46,19 @@ const Nosotros = () => {
                 <h1
                 style={{
                     width: "30vw",
-                    height: "50vh",
-                    textAlign: "center",
+                    height: "70vh",
+                    /* textAlign: "center", */
                     fontFamily: "IBMPlexMono-Medium"
                 }}
                 >
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 5 }}
+                    >
+                    <img src="https://i.ibb.co/HPL9LHy/Frame-50.png" alt="Frame-50" border="0" />
+
+                    </motion.div>
                 <TextoAnimado
                     text="
                 👋 Hola, soy Damián y soy diseñador UX/UI con conocimientos en front-end. ¡Bienvenidos a mi portfolio! 🎉

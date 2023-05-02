@@ -11,7 +11,8 @@ const Products = () => {
         display:"flex",
         justifyContent:"center",
         marginTop:"50px",
-        backgroundColor:"#313130"
+        backgroundColor:"#313130",
+        backgroundImage: "linear-gradient(to left, #313130, #171717)"
     }
 
     const controls = useAnimation();
@@ -38,7 +39,7 @@ const Products = () => {
                     exit={{ opacity: 0 }} 
                     transition={{ duration: 1.5 }}>
             <Box sx={cositas1}>
-                <div style={ {display:"flex", justifyContent: 'center', flexWrap:"wrap", gap:"20px", width:"80vw", backgroundColor:"#313130"}}>
+                <div style={ {display:"flex", justifyContent: 'center', flexWrap:"wrap", gap:"20px", width:"80vw", /* backgroundColor:"#313130" */}}>
                     <MyCard />
                     <MyCard />
                     <MyCard />

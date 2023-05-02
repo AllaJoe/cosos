@@ -39,7 +39,7 @@ const AnimatedTypingH1 = ({ text, duration, element, style }) => {
       opacity: 1,
       from: { opacity: 0 },
       config: { duration: 1000 },
-      fontSize: "2rem",
+      fontSize: "180%",
       color: '#FFE8FE',
       ...style,
     });

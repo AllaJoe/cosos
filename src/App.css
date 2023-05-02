@@ -4,6 +4,8 @@
   padding: 0;
   text-decoration: none;
   background-color: #313130;
+  background: linear-gradient(90deg, rgba(237,34,216,1) 0%, rgba(0,212,255,1) 21%, rgba(12,22,6,1) 52%, rgba(9,19,20,1) 100%);
+
   
 }
 

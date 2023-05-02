@@ -41,3 +41,15 @@
     line-height: 0.7;
     
 }
+
+
+body {
+    margin: 0;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
