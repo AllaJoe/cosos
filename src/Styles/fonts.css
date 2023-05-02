@@ -25,6 +25,10 @@
     font-family: 'IBMPlexMono-Light';
     src: url('../fonts/IBMPlexMono-Light.ttf');
 }
+@font-face {
+    font-family: 'SigmarOne';
+    src: url('../fonts/SigmarOne.ttf');
+}
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

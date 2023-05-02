@@ -21,10 +21,10 @@ const Index = () => {
         
         <div style={ {  position:"relative"}}>   
         {/* <img style={ {  width:"100vw"}} src= "https://i.ibb.co/Y2058f1/Screen-Recorder-Project3-2.gif" alt="222222" border="0" /> */}
-        <video src={videoWeb60} autoPlay loop muted style={ {width:"100%"}}/> 
+        <video src={videoWeb60} autoPlay loop muted style={ {width:"100%", opacity:"50%"}}/> 
         <div style={ {  height:"50vh", width:"40vw", position:"absolute", top: "20vh", left:"30vw", zIndex:1, backgroundColor:"rgba(30, 30, 30, 90%)",
                         display:"flex", alignItems:"center", border:"solid 3px #FF58F8", borderRadius:"10px",
-                        justifyContent:"center", flexDirection:"column"
+                        justifyContent:"center", flexDirection:"column", boxShadow: '0px 0px 20px 5px #D53F8C'
                     }}>
             <h4 style={ {   
                             height:"25vh",

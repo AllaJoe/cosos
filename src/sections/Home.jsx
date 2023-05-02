@@ -40,10 +40,11 @@ const Nosotros = () => {
                 alignItems: "center"
                 }}
             >
+                
                 <h1
                 style={{
                     width: "30vw",
-                    height: "30vh",
+                    height: "50vh",
                     textAlign: "center",
                     fontFamily: "IBMPlexMono-Medium"
                 }}
@@ -52,13 +53,14 @@ const Nosotros = () => {
                     text="
                 👋 Hola, soy Damián y soy diseñador UX/UI con conocimientos en front-end. ¡Bienvenidos a mi portfolio! 🎉
 
-                🤓 Me encanta trabajar en la creación de interfaces digitales intuitivas y atractivas que brinden una experiencia de usuario óptima. 💻
+                🤓 Me encanta trabajar en la c y atra💻
                 "
                     duration={2000}
                     element="h1"
                     style={{ color: "#FFE8FE" }}
                 />
                 </h1>
+                
             </div>
             </div>
         </motion.div>

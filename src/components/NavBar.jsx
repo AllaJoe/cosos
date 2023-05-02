@@ -60,7 +60,7 @@ function ResponsiveAppBar() {
             }}
             >
             
-            <img style={ {width:"18%"}} src="https://i.ibb.co/QmtpptF/Frame-23.png" alt="Frame-23" border="0" />
+            <img style={ {width:"150px", /* marginRight:"30vw" */}} src="https://i.ibb.co/LgDsDZy/Frame-50.png" alt="Frame-23" border="0" />
             
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -117,14 +117,14 @@ function ResponsiveAppBar() {
             >
             <img style={ {width:"110px"}} src="https://i.ibb.co/QmtpptF/Frame-23.png" alt="Frame-23" border="0" />
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, paddingLeft:"30vw" }}>
             {pages.map((page) => (
                 <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 0, color: 'white', display: 'block' }}
                 >
-                <Link style={ {textDecoration:"none", color:"white"}} to={ `/${page}`}>{page}</Link>
+                <Link style={ {textDecoration:"none", color:"white", /* marginLeft:"10vw" */}} to={ `/${page}`}>{page}</Link>
                 </Button>
             ))}
             </Box>

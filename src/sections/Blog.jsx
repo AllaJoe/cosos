@@ -20,9 +20,12 @@ const Blog = () => {
             
         </Box>
         
-        <img style={ {width:"30%"}} src="https://i.ibb.co/xLdJrvH/BLOG.png" alt="BLOG" border="0" />
+            
+        
+        
         </ChakraProvider>
         </motion.div>
+        
         </>
     ) 
 }
