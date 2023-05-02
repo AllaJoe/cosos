@@ -12,9 +12,19 @@
     font-family: 'Gilroy-ExtraBold';
     src: url('../fonts/Gilroy-ExtraBold.ttf');
 }
+@font-face {
+    font-family: 'IBMPlexMono-Medium';
+    src: url('../fonts/IBMPlexMono-Medium.ttf');
+}
+@font-face {
+    font-family: 'IBMPlexMono-Regular';
+    src: url('../fonts/IBMPlexMono-Regular.ttf');
+}
 
-
-
+@font-face {
+    font-family: 'IBMPlexMono-Light';
+    src: url('../fonts/IBMPlexMono-Light.ttf');
+}
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

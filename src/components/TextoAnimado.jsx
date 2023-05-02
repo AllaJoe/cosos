@@ -39,7 +39,7 @@ const AnimatedTypingH1 = ({ text, duration, element, style }) => {
       opacity: 1,
       from: { opacity: 0 },
       config: { duration: 1000 },
-      fontSize: 20,
+      fontSize: "2rem",
       color: '#FFE8FE',
       ...style,
     });
@@ -49,7 +49,7 @@ const AnimatedTypingH1 = ({ text, duration, element, style }) => {
       from: { opacity: 0 },
       config: { duration: 300, /* easing: "easeOut" */ },
       delay: 500,
-      loop: true,
+      loop: false,
     });
   
     const Element = element || 'h1';

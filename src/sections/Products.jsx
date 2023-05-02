@@ -3,6 +3,8 @@ import { ChakraProvider, Box } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 
+
+
 const Products = () => {
     
     const cositas1 = {
@@ -24,7 +26,9 @@ const Products = () => {
     };
     
     return(
+        
         <motion.div animate={controls}>
+         
         <motion.div variants={cardVariants}
                     initial="hidden"
                     animate="visible">
