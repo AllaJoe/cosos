@@ -1,12 +1,6 @@
 import { ChakraProvider, Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-/* import NuevoSvg from '../components/NuevoSvg'; */
-/* import LineSvg from '../components/Pruebitas'; */
-/* import Agujero from '../assets/Agujero.webm' */
-import Formulario from '../components/Formulario';
-
-
-
+/* import Formulario from '../components/Formulario'; */
 import CardGrande from '../components/CardGrande'
 import CardChica from '../components/CardChica';
 
@@ -15,40 +9,41 @@ const Blog = () => {
 
     return(
     <ChakraProvider>
-        <Formulario />  
+        
         
         <motion.div initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 
                     exit={{ opacity: 0 }} 
                     transition={{ duration: 1.5 }} style={ {
-                        width: '100%',
+                        width: '100vw',
                         height: '200vh',
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent:"start",
+                        justifyContent:"center",
                         alignItems:"center",
-                        /* backgroundColor:"green", */
-                        marginTop:"4vh",
+                        background: "linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(32,32,32,1) 100%)",
+                        /* marginTop:"4vh", */
                         gap:"2vh",
-                        flexWrap:"wrap"
+                        flexWrap:"wrap",
+                        
                         
                     }}>
-        <img src="https://i.ibb.co/rvhY4Ky/Linked-In-cover-12-1.png" alt="Linked-In-cover-12-1" border="0" />
-                     
-        <Flex gap="1vw" flexWrap="wrap" justify="center">               
-        <CardGrande />
+        
+        
+        <Flex width="100vw" direction="row" gap="1vw" flexWrap="wrap" justify="center">               
+        
         <CardChica />
-
+        <CardGrande />
 
         </Flex> 
-        <Flex gap="1vw" flexWrap="wrap" justify="center">
-        <CardChica />
+        <Flex width="100vw" gap="1vw" flexWrap="wrap" justify="center">
         <CardGrande />
+        <CardChica />
         </Flex>
 
         </motion.div>
         
-        
+        {/* <Formulario />  */}
         </ChakraProvider>
         
     ) 
