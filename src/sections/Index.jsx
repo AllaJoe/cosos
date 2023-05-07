@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import '../Styles/fonts.css';
 import AnimatedTypingH1 from '../components/TextoAnimado';
 import { Button } from '@chakra-ui/react';
-import CuadradosWeb from '../assets/CuadradosWeb.webm';
+import videoWeb60 from '../assets/videoWeb60.webm';
 
 
 const Index = () => {
@@ -25,11 +25,11 @@ const Index = () => {
               style={{ position: "relative", overflow: "hidden" }}
             >
               <video
-                src={CuadradosWeb}
+                src={videoWeb60}
                 autoPlay
                 loop
                 muted
-                style={{ width: "100%", height: "100%", objectFit: "fill", opacity:"40%" }}
+                style={{ width: "100%", height: "100%", objectFit: "fill", opacity:"70%" }}
               />
             </div>
             <div

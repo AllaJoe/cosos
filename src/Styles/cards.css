@@ -1,0 +1,27 @@
+
+
+
+
+/* .cardChica {
+    display: none
+} */
+
+
+    @media (max-width: 808px) {
+    .cardChica {
+      width: 100%; /* Establece un ancho del 100% para las cards */
+    }
+    .cardGrande {
+        width: 100vw;
+    }
+
+
+    .imgCardChica {
+        width: 80vw;
+        height: 30vh
+    }
+
+
+
+}
+

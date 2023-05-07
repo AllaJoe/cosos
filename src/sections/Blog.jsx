@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 /* import NuevoSvg from '../components/NuevoSvg'; */
 /* import LineSvg from '../components/Pruebitas'; */
 /* import Agujero from '../assets/Agujero.webm' */
+import Formulario from '../components/Formulario';
+
+
 
 import CardGrande from '../components/CardGrande'
 import CardChica from '../components/CardChica';
@@ -12,7 +15,7 @@ const Blog = () => {
 
     return(
     <ChakraProvider>
-        
+        <Formulario />  
         
         <motion.div initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 
@@ -30,6 +33,8 @@ const Blog = () => {
                         flexWrap:"wrap"
                         
                     }}>
+        <img src="https://i.ibb.co/rvhY4Ky/Linked-In-cover-12-1.png" alt="Linked-In-cover-12-1" border="0" />
+                     
         <Flex gap="1vw" flexWrap="wrap" justify="center">               
         <CardGrande />
         <CardChica />
