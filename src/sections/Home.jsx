@@ -15,13 +15,7 @@ const Nosotros = () => {
             transition={{ duration: 1.5 }}
         >
             <div style={{ position: "relative" }}>
-            {/* Este es el gif animado que quiero usar de fondo */}
-            {/* <img
-                style={{ width: "100vw" }}
-                src="https://i.ibb.co/Y2058f1/Screen-Recorder-Project3-2.gif"
-                alt="222222"
-                border="0"
-            /> */}
+            
             <video src={glichWeb} autoPlay loop muted style={ {width:"100%", opacity:"90%", objectFit:"cover"}}></video>
 
             {/* Este es el contenedor donde adentro tengo mi texto animado */}
@@ -42,12 +36,11 @@ const Nosotros = () => {
                 alignItems: "center"
                 }}
             >
-                
-                <h1
+        
+            <h1
                 style={{
                     width: "30vw",
                     height: "70vh",
-                    /* textAlign: "center", */
                     fontFamily: "IBMPlexMono-Medium"
                 }}
                 >

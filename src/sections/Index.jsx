@@ -50,6 +50,7 @@ const Index = () => {
                 /* boxShadow: '0px 0px 20px 5px #D53F8C' */
               }}
             >
+              
               <h4
                 style={{
                   height: "20vh",
@@ -67,7 +68,7 @@ const Index = () => {
                   duration={2000}
                   element="h1"
                   style={{ color: "#FFE8FE" }}
-                />
+                /> 
               </h4>
               <Button sx={tamaño} colorScheme="pink" variant="solid">
                 APRETAME

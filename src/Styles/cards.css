@@ -2,39 +2,117 @@
 
 
 
+
 .cardChica {
-    width:400px;
-    height:350px;
-    flex-direction:column;
+    width: 400px;
+    height: 350px;
+    flex-direction: column;
     overflow: hidden;
-    /* background: linear-gradient(90deg, rgba(231,60,144,1) 0%, rgba(232,83,144,1) 100%); */
-    background-color: #E85390;
-    /* padding:10vw; */
-    border: solid 2px black;
+    position: relative;
+    background-color: #e85390;
+    /* border: solid 2px black; */
     border-radius: 15px;
-    :hover {
-        transform: scale(105%);
-    }
-} 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 20px 25px -18px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cardChica:hover {
+    transform: scale(1.06);
+    z-index: 3;
+  }
+  
+
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imgCardChica {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18vh;
+    padding: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* background-color: rgba(232, 83, 144, 80%); */
+    background-color: rgba(0, 0, 0, 20%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .cardChica:hover .content {
+    opacity: 1;
+    
+  }
+  
+/*   ------------------------------------------ */
+
+
 .cardGrande {
-    width:600px;
-    height:350px;
-    flex-direction:column;
+    width: 600px;
+    height: 350px;
+    flex-direction: column;
     overflow: hidden;
-    /* background: linear-gradient(90deg, rgba(90,177,200,1) 0%, rgba(89,176,198,1) 100%); */
-    background-color: #5AB1C8;
-    /* padding:1vw; */
-    border: solid 2px black;
+    position: relative;
+    /* background-color: #e85390; */
+    /* border: solid 2px black; */
     border-radius: 15px;
-} 
-.imgCardChica {
-    width: 100vw;
-    height: 30vh
-}
-.imgCardGrande {
-    width: 100vw;
-    height: 30vh
-}
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 20px 25px -18px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cardGrande:hover {
+    transform: scale(1.04);
+    z-index: 3;
+  }
+  
+  .imageContainerG {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imgCardGrande {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .contentG {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18vh;
+    padding: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(90, 177, 200, 80%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .cardGrande:hover .contentG {
+    opacity: 1;
+  }
+  
+  
+  
+  
+
+
+
+
 
     @media (max-width: 808px) {
     .cardChica {
@@ -55,8 +133,6 @@
         width: 80vw;
         height: 30vh
     }
-
-
 
 }
 

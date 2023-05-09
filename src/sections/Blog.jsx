@@ -3,14 +3,15 @@ import { motion } from 'framer-motion';
 /* import Formulario from '../components/Formulario'; */
 import CardGrande from '../components/CardGrande'
 import CardChica from '../components/CardChica';
-
+/* import ParaPrueba from '../components/ParaPrueba'; */
 
 const Blog = () => {
 
     return(
+
     <ChakraProvider>
         
-        
+        {/* <ParaPrueba /> */}
         <motion.div initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 
                     exit={{ opacity: 0 }} 
@@ -19,10 +20,10 @@ const Blog = () => {
                         height: '200vh',
                         display: 'flex',
                         flexDirection: 'column',
-                        justifyContent:"center",
+                        justifyContent:"start",
                         alignItems:"center",
-                        background: "linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(32,32,32,1) 100%)",
-                        /* marginTop:"4vh", */
+                        background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)",
+                        marginTop:"4vh",
                         gap:"2vh",
                         flexWrap:"wrap",
                         

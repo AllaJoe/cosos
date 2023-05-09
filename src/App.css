@@ -4,8 +4,16 @@
   padding: 0;
   text-decoration: none;
   background-color: #313130;
-  background: linear-gradient(90deg, rgba(237,34,216,1) 0%, rgba(0,212,255,1) 21%, rgba(12,22,6,1) 52%, rgba(9,19,20,1) 100%);
+  background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(32,32,32,1) 100%);
 
   
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* Tamaño de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F4A2C4; /* Color de la barra de desplazamiento */
+  border-radius: 30px;
+}
