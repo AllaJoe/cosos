@@ -4,6 +4,8 @@ import '../Styles/fonts.css';
 import AnimatedTypingH1 from '../components/TextoAnimado';
 import { Button } from '@chakra-ui/react';
 import videoWeb60 from '../assets/videoWeb60.webm';
+import { Link } from 'react-router-dom';
+
 
 
 const Index = () => {
@@ -70,9 +72,11 @@ const Index = () => {
                   style={{ color: "#FFE8FE" }}
                 /> 
               </h4>
+              <Link to="/Blog">
               <Button sx={tamaño} colorScheme="pink" variant="solid">
                 APRETAME
               </Button>
+              </Link>
             </div>
           </div>
         </ChakraProvider>

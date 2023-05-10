@@ -7,6 +7,7 @@ import Blog from './sections/Blog';
 import Products from './sections/Products';
 import ResponsiveAppBar from './components/NavBar'
 import NotFound from './sections/NotFound';
+import Nuevo from './sections/Nuevo';
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
       <Route path="nosotros" element={<Nosotros />} />
       <Route path="blog" element={<Blog />} />
       <Route path="products" element={<Products />} />
+      <Route path="nuevo" element={<Nuevo />} />
       <Route component={NotFound} />
     </Routes>
     

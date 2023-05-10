@@ -1,8 +1,10 @@
 import { Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import '../Styles/cards.css';
+import PropTypes from 'prop-types';
 
-const CardChica = () => {
+
+const CardChica = (props) => {
   return (
     <div className="cardChica">
       <motion.div
@@ -14,7 +16,7 @@ const CardChica = () => {
       >
         <img
           className="imgCardChica"
-          src="https://i.ibb.co/zXZ9DCB/Frame-527-2.png"
+          src={props.img}
           alt="00055-5555636378"
           border="0"
         />
@@ -31,14 +33,21 @@ const CardChica = () => {
           fontWeight="bold"
           fontFamily="IBMPlexMono-Medium"
         >
-          SOBRE MI
+          {props.title}
         </Text>
-        <Text color="#FFF3E5" fontSize="14px" fontFamily="IBMPlexMono-Regular">
-          Te cuento un poco sobre mi, mis intereses y formacion.
+        <Text color="#FFF3E5" fontSize={props.fontSize} fontFamily="IBMPlexMono-Regular">
+        {props.text}
         </Text>
       </motion.div>
     </div>
   );
+};
+
+CardChica.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string,
+    fontSize: PropTypes.string
 };
 
 export default CardChica;

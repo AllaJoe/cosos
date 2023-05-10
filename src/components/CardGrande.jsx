@@ -1,18 +1,20 @@
 import { Image, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import '../Styles/cards.css';
+import PropTypes from 'prop-types';
 
-const CardGrande = () => {
+const CardGrande = (props) => {
   return (
     <div className="cardGrande">
       <motion.div
         className="imageContainerG"
-        /* initial={{ scale: 1 }}
-        whileHover={{ scale: 1.3 }} */
+        /* initial={{ scale: 1, opacity: 1, y: -180, x: 80 }}
+        whileHover={{ scale: 2, opacity: 1, y: -200, x: 0, transition: 'easeInOut'   }}
+        transition={{ type: "Inertia", stiffness: 1000}} */
       >
         <Image
           className="imgCardGrande"
-          src="https://i.ibb.co/8cHcgxY/00055-5555636378.png"
+          src={props.img}
           alt="00055-5555636378"
           border="0"
         />
@@ -29,15 +31,22 @@ const CardGrande = () => {
           fontWeight="bold"
           fontFamily="IBMPlexMono-Medium"
         >
-          PORTFOLIO
+        {props.title}
         </Text>
-        <Text color="#FFF3E5" fontSize="14px" fontFamily="IBMPlexMono-Regular">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quis. Lorem ipsum
-          dolor sit amet consectetur, adipisicing elit.
+        <Text color="#FFF3E5" fontSize={props.fontSize} fontFamily="Gilroy-ExtraBold" fontWeight="medium" >
+          {props.text}
         </Text>
       </motion.div>
     </div>
   );
+};
+
+CardGrande.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string,
+    fontSize: PropTypes.string,
+    
 };
 
 export default CardGrande;
