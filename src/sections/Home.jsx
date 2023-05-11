@@ -1,74 +1,128 @@
+
 import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import TextoAnimado from '../components/TextoAnimado';
-import glichWeb from '../assets/glichWeb.webm'
+import CardGrande from '../components/CardGrande';
+import CardChica from '../components/CardChica';
+import CuadradosWeb from '../assets/CuadradosWeb.webm'
+import { Link } from 'react-router-dom';
 
+const Home = () => {
+  const cardVariants = {
+    hidden: { y: 150, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5, type: "Inertia", stiffness: 250 } }
+  };
+  const cardVariants2 = {
+    hidden: { y: 150, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.4, type: "Inertia", stiffness: 200 } }
+  };
 
-
-const Nosotros = () => {
-    return (
-        <ChakraProvider>
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
-        >
-            <div style={{ position: "relative" }}>
-            
-            <video src={glichWeb} autoPlay loop muted style={ {width:"100%", opacity:"90%", objectFit:"cover"}}></video>
-
-            {/* Este es el contenedor donde adentro tengo mi texto animado */}
-            
-            <div
-                style={{
-                position: "absolute",
-                top: "40%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                backgroundColor: "rgba(30, 30, 30,70%)",
-                width: "40vw",
-                height: "80vh",
-                border: "solid 3px #FF58F8",
-                borderRadius: "10px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
-                }}
-            >
+  return (
+    <ChakraProvider>
+      <div
+        style={{
+          position: "relative",
+          width: "100vw",
+          height: "100vh",
+          overflow: "hidden"
+        }}
+      >
+        <video
+        src={CuadradosWeb}
+          autoPlay
+          loop
+          muted
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            opacity:"30%",
+            objectFit:"cover"
+          }}
+       />
+          
         
-            <h1
-                style={{
-                    width: "30vw",
-                    height: "70vh",
-                    fontFamily: "IBMPlexMono-Medium"
-                }}
-                >
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 5 }}
-                    >
-                    <img src="https://i.ibb.co/HPL9LHy/Frame-50.png" alt="Frame-50" border="0" />
 
-                    </motion.div>
-                <TextoAnimado
-                    text="
-                👋 Hola, soy Damián y soy diseñador UX/UI con conocimientos en front-end. ¡Bienvenidos a mi portfolio! 🎉
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          style={{
+            width: '100vw',
+            height: '90vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: "center",
+            alignItems: "center",
+            background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)",
+            /* marginTop: "4vh", */
+            gap: "2vh",
+            flexWrap: "wrap",
+          }}
+        >
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            style={{
+              width: "100vw",
+              display: "flex",
+              flexDirection: "row",
+              gap: "1vw",
+              flexWrap: "wrap",
+              justifyContent: "center"
+            }}
+          >
+            <Link to="/Perfil">
+            <CardChica
+              img="https://i.ibb.co/zXZ9DCB/Frame-527-2.png"
+              title="SOBRE MI"
+              text="Conoceme, mira mi formacion y lo que tengo para dar"
+              fontSize="16px"
+            />
+            </Link>
+            <Link to="/Portfolio">
+            <CardGrande
+              img="https://i.ibb.co/tDws9Cs/Frame-530.png"
+              title="PORTFOLIO"
+              text="Mirá mis trabajos para que veas mis capacidades y experiencia"
+              fontSize="16px"
+            />
+            </Link>
+          </motion.div>
 
-                🤓 Me encanta trabajar en la c y atra💻
-                "
-                    duration={2000}
-                    element="h1"
-                    style={{ color: "#FFE8FE" }}
-                />
-                </h1>
-                
-            </div>
-            </div>
-        </motion.div>
-        </ChakraProvider>
-    );
-    };
+          <motion.div
+            variants={cardVariants2}
+            initial="hidden"
+            animate="visible"
+            style={{
+              width: "100vw",
+              display: "flex",
+              gap: "1vw",
+              flexWrap: "wrap",
+              justifyContent: "center"
+            }}
+          >
+            <CardGrande
+            img="https://i.ibb.co/pKBW866/Frame-531.png"
+            title="APTITUDES"
+            text="Ecá encontras mis habilidades que me califican para los diferentes trabajos"
+            />
+            <Link to="/Nuevo">
+            <CardChica
+            img="https://i.ibb.co/wMG6gZj/Frame-529.png"
+            title="ESCRIBIME"
+            text="Dejame un mensaje y te respondo k-po"
+            fontSize="16px"
+            />
+            </Link>
+</motion.div>
+</motion.div>
+</div>
+</ChakraProvider>
+);
+}
 
-    export default Nosotros;
+export default Home;

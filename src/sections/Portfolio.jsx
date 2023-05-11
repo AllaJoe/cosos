@@ -2,10 +2,10 @@ import MyCard from '../components/Card';
 import { ChakraProvider, Box } from '@chakra-ui/react';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
-
-const Products = () => {
+const Portfolio = () => {
     
     const cositas1 = {
         display:"flex",
@@ -40,7 +40,9 @@ const Products = () => {
                     transition={{ duration: 1.5 }}>
             <Box sx={cositas1}>
                 <div style={ {display:"flex", justifyContent: 'center', flexWrap:"wrap", gap:"20px", width:"80vw", /* backgroundColor:"#313130" */}}>
-                    <MyCard />
+                <Link to="https://www.behance.net/gallery/142252339/Medif-UXUI-project-Rediseno-de-app" target="_blank">
+                    <MyCard img="https://i.ibb.co/gJF6H59/Frame-534.png"/>
+                </Link>
                     <MyCard />
                     <MyCard />
                     <MyCard />
@@ -55,4 +57,4 @@ const Products = () => {
         ) 
 }
 
-export default Products;
+export default Portfolio;

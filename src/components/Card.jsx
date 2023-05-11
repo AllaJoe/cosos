@@ -1,22 +1,19 @@
 
-/* import PropTypes from 'prop-types'; */
-
-
-
+import PropTypes from 'prop-types';
 import { Card, CardBody } from '@chakra-ui/react'
-import { Button } from '@chakra-ui/react'
-import { Image, Text, Heading, Stack, Divider, CardFooter, ButtonGroup } from '@chakra-ui/react'
+/* import { Button } from '@chakra-ui/react' */
+import { Image, Text, Heading, Stack, Divider,/*  CardFooter, ButtonGroup  */} from '@chakra-ui/react'
 
 
 
 
 
-const MyCard = () => {
+const MyCard = (props) => {
     return( 
   <Card maxW='sm'>
   <CardBody>
     <Image
-      src='https://i.ibb.co/fQmPYdt/00056-5555636379.png'
+      src={props.img}
       alt='Green double couch with wooden legs'
       borderRadius='lg'
     />
@@ -27,13 +24,13 @@ const MyCard = () => {
         spaces, earthy toned spaces and for people who love a chic design with a
         sprinkle of vintage design.
       </Text>
-      <Text color='blue.600' fontSize='2xl'>
+      {/* <Text color='blue.600' fontSize='2xl'>
         $450
-      </Text>
+      </Text> */}
     </Stack>
   </CardBody>
   <Divider />
-  <CardFooter>
+  {/* <CardFooter>
     <ButtonGroup spacing='2'>
       <Button variant='solid' colorScheme='blue'>
         Buy now
@@ -42,10 +39,14 @@ const MyCard = () => {
         Add to cart
       </Button>
     </ButtonGroup>
-  </CardFooter>
+  </CardFooter> */}
 </Card>
 
     )
+}
+
+MyCard.propTypes = {
+  img: PropTypes.string
 }
 
 

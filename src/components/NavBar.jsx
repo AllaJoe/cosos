@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
 
-const pages = ['Nosotros', 'Blog', 'Products', 'Nuevo'];
+const pages = ['Home','Perfil', 'Portfolio', 'Bio' ];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -35,6 +35,8 @@ function ResponsiveAppBar() {
     const culurcitos = {
         backgroundColor: '#000000',
         height: '8vh',
+        borderBottom: '1px solid #ffffff',
+        shadowBottom: '0px'
     }
     
 

@@ -72,7 +72,7 @@ const Index = () => {
                   style={{ color: "#FFE8FE" }}
                 /> 
               </h4>
-              <Link to="/Blog">
+              <Link to="/Home">
               <Button sx={tamaño} colorScheme="pink" variant="solid">
                 APRETAME
               </Button>
