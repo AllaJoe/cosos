@@ -1,12 +1,12 @@
 
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import Index from './sections/Index';
+import Landing from './sections/Landing';
 import ResponsiveAppBar from './components/NavBar'
 import NotFound from './sections/NotFound';
 import Portfolio from './sections/Portfolio';
 import Bio from './sections/Bio';
-import Perfil from './sections/Nuevo';
+import Perfil from './sections/Perfil';
 import Home from './sections/Home';
 
 
@@ -21,7 +21,7 @@ const App = () => {
     <ResponsiveAppBar />
     
     <Routes >
-    <Route path="/" element={<Index />} />
+    <Route path="/" element={<Landing />} />
       <Route path="bio" element={<Bio />} />
       <Route path="home" element={<Home />} />
       <Route path="portfolio" element={<Portfolio />} />

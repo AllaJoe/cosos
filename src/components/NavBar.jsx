@@ -11,7 +11,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-
+import '../Styles/nav.css'
 
 const pages = ['Home','Perfil', 'Portfolio', 'Bio' ];
 
@@ -35,16 +35,17 @@ function ResponsiveAppBar() {
     const culurcitos = {
         backgroundColor: '#000000',
         height: '8vh',
-        borderBottom: '1px solid #ffffff',
-        shadowBottom: '0px'
+        borderBottom: '1px solid #343434',
+        shadowBottom: '0px',
+        
     }
     
 
 
     return (
     <AppBar position="static">
-        <Container sx={culurcitos} maxWidth="xl">
-        <Toolbar disableGutters>
+        <Container className='nav_nav' sx={culurcitos} maxWidth="xl">
+        <Toolbar disableGutters >
             
             <Typography
             variant="h6"
@@ -59,6 +60,7 @@ function ResponsiveAppBar() {
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
+                
             }}
             >
             

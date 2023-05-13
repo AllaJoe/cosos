@@ -3,8 +3,12 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import CardGrande from '../components/CardGrande';
 import CardChica from '../components/CardChica';
-import CuadradosWeb from '../assets/CuadradosWeb.webm'
+/* import CuadradosWeb from '../assets/CuadradosWeb.webm' */
 import { Link } from 'react-router-dom';
+import videoEspacio from '../assets/videoEspacio.webm'
+
+
+
 
 const Home = () => {
   const cardVariants = {
@@ -26,7 +30,32 @@ const Home = () => {
           overflow: "hidden"
         }}
       >
+        <div style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            /* opacity:"30%", */
+            objectFit:"cover"
+          }}>
         <video
+        src={videoEspacio}
+          autoPlay
+          loop
+          muted 
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            opacity:"50%",
+            objectFit:"cover"
+          }}
+          />
+        </div>
+        {/* <video
         src={CuadradosWeb}
           autoPlay
           loop
@@ -40,7 +69,7 @@ const Home = () => {
             opacity:"30%",
             objectFit:"cover"
           }}
-       />
+       /> */}
           
         
 
@@ -110,7 +139,7 @@ const Home = () => {
             title="APTITUDES"
             text="Ecá encontras mis habilidades que me califican para los diferentes trabajos"
             />
-            <Link to="/Nuevo">
+            <Link to="/Portfolio">
             <CardChica
             img="https://i.ibb.co/wMG6gZj/Frame-529.png"
             title="ESCRIBIME"

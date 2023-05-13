@@ -29,7 +29,6 @@ const Portfolio = () => {
     return(
         
         <motion.div animate={controls}>
-         
         <motion.div variants={cardVariants}
                     initial="hidden"
                     animate="visible">
@@ -43,8 +42,12 @@ const Portfolio = () => {
                 <Link to="https://www.behance.net/gallery/142252339/Medif-UXUI-project-Rediseno-de-app" target="_blank">
                     <MyCard img="https://i.ibb.co/gJF6H59/Frame-534.png"/>
                 </Link>
-                    <MyCard />
-                    <MyCard />
+                <Link to="https://www.behance.net/gallery/142238747/Pure-design-e-commerce-project-design" target="_blank">
+                    <MyCard img="https://i.ibb.co/84rbpq9/Frame-537.png"/>
+                </Link>  
+                <Link to="https://www.behance.net/gallery/142209749/Indienac-app-design" target="_blank">
+                    <MyCard img="https://i.ibb.co/ys1RBFs/Pantallazo-11-05-2023-01-36-09.png"/>
+                </Link>
                     <MyCard />
                     <MyCard />
                     <MyCard />

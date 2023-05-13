@@ -14,7 +14,9 @@ const ParaPrueba = () => {
             flexDirection:"column", 
             justifyContent:"center", 
             alignItems:"center",
-            backgroundColor:"black"
+            /* backgroundColor:"black", */
+            
+            
             
 
             }}>
@@ -29,6 +31,7 @@ const ParaPrueba = () => {
             border:"3px solid #F815E1",
             borderRadius:"15px",
             paddingTop:"90px",
+            
             
             }}>      
 
