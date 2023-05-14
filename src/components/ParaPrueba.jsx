@@ -1,13 +1,19 @@
 import PropTypes from 'prop-types';
+import { motion  } from 'framer-motion';
 import '../Styles/estilitos.css'
 import AnimatedTypingH1 from '../components/TextoAnimado'
 
-const ParaPrueba = () => {
+const ParaPrueba = (props) => {
     return (
         
          
       
-    <div style={{
+    <motion.div 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1.5 }}
+        style={{
             width:"100vw",
             height:"90vh", 
             display:"flex", 
@@ -21,7 +27,8 @@ const ParaPrueba = () => {
 
             }}>
         <div style={{
-            width:"40vw", 
+            width:"40vw",
+            height:"85vh", 
             backgroundColor:"rgba(30, 30, 30, 90%)", 
             display:"flex", 
             flexDirection:"column", 
@@ -30,32 +37,42 @@ const ParaPrueba = () => {
             textAlign:"center", 
             border:"3px solid #F815E1",
             borderRadius:"15px",
-            paddingTop:"90px",
+            /* paddingTop:"30px", */
             
             
             }}>      
 
-            <div>
-                <img style={{width:"30vw", opacity:"90%"}} src="https://i.ibb.co/HPL9LHy/Frame-50.png" alt="Frame-50" border="0" />
-            </div>
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 3 }}
+            >
+                <img style={{width:props.width, opacity:"90%"}} src={props.img} alt="Frame-50" border="0" />
+            </motion.div>
         <div style={{width:"30vw", height:"50vh"}}>
             <AnimatedTypingH1
-                      text="😊 Hola, me llamo Damián, soy diseñador UX/UI. Entrá a mi web 👇"
-                      duration={2000}
-                      element="h1"
-                      style={{ color: "#FFE8FE", fontFamily: 'IBMPlexMono-Light'}}
+                    text= {props.text}
+                    duration={2000}
+                    element={props.element}
+                    loop={props.loop}
+                    style={{ color: "#FFE8FE", fontFamily: 'IBMPlexMono-Light', fontSize: "1.5rem" }}
             /> 
         </div>
 
         </div>
-    </div> 
+    </motion.div> 
         
     );
 }
 
 ParaPrueba.propTypes = {
     background: PropTypes.string,
-    img: PropTypes.string
+    img: PropTypes.string,
+    text: PropTypes.string,
+    element: PropTypes.string,
+    loop: PropTypes.bool,
+    width: PropTypes.number
 }
 
 export default ParaPrueba;

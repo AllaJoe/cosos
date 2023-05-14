@@ -14,12 +14,8 @@ import Home from './sections/Home';
 
 const App = () => {
   return(
-    
-    
-    
     <>
     <ResponsiveAppBar />
-    
     <Routes >
     <Route path="/" element={<Landing />} />
       <Route path="bio" element={<Bio />} />
@@ -28,10 +24,7 @@ const App = () => {
       <Route path="perfil" element={<Perfil />} />
       <Route component={NotFound} />
     </Routes>
-    
     </>
-    
-  
   )
 }
 

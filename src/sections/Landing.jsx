@@ -13,7 +13,11 @@ const Landing = () => {
     const tamaño = {
       width: "10vw"
     };
-  
+    const cardVariants = {
+      hidden: { y: 150, opacity: 0 },
+      visible: { y: 0, opacity: 1, transition: { duration: 0.5, type: "Inertia", stiffness: 250 } }
+    };
+
     return (
       <motion.div
         initial={{ opacity: 0 }}
@@ -22,7 +26,10 @@ const Landing = () => {
         transition={{ duration: 1.5 }}
       >
         <ChakraProvider>
-          <div style={{ position: "relative" }}>
+          <div
+          
+          
+          style={{ position: "relative", backgroundColor:"#4B0F4D" }}>
             <div
               className="video-container"
               style={{ position: "relative", overflow: "hidden" }}
@@ -32,10 +39,14 @@ const Landing = () => {
                 autoPlay
                 loop
                 muted
-                style={{ width: "100%", height: "100%", objectFit: "fill", opacity:"30%" }}
+                style={{ width: "100%", height: "100%", objectFit: "fill", opacity:"50%" }}
               />
             </div>
-            <div
+            <motion.div
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+
               style={{
                 height: "50%",
                 width: "40%",
@@ -78,7 +89,7 @@ const Landing = () => {
                 APRETAME
               </Button>
               </Link>
-            </div>
+            </motion.div>
           </div>
         </ChakraProvider>
       </motion.div>

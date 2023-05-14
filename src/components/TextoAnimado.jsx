@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import PropTypes from 'prop-types';
 
-const AnimatedTypingH1 = ({ text, duration, element, style }) => {
+const AnimatedTypingH1 = ({ text, duration, element, style, loop }) => {
     const [animatedText, setAnimatedText] = useState('');
     const [animationComplete, setAnimationComplete] = useState(false);
     const [showCursor, setShowCursor] = useState(true);
@@ -12,7 +12,7 @@ const AnimatedTypingH1 = ({ text, duration, element, style }) => {
       const fullText = text;
       let intervalId;
   
-      if (animationComplete) {
+      if (animationComplete && loop) {
         intervalId = setInterval(() => {
           setAnimatedText('');
           setAnimationComplete(false);
@@ -33,7 +33,7 @@ const AnimatedTypingH1 = ({ text, duration, element, style }) => {
       }
   
       return () => clearInterval(intervalId);
-    }, [text, duration, animationComplete]);
+    }, [text, duration, animationComplete, loop]);
   
     const textProps = useSpring({
       opacity: 1,
@@ -69,6 +69,7 @@ AnimatedTypingH1.propTypes = {
     duration: PropTypes.number.isRequired,
     element: PropTypes.string,
     style: PropTypes.object,
+    loop: PropTypes.bool
 }
 
 

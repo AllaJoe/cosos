@@ -43,10 +43,10 @@ const Perfil = () => {
   };
 
   const slides = [
-    { titleColor: 'green', textColor: 'white' },
-    { titleColor: 'red', textColor: 'blue' },
-    { titleColor: 'purple', textColor: 'yellow' },
-    { titleColor: 'orange', textColor: 'black' },
+    {img:'https://i.ibb.co/HPL9LHy/Frame-50.png', width:"30vw", text: '¡Hola y bienvenidos a mi página web! 👋✨ Soy un diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end. 💻🎨 Me apasiona crear experiencias digitales únicas y atractivas, enfocadas en las necesidades y deseos de los usuarios. 🌟🔍 ¡Vamos a hacer cosas increíbles juntos! 💪🚀', element: 'h2' },
+    {img:'https://i.ibb.co/DDf3Wpk/Frame-542ttt.png', width:"13vw", text: '✨ Fusiono estética y funcionalidad ⚖️ para crear experiencias excepcionales. Trabajo en diversos proyectos 📱💻, colaborando con equipos multidisciplinarios para lograr resultados sobresalientes. 💪🌟 ¡Creemos cosas increíbles juntos! 🚀', element: 'h2' },
+    {img:'https://i.ibb.co/WFwq0tZ/cositos3.png', width:"30vw", text: '✨ Soy un diseñador creativo en constante exploración de nuevas tecnologías y herramientas para estar a la vanguardia del diseño y desarrollo. Me apasiona la innovación en la experiencia del usuario. 💡🌟', element: 'h2'},
+    {img:'https://i.ibb.co/ng9DZQX/Linked-In-cover-13.png', width:"30vw", text: '🌐 Diseñador UX/UI con experiencia en desarrollo front-end. Interfaces intuitivas y centradas en el usuario. 💼💡 ¡Colaboremos en proyectos desafiantes! 🚀🌟', element: 'h2', loop:false },
   ];
 
   const carouselSettings = {
@@ -90,9 +90,11 @@ const Perfil = () => {
         {slides.map((slide, index) => (
           <div key={index}>
             <ParaPrueba
-              /* img="https://i.ibb.co/tDws9Cs/Frame-530.png"
-              titleColor={slide.titleColor}
-              textColor={slide.textColor} */
+              text={slide.text}
+              element={slide.element}
+              img={slide.img}
+              loop={slide.loop}
+              width={slide.width}
             />
           </div>
         ))}

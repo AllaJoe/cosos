@@ -106,10 +106,11 @@ const Home = () => {
           >
             <Link to="/Perfil">
             <CardChica
-              img="https://i.ibb.co/zXZ9DCB/Frame-527-2.png"
+              img="https://i.ibb.co/DDf3Wpk/Frame-542ttt.png"
               title="SOBRE MI"
               text="Conoceme, mira mi formacion y lo que tengo para dar"
               fontSize="16px"
+              width="100vw"
             />
             </Link>
             <Link to="/Portfolio">

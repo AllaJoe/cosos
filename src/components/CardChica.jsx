@@ -15,10 +15,12 @@ const CardChica = (props) => {
         
       >
         <img
+          style={{width:props.width}}
           className="imgCardChica"
           src={props.img}
           alt="00055-5555636378"
           border="0"
+          
         />
       </motion.div>
       <motion.div
@@ -47,7 +49,8 @@ CardChica.propTypes = {
     img: PropTypes.string,
     title: PropTypes.string,
     text: PropTypes.string,
-    fontSize: PropTypes.string
+    fontSize: PropTypes.string,
+    width: PropTypes.number,
 };
 
 export default CardChica;
