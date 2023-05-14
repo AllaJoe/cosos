@@ -48,7 +48,7 @@ const ParaPrueba = (props) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 3 }}
             >
-                <img style={{width:props.width, opacity:"90%"}} src={props.img} alt="Frame-50" border="0" />
+                <img style={{width:props.width, /* opacity:"90%" */}} src={props.img} alt="Frame-50" border="0" />
             </motion.div>
         <div style={{width:"30vw", height:"50vh"}}>
             <AnimatedTypingH1
