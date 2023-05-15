@@ -30,7 +30,13 @@ const Home = () => {
           overflow: "hidden"
         }}
       >
-        <div style={{
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.5 }}
+        
+        style={{
             position: "absolute",
             top: 0,
             left: 0,
@@ -50,11 +56,11 @@ const Home = () => {
             left: 0,
             width: "100%",
             height: "100%",
-            opacity:"50%",
+            opacity:"70%",
             objectFit:"cover"
           }}
           />
-        </div>
+        </motion.div>
         {/* <video
         src={CuadradosWeb}
           autoPlay
@@ -74,10 +80,11 @@ const Home = () => {
         
 
         <motion.div
-          initial={{ opacity: 0 }}
+          /* initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 0 }} */
+          
           style={{
             width: '100vw',
             height: '90vh',
@@ -85,12 +92,13 @@ const Home = () => {
             flexDirection: 'column',
             justifyContent: "center",
             alignItems: "center",
-            background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)",
+            /* background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)", */
+            background:"",
             /* marginTop: "4vh", */
             gap: "2vh",
             flexWrap: "wrap",
           }}
-        >
+        >  
           <motion.div
             variants={cardVariants}
             initial="hidden"
@@ -122,7 +130,7 @@ const Home = () => {
             />
             </Link>
           </motion.div>
-
+        
           <motion.div
             variants={cardVariants2}
             initial="hidden"

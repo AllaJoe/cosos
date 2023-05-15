@@ -10,19 +10,189 @@ import videoEspacio from '../assets/videoEspacio.webm'
 
 const CustomPrevArrow = (props) => (
   <div className="custom-arrow custom-prev-arrow" onClick={props.onClick}>
-    <svg width="34" height="81" viewBox="0 0 34 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M29.0173 76.5L4 41.649L29.5249 3.99983" stroke="pink" opacity="20%" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <motion.svg
+      width="34"
+      height="81"
+      viewBox="0 0 34 81"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ stroke: 'pink' }}
+      animate={{
+        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el parpadeo
+        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
+      }}
+      transition={{
+        duration: 0.3, // Duración de cada transición
+        repeat: Infinity, // Repetición infinita
+        repeatType: 'reverse', // Invierte la lista para el parpadeo
+        ease: 'easeInOut',
+        
+      }}
+      style={{ filter: 'drop-shadow(0 0 8px pink)' }} // Efecto de glow inicial
+    >
+      <path
+        d="M29.0173 76.5L4 41.649L29.5249 3.99983"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
 
+{/* --------------------------------22222222------------------------------------------- */}
+
+    <motion.svg
+      width="34"
+      height="81"
+      viewBox="0 0 34 81"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ stroke: 'pink' }}
+      animate={{
+        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el parpadeo
+        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
+      }}
+      transition={{
+        duration: 0.4, // Duración de cada transición
+        repeat: Infinity, // Repetición infinita
+        repeatType: 'reverse', // Invierte la lista para el parpadeo
+        ease: 'easeInOut',
+        
+      }}
+      style={{ filter: 'drop-shadow(0 0 8px pink)' }} // Efecto de glow inicial
+    >
+      <path
+        d="M29.0173 76.5L4 41.649L29.5249 3.99983"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
+
+{/* --------------------------------333333333------------------------------------------- */}
+
+<motion.svg
+      width="34"
+      height="81"
+      viewBox="0 0 34 81"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ stroke: 'pink' }}
+      animate={{
+        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el parpadeo
+        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
+      }}
+      transition={{
+        duration: 0.5, // Duración de cada transición
+        repeat: Infinity, // Repetición infinita
+        repeatType: 'reverse', // Invierte la lista para el parpadeo
+        ease: 'easeInOut',
+        
+      }}
+      style={{ filter: 'drop-shadow(0 0 8px pink)' }} // Efecto de glow inicial
+    >
+      <path
+        d="M29.0173 76.5L4 41.649L29.5249 3.99983"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
 
   </div>
 );
 
 const CustomNextArrow = (props) => (
   <div className="custom-arrow custom-next-arrow" onClick={props.onClick}>
-    <svg width="34" height="80" viewBox="0 0 34 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4.5 4L29.5 38L4.5 76" stroke="pink" opacity="20%" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+
+{/* ------------------11111111111--------------------------------------------------- */}
+
+    <motion.svg
+      width="34"
+      height="80"
+      viewBox="0 0 34 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ stroke: 'pink', filter: 'drop-shadow(0 0 8px pink)' }} // Estado inicial del SVG
+      animate={{
+        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el cambio
+        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
+      }}
+      transition={{
+        duration: 0.3, // Duración de cada transición
+        repeat: Infinity, // Repetición infinita
+        repeatType: 'reverse', // Invierte la lista para el cambio de color
+        ease: 'easeInOut',
+      }}
+    >
+      <motion.path
+        d="M4.5 4L29.5 38L4.5 76"
+        stroke="pink"
+        /* opacity="20%" */
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
+
+{/* -----------------------22222222222222222---------------------------------------------- */}
+
+    <motion.svg
+      width="34"
+      height="80"
+      viewBox="0 0 34 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ stroke: 'pink', filter: 'drop-shadow(0 0 8px pink)' }} // Estado inicial del SVG
+      animate={{
+        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el cambio
+        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
+      }}
+      transition={{
+        duration: 0.4, // Duración de cada transición
+        repeat: Infinity, // Repetición infinita
+        repeatType: 'reverse', // Invierte la lista para el cambio de color
+        ease: 'easeInOut',
+      }}
+    >
+      <motion.path
+        d="M4.5 4L29.5 38L4.5 76"
+        stroke="pink"
+        /* opacity="20%" */
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
+
+{/* -----------------33333333333333333---------------------------------------------------- */}
+
+    <motion.svg
+      width="34"
+      height="80"
+      viewBox="0 0 34 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      initial={{ stroke: 'pink', filter: 'drop-shadow(0 0 8px pink)' }} // Estado inicial del SVG
+      animate={{
+        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el cambio
+        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
+      }}
+      transition={{
+        duration: 0.5, // Duración de cada transición
+        repeat: Infinity, // Repetición infinita
+        repeatType: 'reverse', // Invierte la lista para el cambio de color
+        ease: 'easeInOut',
+      }}
+    >
+      <motion.path
+        d="M4.5 4L29.5 38L4.5 76"
+        stroke="pink"
+        /* opacity="20%" */
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </motion.svg>
 
   </div>
 );

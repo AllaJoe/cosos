@@ -27,8 +27,7 @@ const Landing = () => {
       >
         <ChakraProvider>
           <div
-          
-          
+
           style={{ position: "relative", backgroundColor:"#4B0F4D" }}>
             <div
               className="video-container"
@@ -54,11 +53,11 @@ const Landing = () => {
                 top: "20vh",
                 left: "30%",
                 zIndex: 1,
-                backgroundColor: "rgba(30, 30, 30, 90%)",
+                backgroundColor: "rgba(30, 30, 30, 40%)",
                 display: "flex",
                 alignItems: "center",
                 border: "solid 3px #FF58F8",
-                borderRadius: "10px",
+                borderRadius: "25px",
                 justifyContent: "center",
                 flexDirection: "column",
                 /* boxShadow: '0px 0px 20px 5px #D53F8C' */

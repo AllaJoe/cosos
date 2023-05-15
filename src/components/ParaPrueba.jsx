@@ -29,14 +29,14 @@ const ParaPrueba = (props) => {
         <div style={{
             width:"40vw",
             height:"85vh", 
-            backgroundColor:"rgba(30, 30, 30, 90%)", 
+            backgroundColor:"rgba(30, 30, 30, 40%)", 
             display:"flex", 
             flexDirection:"column", 
             justifyContent:"center", 
             alignItems:"center",
             textAlign:"center", 
-            border:"3px solid #F815E1",
-            borderRadius:"15px",
+            /* border:"3px solid #F815E1", */
+            borderRadius:"25px",
             /* paddingTop:"30px", */
             
             
