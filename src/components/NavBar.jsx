@@ -64,7 +64,7 @@ function ResponsiveAppBar() {
             }}
             >
             
-            <img style={ {width:"150px", /* marginRight:"30vw" */}} src="https://i.ibb.co/LgDsDZy/Frame-50.png" alt="Frame-23" border="0" />
+            <img style={ {width:"150px", /* marginRight:"30vw" */}} src="https://i.ibb.co/Yfzw8Zm/Frame-5437773.png" alt="Frame-23" border="0" />
             
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -119,7 +119,7 @@ function ResponsiveAppBar() {
                 textDecoration: 'none',
             }}
             >
-            <img style={ {width:"110px"}} src="https://i.ibb.co/LgDsDZy/Frame-50.png" alt="Frame-23" border="0" />
+            <img style={ {width:"110px"}} src="https://i.ibb.co/Yfzw8Zm/Frame-5437773.png" alt="Frame-23" border="0" />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, paddingLeft:"30vw" }}>
             {pages.map((page) => (

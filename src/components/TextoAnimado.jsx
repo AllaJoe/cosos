@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import PropTypes from 'prop-types';
 
+
 const AnimatedTypingH1 = ({ text, duration, element, style, loop }) => {
     const [animatedText, setAnimatedText] = useState('');
     const [animationComplete, setAnimationComplete] = useState(false);
@@ -59,7 +60,7 @@ const AnimatedTypingH1 = ({ text, duration, element, style, loop }) => {
   return (
     <AnimatedElement style={textProps}>
       {animatedText}
-      <animated.span style={cursorProps}>|</animated.span>
+    <animated.span style={cursorProps}>|</animated.span>  
     </AnimatedElement>
   );
 };

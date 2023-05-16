@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  background-color: #313130;
-  background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(32,32,32,1) 100%);
+  background-color: black;
+  /* background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(32,32,32,1) 100%); */
 
   
 }

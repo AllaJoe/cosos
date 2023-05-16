@@ -29,6 +29,10 @@
     font-family: 'SigmarOne';
     src: url('../fonts/SigmarOne.ttf');
 }
+@font-face {
+    font-family: 'HelveticaNowDisplay-Thin';
+    src: url('../fonts/HelveticaNowDisplay-Thin.ttf');
+}
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

@@ -6,194 +6,36 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Styles/estilitos.css';
 import videoEspacio from '../assets/videoEspacio.webm'
+import FlechitaPrev from '../components/FlechitaPrev';
+import FlechitaNext from '../components/FlechitaNext';
+/* import TextoDeColor from '../components/TextoDeColor'; */
 
 
-const CustomPrevArrow = (props) => (
+const CustomPrevArrow = (props) => (        //FLECHA PREV
   <div className="custom-arrow custom-prev-arrow" onClick={props.onClick}>
-    <motion.svg
-      width="34"
-      height="81"
-      viewBox="0 0 34 81"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      initial={{ stroke: 'pink' }}
-      animate={{
-        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el parpadeo
-        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
-      }}
-      transition={{
-        duration: 0.3, // Duración de cada transición
-        repeat: Infinity, // Repetición infinita
-        repeatType: 'reverse', // Invierte la lista para el parpadeo
-        ease: 'easeInOut',
-        
-      }}
-      style={{ filter: 'drop-shadow(0 0 8px pink)' }} // Efecto de glow inicial
-    >
-      <path
-        d="M29.0173 76.5L4 41.649L29.5249 3.99983"
-        strokeWidth="8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </motion.svg>
-
-{/* --------------------------------22222222------------------------------------------- */}
-
-    <motion.svg
-      width="34"
-      height="81"
-      viewBox="0 0 34 81"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      initial={{ stroke: 'pink' }}
-      animate={{
-        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el parpadeo
-        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
-      }}
-      transition={{
-        duration: 0.4, // Duración de cada transición
-        repeat: Infinity, // Repetición infinita
-        repeatType: 'reverse', // Invierte la lista para el parpadeo
-        ease: 'easeInOut',
-        
-      }}
-      style={{ filter: 'drop-shadow(0 0 8px pink)' }} // Efecto de glow inicial
-    >
-      <path
-        d="M29.0173 76.5L4 41.649L29.5249 3.99983"
-        strokeWidth="8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </motion.svg>
-
-{/* --------------------------------333333333------------------------------------------- */}
-
-<motion.svg
-      width="34"
-      height="81"
-      viewBox="0 0 34 81"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      initial={{ stroke: 'pink' }}
-      animate={{
-        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el parpadeo
-        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
-      }}
-      transition={{
-        duration: 0.5, // Duración de cada transición
-        repeat: Infinity, // Repetición infinita
-        repeatType: 'reverse', // Invierte la lista para el parpadeo
-        ease: 'easeInOut',
-        
-      }}
-      style={{ filter: 'drop-shadow(0 0 8px pink)' }} // Efecto de glow inicial
-    >
-      <path
-        d="M29.0173 76.5L4 41.649L29.5249 3.99983"
-        strokeWidth="8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </motion.svg>
-
+    <FlechitaPrev      //flecha 1
+      duration="0.5"
+    />
+    <FlechitaPrev      //flecha 2
+      duration="0.6"
+    />
+    <FlechitaPrev      //flecha 3
+      duration="0.7"
+    />
   </div>
 );
 
-const CustomNextArrow = (props) => (
+const CustomNextArrow = (props) => (       //FLECHA NEXT
   <div className="custom-arrow custom-next-arrow" onClick={props.onClick}>
-
-{/* ------------------11111111111--------------------------------------------------- */}
-
-    <motion.svg
-      width="34"
-      height="80"
-      viewBox="0 0 34 80"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      initial={{ stroke: 'pink', filter: 'drop-shadow(0 0 8px pink)' }} // Estado inicial del SVG
-      animate={{
-        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el cambio
-        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
-      }}
-      transition={{
-        duration: 0.3, // Duración de cada transición
-        repeat: Infinity, // Repetición infinita
-        repeatType: 'reverse', // Invierte la lista para el cambio de color
-        ease: 'easeInOut',
-      }}
-    >
-      <motion.path
-        d="M4.5 4L29.5 38L4.5 76"
-        stroke="pink"
-        /* opacity="20%" */
-        strokeWidth="8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </motion.svg>
-
-{/* -----------------------22222222222222222---------------------------------------------- */}
-
-    <motion.svg
-      width="34"
-      height="80"
-      viewBox="0 0 34 80"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      initial={{ stroke: 'pink', filter: 'drop-shadow(0 0 8px pink)' }} // Estado inicial del SVG
-      animate={{
-        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el cambio
-        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
-      }}
-      transition={{
-        duration: 0.4, // Duración de cada transición
-        repeat: Infinity, // Repetición infinita
-        repeatType: 'reverse', // Invierte la lista para el cambio de color
-        ease: 'easeInOut',
-      }}
-    >
-      <motion.path
-        d="M4.5 4L29.5 38L4.5 76"
-        stroke="pink"
-        /* opacity="20%" */
-        strokeWidth="8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </motion.svg>
-
-{/* -----------------33333333333333333---------------------------------------------------- */}
-
-    <motion.svg
-      width="34"
-      height="80"
-      viewBox="0 0 34 80"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      initial={{ stroke: 'pink', filter: 'drop-shadow(0 0 8px pink)' }} // Estado inicial del SVG
-      animate={{
-        stroke: ['pink', 'blue', 'pink'], // Lista de colores para el cambio
-        filter: ['drop-shadow(0 0 8px pink)', 'drop-shadow(0 0 8px blue)', 'drop-shadow(0 0 8px pink)'], // Lista de efectos de glow
-      }}
-      transition={{
-        duration: 0.5, // Duración de cada transición
-        repeat: Infinity, // Repetición infinita
-        repeatType: 'reverse', // Invierte la lista para el cambio de color
-        ease: 'easeInOut',
-      }}
-    >
-      <motion.path
-        d="M4.5 4L29.5 38L4.5 76"
-        stroke="pink"
-        /* opacity="20%" */
-        strokeWidth="8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </motion.svg>
-
+    <FlechitaNext   //flecha 1
+    duration="0.5"
+    />
+    <FlechitaNext  //flecha 2
+    duration="0.6"
+    />
+    <FlechitaNext  //flecha 3
+    duration="0.7"
+    />
   </div>
 );
 
@@ -213,10 +55,34 @@ const Perfil = () => {
   };
 
   const slides = [
-    {img:'https://i.ibb.co/Yfzw8Zm/Frame-5437773.png', width:"30vw", text: '¡Hola y bienvenidos a mi página web! 👋✨ Soy un diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end. 💻🎨 Me apasiona crear experiencias digitales únicas y atractivas, enfocadas en las necesidades y deseos de los usuarios. 🌟🔍 ¡Vamos a hacer cosas increíbles juntos! 💪🚀', element: 'h2' },
-    {img:'https://i.ibb.co/DDf3Wpk/Frame-542ttt.png', width:"13vw", text: '✨ Fusiono estética y funcionalidad ⚖️ para crear experiencias excepcionales. Trabajo en diversos proyectos 📱💻, colaborando con equipos multidisciplinarios para lograr resultados sobresalientes. 💪🌟 ¡Creemos cosas increíbles juntos! 🚀', element: 'h2' },
-    {img:'https://i.ibb.co/WFwq0tZ/cositos3.png', width:"30vw", text: '✨ Soy un diseñador creativo en constante exploración de nuevas tecnologías y herramientas para estar a la vanguardia del diseño y desarrollo. Me apasiona la innovación en la experiencia del usuario. 💡🌟', element: 'h2'},
-    {img:'https://i.ibb.co/ng9DZQX/Linked-In-cover-13.png', width:"30vw", text: '🌐 Diseñador UX/UI con experiencia en desarrollo front-end. Interfaces intuitivas y centradas en el usuario. 💼💡 ¡Colaboremos en proyectos desafiantes! 🚀🌟', element: 'h2', loop:false },
+    {img:'https://i.ibb.co/Yfzw8Zm/Frame-5437773.png', size:"1.5rem",
+    color1:"white",
+    textShadow:"0 0 8px #E85390",
+    color2:"#83FFE9",
+    textShadow2:"0 0 8px #83FFE9",
+    color3:"white",
+    textShadow3:"0 0 8px #E85390", text1:"HOLALALA", width:"30vw", text: '¡Hola y bienvenidos a mi página web! 👋✨ Soy un diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end. 💻🎨 Me apasiona crear experiencias digitales únicas y atractivas, enfocadas en las necesidades y deseos de los usuarios. 🌟🔍 ¡Vamos a hacer cosas increíbles juntos! 💪🚀', element: 'h2' },
+    {img:'https://i.ibb.co/DDf3Wpk/Frame-542ttt.png', size:"1.5rem",
+    color1:"white",
+    textShadow:"0 0 8px #E85390",
+    color2:"#83FFE9",
+    textShadow2:"0 0 8px #59B0C6",
+    color3:"white",
+    textShadow3:"0 0 8px #E85390", text1:"ESTA ES LA CARD 2", width:"13vw", text: '✨ Fusiono estética y funcionalidad ⚖️ para crear experiencias excepcionales. Trabajo en diversos proyectos 📱💻, colaborando con equipos multidisciplinarios para lograr resultados sobresalientes. 💪🌟 ¡Creemos cosas increíbles juntos! 🚀', element: 'h2' },
+    {img:'https://i.ibb.co/WFwq0tZ/cositos3.png', size:"1.5rem",
+    color1:"white",
+    textShadow:"0 0 8px #E85390",
+    color2:"#83FFE9",
+    textShadow2:"0 0 8px #59B0C6",
+    color3:"white",
+    textShadow3:"0 0 8px #E85390", text1:"ESTA ES LA CARD 3", width:"30vw", text: '✨ Soy un diseñador creativo en constante exploración de nuevas tecnologías y herramientas para estar a la vanguardia del diseño y desarrollo. Me apasiona la innovación en la experiencia del usuario. 💡🌟', element: 'h2'},
+    {img:'https://i.ibb.co/ng9DZQX/Linked-In-cover-13.png', size:"1.5rem",
+    color1:"white",
+    textShadow:"0 0 8px #E85390",
+    color2:"#83FFE9",
+    textShadow2:"0 0 8px #59B0C6",
+    color3:"white",
+    textShadow3:"0 0 8px #E85390", text1:"ESTA ES LA CARD 4", width:"30vw", text:'🌐 Diseñador UX/UI con experiencia en desarrollo front-end. Interfaces intuitivas y centradas en el usuario. 💼💡 ¡Colaboremos en proyectos desafiantes! 🚀🌟', element: 'h2', loop:false },
   ];
 
   const carouselSettings = {
@@ -230,12 +96,14 @@ const Perfil = () => {
   };
 
   return (
+    
     <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
     style={{backgroundColor:"purple"}}>
+      
       <video
         src={videoEspacio}
           autoPlay
@@ -260,11 +128,21 @@ const Perfil = () => {
         {slides.map((slide, index) => (
           <div key={index}>
             <ParaPrueba
+              text1= {slide.text1}
               text={slide.text}
               element={slide.element}
               img={slide.img}
               loop={slide.loop}
               width={slide.width}
+
+              size={slide.size}
+              color1={slide.color1}
+              textShadow={slide.textShadow}
+              color2={slide.color2}
+              textShadow2={slide.textShadow2}
+              color3={slide.color3}
+              textShadow3={slide.textShadow3}
+              fontFamily="IBMPlexMono-Light"
             />
           </div>
         ))}

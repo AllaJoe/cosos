@@ -1,73 +1,35 @@
-import { ChakraProvider } from '@chakra-ui/react';
+/* import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import TextoAnimado from '../components/TextoAnimado';
-import glichWeb from '../assets/glichWeb.webm'
+import TextoAnimado from '../components/TextoAnimado'; */
+
+import Modalcito from '../components/Modalcito';
+/* import { Link } from 'react-router-dom'; */
 
 
 
 const Bio = () => {
     return (
-        <ChakraProvider>
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
-        >
-            <div style={{ position: "relative" }}>
+        <div style={{
+            /* position:"fixed", */
+            display:"flex",
+            flexWrap:"wrap",
+            width:"100vw",
+            flexDirection:"row",
+            justifyContent:"center",
+            alignItems:"center",
+            gap:"40px",
+            height:"100vh",
+            backgroundColor:"#CAF2FF"
+            }}>
             
-            <video src={glichWeb} autoPlay loop muted style={ {width:"100%", opacity:"90%", objectFit:"cover"}}></video>
-
-            {/* Este es el contenedor donde adentro tengo mi texto animado */}
             
-            <div
-                style={{
-                position: "absolute",
-                top: "40%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                backgroundColor: "rgba(30, 30, 30,70%)",
-                width: "40vw",
-                height: "80vh",
-                border: "solid 3px #FF58F8",
-                borderRadius: "10px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
-                }}
-            >
-        
-            <h1
-                style={{
-                    width: "30vw",
-                    height: "70vh",
-                    fontFamily: "IBMPlexMono-Medium"
-                }}
-                >
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 5 }}
-                    >
-                    <img src="https://i.ibb.co/HPL9LHy/Frame-50.png" alt="Frame-50" border="0" />
-
-                    </motion.div>
-                <TextoAnimado
-                    text="
-                👋 Hola, soy Damián y soy diseñador UX/UI con conocimientos en front-end. ¡Bienvenidos a mi portfolio! 🎉
-
-                🤓 Me encanta trabajar en la c y atra💻
-                "
-                    duration={2000}
-                    element="h1"
-                    style={{ color: "#FFE8FE" }}
-                />
-                </h1>
-                
-            </div>
-            </div>
-        </motion.div>
-        </ChakraProvider>
+            <Modalcito img="https://i.ibb.co/m9XxwSV/00011-556346363-gigapixel-standard-scale-4-00x.jpg"/>
+            <Modalcito img="https://i.ibb.co/N6Dq3Cv/00005-3354756848346-gigapixel-standard-scale-4-00x-gigapixel-standard-scale-1-00x.jpg" />
+            
+            <Modalcito img="https://i.ibb.co/Ld3BcR5/00019-88805685333-gigapixel-standard-scale-6-00x.jpg" redit="https://i.ibb.co/Ld3BcR5/00019-88805685333-gigapixel-standard-scale-6-00x.jpg" />
+            
+            <Modalcito img="https://i.ibb.co/bPFj1QK/pibita-mayor-calidad-1-1.png" />
+        </div>
     );
     };
 

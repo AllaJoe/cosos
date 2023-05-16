@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import { motion  } from 'framer-motion';
 import '../Styles/estilitos.css'
+
 import AnimatedTypingH1 from '../components/TextoAnimado'
+import TextoDeColor from './TextoDeColor';
+
 
 const ParaPrueba = (props) => {
     return (
@@ -51,6 +54,17 @@ const ParaPrueba = (props) => {
                 <img style={{width:props.width, /* opacity:"90%" */}} src={props.img} alt="Frame-50" border="0" />
             </motion.div>
         <div style={{width:"30vw", height:"50vh"}}>
+            <TextoDeColor 
+            text1={props.text1} 
+            size={props.size}
+            color1={props.color1}
+            textShadow={props.textShadow}
+            color2={props.color2}
+            textShadow2={props.textShadow2}
+            color3={props.color3}
+            textShadow3={props.textShadow3}
+            fontFamily={props.fontFamily}
+            />
             <AnimatedTypingH1
                     text= {props.text}
                     duration={2000}
@@ -58,6 +72,7 @@ const ParaPrueba = (props) => {
                     loop={props.loop}
                     style={{ color: "#FFE8FE", fontFamily: 'IBMPlexMono-Light', fontSize: "1.5rem" }}
             /> 
+            
         </div>
 
         </div>
@@ -72,7 +87,17 @@ ParaPrueba.propTypes = {
     text: PropTypes.string,
     element: PropTypes.string,
     loop: PropTypes.bool,
-    width: PropTypes.number
+    width: PropTypes.number,
+    text1: PropTypes.string,
+    size: PropTypes.number,
+    color1: PropTypes.string,
+    color2: PropTypes.string,
+    color3: PropTypes.string,
+    color4s: PropTypes.string,
+    textShadow : PropTypes.bool,
+    textShadow2 : PropTypes.bool,
+    textShadow3 : PropTypes.bool,
+    fontFamily: PropTypes.string,
 }
 
 export default ParaPrueba;
