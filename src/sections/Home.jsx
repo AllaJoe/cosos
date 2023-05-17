@@ -148,7 +148,7 @@ const Home = () => {
             title="APTITUDES"
             text="Ecá encontras mis habilidades que me califican para los diferentes trabajos"
             />
-            <Link to="/Portfolio">
+            <Link to="/Bio">
             <CardChica
             img="https://i.ibb.co/wMG6gZj/Frame-529.png"
             title="ESCRIBIME"

@@ -33,7 +33,7 @@ const Bio = () => {
             <Modalcito  
             img1="https://i.ibb.co/tCvjB6m/00007-322222213778-1.png"
             img="https://i.ibb.co/m9XxwSV/00011-556346363-gigapixel-standard-scale-4-00x.jpg"
-            h3="TITULITO CARD 1"
+            h3="TITULon CARD 1"
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
 
