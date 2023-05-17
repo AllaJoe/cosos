@@ -15,15 +15,17 @@ import Home from './sections/Home';
 const App = () => {
   return(
     <>
+    
     <ResponsiveAppBar />
     <Routes >
     <Route path="/" element={<Landing />} />
-      <Route path="bio" element={<Bio />} />
       <Route path="home" element={<Home />} />
       <Route path="portfolio" element={<Portfolio />} />
       <Route path="perfil" element={<Perfil />} />
+      <Route path="bio" element={<Bio />} />
       <Route component={NotFound} />
     </Routes>
+    
     </>
   )
 }

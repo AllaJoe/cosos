@@ -11,11 +11,16 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import '../Styles/nav.css'
+import '../Styles/nav.css';
+
+
+
 
 const pages = ['Home','Perfil', 'Portfolio', 'Bio' ];
 
 function ResponsiveAppBar() {
+
+
     const [anchorElNav, setAnchorElNav] = useState(null);
     const [anchorElUser, setAnchorElUser] = useState(null);
 
