@@ -8,7 +8,11 @@ import '../Styles/estilitos.css';
 import videoEspacio from '../assets/videoEspacio.webm'
 import FlechitaPrev from '../components/FlechitaPrev';
 import FlechitaNext from '../components/FlechitaNext';
+/* import Regresar from '../components/Regresar'; */
 /* import TextoDeColor from '../components/TextoDeColor'; */
+/* import { Link } from 'react-router-dom'; */
+
+
 
 
 const CustomPrevArrow = (props) => (        //FLECHA PREV
@@ -96,14 +100,19 @@ const Perfil = () => {
   };
 
   return (
-    
+    <>
+      
     <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
-    style={{backgroundColor:"purple"}}>
-      
+        style={{backgroundColor:"purple"}}>
+      {/* <div>  
+      <Link to="/Home">
+      <Regresar />
+      </Link>  
+    </div> */}
       <video
         src={videoEspacio}
           autoPlay
@@ -119,6 +128,7 @@ const Perfil = () => {
             objectFit:"cover",
             /* zIndex: 1 */
           }}/>
+      
       <motion.div
       variants={carouselVariants}
       initial="hidden"
@@ -149,6 +159,7 @@ const Perfil = () => {
       </Slider>
       </motion.div>
     </motion.div>
+    </>
   );
 };
 

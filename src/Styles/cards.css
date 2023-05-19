@@ -50,6 +50,7 @@
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    
   }
   
   .cardChica:hover .content {
@@ -76,6 +77,7 @@
   .cardGrande:hover {
     transform: scale(1.04);
     z-index: 3;
+    
   }
   
   .imageContainerG {
@@ -103,10 +105,12 @@
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    
   }
   
   .cardGrande:hover .contentG {
     opacity: 1;
+    
   }
   
   

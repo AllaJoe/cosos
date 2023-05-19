@@ -3,12 +3,20 @@ import { motion } from 'framer-motion';
 import TextoAnimado from '../components/TextoAnimado'; */
 import { motion } from 'framer-motion';
 import Modalcito from '../components/Modalcito';
+/* import Regresar from '../components/Regresar';
+import { Link } from 'react-router-dom'; */
+
 /* import { Link } from 'react-router-dom'; */
 /* import TextoDeColor from '../components/TextoDeColor'; */
 
 
 const Bio = () => {
     return (
+        <>
+        {/* <Link to="/Home">
+           <Regresar /> 
+        </Link>  */}
+
         <motion.div
         
         initial={{ opacity: 0 }}
@@ -28,8 +36,7 @@ const Bio = () => {
             height:"100vh",
             backgroundColor:"#343434"
             }}>
-            
-            
+             
             <Modalcito  
             img1="https://i.ibb.co/tCvjB6m/00007-322222213778-1.png"
             img="https://i.ibb.co/m9XxwSV/00011-556346363-gigapixel-standard-scale-4-00x.jpg"
@@ -65,7 +72,10 @@ const Bio = () => {
             <div style={{width:"300px", height:"50vh"}}>
 
             </div>
+
+            
         </motion.div>
+        </>
     );
     };
 

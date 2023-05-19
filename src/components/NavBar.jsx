@@ -16,7 +16,7 @@ import '../Styles/nav.css';
 
 
 
-const pages = ['Home','Perfil', 'Portfolio', 'Bio' ];
+const pages = ['Home','Perfil', 'Portfolio', 'Bio', 'Pruevis' ];
 
 function ResponsiveAppBar() {
 
