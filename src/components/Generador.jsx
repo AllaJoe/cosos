@@ -1,75 +1,106 @@
-import { useState } from 'react';
-import MasPruev from './MasPruev';
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
-const Generador = () => {
-  const [divs, setDivs] = useState([{ id: 'div-0', onDelete: () => handleDelete('div-0') }]);
+import { useState } from "react";
+import { motion } from "framer-motion";
 
-  const handleButtonClick = () => {
-    const newDivs = [...divs];
-    const newIndex = newDivs.length;
-    const newId = `div-${newIndex}`;
-    newDivs.push({ id: newId, onDelete: () => handleDelete(newId) });
-    setDivs(newDivs);
+function DivGenerator() {
+  const [divs, setDivs] = useState([]);
+
+  const addDiv = () => {
+    const newId = divs.length + 1;
+    const newDiv = { id: newId, text: "", isEditing: false };
+    setDivs([...divs, newDiv]);
   };
 
-  const handleDelete = (id) => {
-    const newDivs = divs.filter((div) => div.id !== id);
-    setDivs(newDivs);
-  };
-
-  const handleDragEnd = (result) => {
-    if (!result.destination) return;
-    const { source, destination } = result;
-    const newDivs = Array.from(divs);
-    const [movedDiv] = newDivs.splice(source.index, 1);
-    newDivs.splice(destination.index, 0, movedDiv);
-
-    // Actualizar los índices en el estado divs para que coincidan con los índices en la interfaz de usuario
-    const updatedDivs = newDivs.map((div, index) => ({
-      ...div,
-      id: `div-${index}`,
-      onDelete: () => handleDelete(`div-${index}`)
-    }));
-
+  const handleDivClick = (id) => {
+    const updatedDivs = divs.filter(div => div.id !== id);
     setDivs(updatedDivs);
+  };
+
+  const handleSpanClick = (id) => {
+    const updatedDivs = divs.map(div => {
+      if (div.id === id) {
+        return { ...div, isEditing: true };
+      }
+      return { ...div, isEditing: false };
+    });
+    setDivs(updatedDivs);
+  };
+
+  const handleInputChange = (event, id) => {
+    const updatedDivs = divs.map(div => {
+      if (div.id === id) {
+        return { ...div, text: event.target.value };
+      }
+      return div;
+    });
+    setDivs(updatedDivs);
+  };
+
+  const handleInputBlur = (id) => {
+    const updatedDivs = divs.map(div => {
+      if (div.id === id) {
+        return { ...div, text: div.text.trim(), isEditing: false };
+      }
+      return div;
+    });
+    setDivs(updatedDivs);
+  };
+
+  const estilo = {
+    fontFamily: 'Gilroy-ExtraBold',
+    backgroundColor: 'none',
+    width: '100%',
+    height: '30px',
+    cursor: 'pointer',
+    border: 'none'
   };
 
   return (
     <div>
-      <DragDropContext onDragEnd={handleDragEnd}>
-        <Droppable droppableId="divs">
-          {(provided) => (
-            <div
-              ref={provided.innerRef}
-              {...provided.droppableProps}
-              style={{ minHeight: '100px' }}
+      <button onClick={addDiv}>Agregar div</button>
+      <div style={{ position: "relative" }}>
+        {divs.map(div => (
+          <motion.div
+            style={{
+              position: "absolute",
+              backgroundColor: "orange",
+              width: "300px",
+              height: "100px",
+              boxSizing: 'border-box',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              marginTop: '20px',
+              zIndex: div.id
+            }}
+            key={div.id}
+            drag
+          >
+            <span
+              style={{ position: 'absolute', top: '0', right: '0', cursor: 'pointer' }}
+              onClick={() => handleDivClick(div.id)}
             >
-              {divs.map((div, index) => (
-                <Draggable key={div.id} draggableId={div.id} index={index}>
-                  {(provided) => (
-                    <div
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      style={{
-                        marginBottom: '10px',
-                        ...provided.draggableProps.style
-                      }}
-                    >
-                      <MasPruev onDelete={div.onDelete} index={index} />
-                    </div>
-                  )}
-                </Draggable>
-              ))}
-              {provided.placeholder}
-            </div>
-          )}
-        </Droppable>
-      </DragDropContext>
-      <button onClick={handleButtonClick}>Generar más</button>
+              ✖
+            </span>
+            {div.isEditing ? (
+              <input
+                type="text"
+                value={div.text}
+                onChange={event => handleInputChange(event, div.id)}
+                onBlur={() => handleInputBlur(div.id)}
+                autoFocus
+              />
+            ) : (
+              <span style={estilo} onClick={() => handleSpanClick(div.id)}>
+                {div.text || 'Haz clic para escribir'}
+              </span>
+            )}
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
-export default Generador;
+
+
+export default DivGenerator;

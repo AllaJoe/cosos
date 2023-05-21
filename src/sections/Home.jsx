@@ -93,7 +93,7 @@ const Home = () => {
             justifyContent: "center",
             alignItems: "center",
             /* background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)", */
-            background:"rgba(77, 19, 48, 0.5)",
+            background:"rgba(77, 19, 48, 0.8)",
             /* marginTop: "4vh", */
             gap: "2vh",
             flexWrap: "wrap",

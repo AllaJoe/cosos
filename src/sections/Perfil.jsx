@@ -59,7 +59,7 @@ const Perfil = () => {
   };
 
   const slides = [
-    {img:'https://i.ibb.co/Yfzw8Zm/Frame-5437773.png', size:"1.5rem",
+    {img:'https://i.ibb.co/vxKP113/nuevo-logo.png', size:"1.5rem",
     color1:"white",
     textShadow:"0 0 8px #E85390",
     color2:"#83FFE9",
