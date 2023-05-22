@@ -1,0 +1,121 @@
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(36, 36, 36); */
+    
+}
+
+.h2_1 {
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    font-family: SigmarOne;
+    font-size: 70px;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -7px;
+    /* background-color: #ffffff; */
+    
+}
+
+.h2_1 span {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, #ff94c8, #e41076);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #36C4F4;
+}
+
+.h2_2 {
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    font-family: SigmarOne;
+    font-size: 64px;
+    height: 58px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -5px;
+    
+}
+
+.h2_2 span {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, #ff94c8, #e41076);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #36C4F4;
+}
+
+.h2_3 {
+    color: #ffffff;
+    /* background-color: rgb(0, 0, 0); */
+    font-family: SigmarOne;
+    font-size: 45px;
+    margin: 0;
+    padding-top: 0px;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -1px;
+    opacity: 90%;
+}
+
+@keyframes glowAnimation {
+    0% {
+        text-shadow: 0 0 0px #f44499;
+        
+    }
+    50% {
+        text-shadow: 0 0 0px #FC62AD, 0 0 8px #ffffffa1;
+    }
+    100% {
+        text-shadow: 0 0 0px #f44499 ;
+        
+    }
+}
+
+    .glow {
+    animation: glowAnimation 1500ms ease-in-out infinite;
+}
+
+
+
+
+/* .h2_1 {
+    color: #FC62AD;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: SigmarOne;
+    font-size: 40px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    letter-spacing: -4px;
+    -webkit-text-stroke: 0.7px #36C4F4;
+} */
+
+
+/* .h2_2 {
+    color: #FC62AD;
+    background-color: rgb(0, 0, 0);
+    font-family: SigmarOne;
+    font-size: 35px;
+    margin: 0;
+    padding-top: 6px;
+    height: 33px;
+    width: 250px;
+    text-align: center;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 0.7px #36C4F4;
+    
+} */

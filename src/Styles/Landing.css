@@ -15,3 +15,30 @@
     background-color: rgba(0,0,0,0.2);
     transition: ease-in-out;
   }
+
+
+.contLand {
+  height: 50%;
+  width: 40%;
+  position: absolute;
+  top: 25vh;
+  left: 29%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 40%);
+  display: flex;
+  align-items: center;
+  border:solid 0.5px rgba(255, 255, 255, 40%);
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .contLand {
+    height: 60vh;
+    width: 70vw;
+    left: 15vw;
+  }
+
+  
+  }

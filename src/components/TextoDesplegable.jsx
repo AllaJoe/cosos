@@ -4,7 +4,7 @@ import { useTrail, a } from '@react-spring/web';
 
 
 
-const Trail = ({ open, children }) => {
+const TextoDesplegable = ({ open, children }) => {
   const items = [...children];
   const trail = useTrail(items.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
@@ -32,10 +32,10 @@ const Trail = ({ open, children }) => {
   );
 };
 
-Trail.propTypes = {
+TextoDesplegable.propTypes = {
     open: PropTypes.string,
     children: PropTypes.string
   }
 
 
-export default Trail;
+export default TextoDesplegable;

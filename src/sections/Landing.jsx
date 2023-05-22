@@ -7,6 +7,7 @@ import videoEspacio from '../assets/videoEspacio.webm'
 import { Link } from 'react-router-dom';
 import TextoDeColor from '../components/TextoDeColor';
 import '../Styles/Landing.css';
+/* import PngGlow from '../components/PngGlow'; */
 
 
 const Landing = () => {
@@ -39,31 +40,24 @@ const Landing = () => {
                 style={{ width: "100%", height: "100%", objectFit: "cover", opacity:"50%" }}
               />
             </div>
+
+            {/* <div style={{
+              height: "50%",
+              width: "40%",
+              position: "absolute",
+              top: "4vh",
+              left: "35%",
+              zIndex: 3,
+              }}>
+            <PngGlow />
+            </div> */}
+
             <motion.div
+            className='contLand'
               variants={cardVariants}
               initial="hidden"
               animate="visible"
-
-              style={{
-                height: "50%",
-                width: "40%",
-                position: "absolute",
-                top: "20vh",
-                left: "30%",
-                zIndex: 1,
-                /* backgroundColor: "rgba(30, 30, 30, 40%)", */
-                backgroundColor: "rgba(0, 0, 0, 40%)",
-                display: "flex",
-                alignItems: "center",
-                /* border: "solid 1px #FF58F8", */
-                border:"solid 0.5px rgba(255, 255, 255, 40%)",
-                borderRadius: "10px",
-                justifyContent: "center",
-                flexDirection: "column",
-                /* boxShadow: '0px 0px 20px 5px #D53F8C' */
-              }}
             >
-              
               <h4
                 style={{
                   height: "20vh",

@@ -3,7 +3,8 @@ import { useState } from 'react';
 /* import DivGenerator from "../components/Generador"; */
 /* import Medida from "../components/Medida"; */
 
-import Trail from "../components/Trail";
+import TextoDesplegable from "../components/TextoDesplegable";
+import PngGlow from "../components/PngGlow";
 
 
 const Pruevis = () => {
@@ -53,7 +54,7 @@ const Pruevis = () => {
         
         {/* <Medida /> */}
         <div style={{display:"flex", flexDirection:"column"}}  onClick={() => set((state) => !state)}>
-          <Trail open={open}>
+          <TextoDesplegable open={open}>
             <Calculador scaleLength="25.5" frets="24" />
             <span>
                 <img style={{width:"20%"}} src="https://i.ibb.co/vxKP113/nuevo-logo.png" alt="" />
@@ -62,7 +63,8 @@ const Pruevis = () => {
             <span>Ipsum</span>
             <span>Dolor</span>
             <span>Sit</span>
-          </Trail>
+          </TextoDesplegable>
+          <PngGlow />
       
         </div>
         </>
