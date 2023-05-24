@@ -10,6 +10,7 @@ import videoEspacio from '../assets/videoEspacio.webm'
 
 
 
+
 const Home = () => {
   const cardVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },
@@ -21,6 +22,7 @@ const Home = () => {
   };
 
   return (
+    <>
     <ChakraProvider>
       <div
         style={{
@@ -62,24 +64,7 @@ const Home = () => {
           }}
           />
         </motion.div>
-        {/* <video
-        src={CuadradosWeb}
-          autoPlay
-          loop
-          muted
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            opacity:"30%",
-            objectFit:"cover"
-          }}
-       /> */}
-          
-        
-
+  
         <motion.div
           /* initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -93,9 +78,6 @@ const Home = () => {
             flexDirection: 'column',
             justifyContent: "center",
             alignItems: "center",
-            /* background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)", */
-            /* background:"rgba(77, 19, 48, 0.8)", */
-            /* marginTop: "4vh", */
             gap: "2vh",
             flexWrap: "wrap",
           }}
@@ -159,10 +141,13 @@ const Home = () => {
             fontSize="16px"
             />
             </Link>
+            
 </motion.div>
 </motion.div>
 </div>
 </ChakraProvider>
+
+</>
 );
 }
 

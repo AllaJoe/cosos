@@ -149,7 +149,9 @@ function ResponsiveAppBar() {
                 justifyContent:"center"
             }}
             >
-            <img style={ {width:"110px"}} src="https://i.ibb.co/vxKP113/nuevo-logo.png" alt="Frame-23" border="0" />
+            <div style={{width:"50vw", display:"flex", justifyContent:"flex-end", alignItems:"center"}}>   
+            <img style={ {width:"110px", /* marginLeft:"200px"  */}} src="https://i.ibb.co/vxKP113/nuevo-logo.png" alt="Frame-23" border="0" />
+            </div> 
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, paddingLeft:"30vw" }}>
             {pages.map((page) => (
