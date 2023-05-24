@@ -1,3 +1,9 @@
+
+
+.landing-css {
+  background-color: black;
+}
+
 .buttonLanding {
     width: 15vw;
     height:8vh;
@@ -21,7 +27,7 @@
   height: 50%;
   width: 40%;
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   left: 29%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 40%);
@@ -32,6 +38,8 @@
   justify-content: center;
   flex-direction: column;
 }
+
+
 
 @media (max-width: 1000px) {
   .contLand {

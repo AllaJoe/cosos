@@ -1,0 +1,80 @@
+input::placeholder {
+    color: rgb(255, 224, 224);
+    font-size: 1em;
+    opacity: 30%;
+  }
+
+textarea::placeholder {
+    color: rgb(255, 224, 224);
+    font-size: 1em;
+    opacity: 30%;
+  }
+
+
+  .form_cont {
+    width:450px; 
+    height:600px; 
+    margin-left:160px;
+    margin-right:160px;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    align-items:center;
+    /* background-color: white; */
+    margin-bottom:10vh;
+  }
+
+  .nombre {
+    background-color: rgba(0, 0, 0, 0);
+    border:none; 
+    border-bottom: solid 3px #FF58F8; 
+    outline:none; 
+    /* minWidth:"50em", */ 
+    width:750px;
+    height:10vh; 
+    /* padding:"5px",  */
+    font-size:30px;
+    color:white
+  }
+  
+  .texttext {
+    background-color: rgba(0, 0, 0, 0);
+    border:none; 
+    border-bottom: solid 3px #FF58F8; 
+    outline:none; 
+    /* minWidth:"50em", */ 
+    width:750px;
+    height:40vh; 
+    /* padding:"5px",  */
+    font-size:30px;
+    color:white;
+    resize: none;
+  }
+
+  .input_submit {
+    width:750px; 
+    height:10vh; 
+    margin-top:30px;
+    padding:5px;
+    background-color:#FF58F8;
+    border:none;
+    font-weight:bold;
+    font-size: 2em;
+    color:white;
+  }
+
+  @media (max-width: 800px) {
+    .form_cont {
+        /* display: none; */
+        width:200px;
+    }
+    .nombre {
+        width:450px;
+    }
+    .texttext {
+        width:450px;
+    }
+    .input_submit {
+        width:450px;
+    }
+  }

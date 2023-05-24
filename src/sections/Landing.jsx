@@ -1,16 +1,17 @@
+
+
 import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import '../Styles/fonts.css';
 import AnimatedTypingH1 from '../components/TextoAnimado';
-/* import videoWeb60 from '../assets/videoWeb60.webm'; */
 import videoEspacio from '../assets/videoEspacio.webm'
 import { Link } from 'react-router-dom';
 import TextoDeColor from '../components/TextoDeColor';
 import '../Styles/Landing.css';
-/* import PngGlow from '../components/PngGlow'; */
 
 
 const Landing = () => {
+  
     
     const cardVariants = {
       hidden: { y: 150, opacity: 0 },
@@ -19,10 +20,12 @@ const Landing = () => {
 
     return (
       <motion.div
+      className='landing-css'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
+
       >
         <ChakraProvider>
           <div
@@ -40,17 +43,6 @@ const Landing = () => {
                 style={{ width: "100%", height: "100%", objectFit: "cover", opacity:"50%" }}
               />
             </div>
-
-            {/* <div style={{
-              height: "50%",
-              width: "40%",
-              position: "absolute",
-              top: "4vh",
-              left: "35%",
-              zIndex: 3,
-              }}>
-            <PngGlow />
-            </div> */}
 
             <motion.div
             className='contLand'
@@ -77,6 +69,7 @@ const Landing = () => {
                   style={{ color: "#FFE8FE" }}
                 /> 
               </h4>
+              
               <Link to="/Home">
               <button className='buttonLanding' type='submit'>
               <TextoDeColor 
@@ -94,12 +87,12 @@ const Landing = () => {
                 <TextoDeColor text1="BOTONASO" />
               </div> */}
               </Link>
+              
             </motion.div>
           </div>
         </ChakraProvider>
       </motion.div>
     );
   };
-  
+
   export default Landing;
-  

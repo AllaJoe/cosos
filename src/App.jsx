@@ -16,8 +16,11 @@ import Pruevis from './sections/Pruevis';
 
 const App = () => {
   return(
+
     <>
+    
    {/*  <Regresar /> */}
+
     <ResponsiveAppBar />
     <Routes >
     <Route path="/" element={<Landing />} />

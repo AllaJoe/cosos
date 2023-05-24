@@ -12,12 +12,12 @@ import videoEspacio from '../assets/videoEspacio.webm'
 
 const Home = () => {
   const cardVariants = {
-    hidden: { y: 150, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5, type: "Inertia", stiffness: 250 } }
+    hidden: { y: 150, opacity: 0, scale: 1.2 },
+    visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.4, type: "Inertia", stiffness: 150 } }
   };
   const cardVariants2 = {
-    hidden: { y: 150, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5, delay: 0.4, type: "Inertia", stiffness: 200 } }
+    hidden: { y: 150, opacity: 0, scale: 1.2  },
+    visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.3, type: "Inertia", stiffness: 200 } }
   };
 
   return (
@@ -27,7 +27,8 @@ const Home = () => {
           position: "relative",
           width: "100vw",
           height: "100vh",
-          overflow: "hidden"
+          overflow: "hidden",
+          backgroundColor: "black"
         }}
       >
         <motion.div
@@ -93,7 +94,7 @@ const Home = () => {
             justifyContent: "center",
             alignItems: "center",
             /* background: "linear-gradient(180deg, rgba(15,15,15) 0%, rgba(20,20,20) 100%)", */
-            background:"rgba(77, 19, 48, 0.8)",
+            /* background:"rgba(77, 19, 48, 0.8)", */
             /* marginTop: "4vh", */
             gap: "2vh",
             flexWrap: "wrap",
@@ -143,11 +144,13 @@ const Home = () => {
               justifyContent: "center"
             }}
           >
+            <Link to="/Pruevis">
             <CardGrande
             img="https://i.ibb.co/pKBW866/Frame-531.png"
             title="APTITUDES"
             text="Ecá encontras mis habilidades que me califican para los diferentes trabajos"
             />
+            </Link>
             <Link to="/Bio">
             <CardChica
             img="https://i.ibb.co/wMG6gZj/Frame-529.png"

@@ -12,9 +12,22 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import '../Styles/nav.css';
+/* import { createTheme } from '@mui/material/styles'; */
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-
-
+const theme = createTheme({
+    palette: {
+      primary: {
+        // Purple and green play nicely together.
+        main: '#000000',
+      },
+      secondary: {
+        // This is green.A700 as hex.
+        main: '#11cb5f',
+      },
+    },
+  });
+  
 
 const pages = ['Home','Perfil', 'Portfolio', 'Bio', 'Pruevis' ];
 
@@ -38,17 +51,26 @@ function ResponsiveAppBar() {
     };
 
     const culurcitos = {
-        backgroundColor: '#000000',
+        /* backgroundColor: '#000000', */
         height: '8vh',
         borderBottom: '1px solid #343434',
         shadowBottom: '0px',
+        display:"flex",
+        backgroundColor:"black",
+        margin:0,
+        width:"100%",
+        marginRight:0,
         
     }
     
+    
+    
+
 
 
     return (
-    <AppBar position="static">
+        <ThemeProvider theme={theme}>
+    <AppBar color='primary'  position="static">
         <Container className='nav_nav' sx={culurcitos} maxWidth="xl">
         <Toolbar disableGutters >
             
@@ -160,6 +182,8 @@ function ResponsiveAppBar() {
         </Toolbar>
         </Container>
     </AppBar>
+    </ThemeProvider>
+    
     );
 }
 export default ResponsiveAppBar;
