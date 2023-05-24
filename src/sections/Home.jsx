@@ -13,11 +13,11 @@ import videoEspacio from '../assets/videoEspacio.webm'
 const Home = () => {
   const cardVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },
-    visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.4, type: "Inertia", stiffness: 150 } }
+    visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.4, delay: 2.5, type: "Inertia", stiffness: 150 } }
   };
   const cardVariants2 = {
     hidden: { y: 150, opacity: 0, scale: 1.2  },
-    visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.4, delay: 0.3, type: "Inertia", stiffness: 200 } }
+    visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.4, delay: 2.6, type: "Inertia", stiffness: 200 } }
   };
 
   return (

@@ -15,7 +15,7 @@ const Landing = () => {
     
     const cardVariants = {
       hidden: { y: 150, opacity: 0 },
-      visible: { y: 0, opacity: 1, transition: { duration: 0.5, type: "Inertia", stiffness: 250 } }
+      visible: { y: 0, opacity: 1, transition: { duration: 0.5, delay:2.5, type: "Inertia", stiffness: 250 } }
     };
 
     return (

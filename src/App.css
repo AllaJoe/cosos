@@ -17,3 +17,22 @@
   background-color: #F4A2C4; /* Color de la barra de desplazamiento */
   border-radius: 30px;
 }
+
+
+.transicion-imagen {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 1;
+  z-index: 9999;
+  transition: opacity 2s ease;
+}
+
+.transicion-imagen.out {
+  opacity: 0;
+}

@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
         display:"flex",
         backgroundColor:"black",
         margin:0,
-        width:"100%",
+        /* width:"100%", */
         marginRight:0,
         
     }
@@ -91,7 +91,7 @@ function ResponsiveAppBar() {
             }}
             >
             
-            <img style={ {width:"150px", /* marginRight:"30vw" */}} src="https://i.ibb.co/vxKP113/nuevo-logo.png" alt="Frame-23" border="0" />
+            <img style={ {width:"150px"}} src="https://i.ibb.co/vxKP113/nuevo-logo.png" alt="Frame-23" border="0" />
             
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -139,11 +139,13 @@ function ResponsiveAppBar() {
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
+                fontFamily: 'SigmarOne',
                 fontWeight: 700,
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
+                alignContent: 'center',
+                justifyContent:"center"
             }}
             >
             <img style={ {width:"110px"}} src="https://i.ibb.co/vxKP113/nuevo-logo.png" alt="Frame-23" border="0" />
