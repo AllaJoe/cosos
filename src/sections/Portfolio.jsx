@@ -36,7 +36,7 @@ const Portfolio = () => {
             <motion.div initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 
                     exit={{ opacity: 0 }} 
-                    transition={{ duration: 1.5 }}>
+                    transition={{ duration: 1.5, delay:2.5 }}>
             <Box sx={cositas1}>
                 <div style={ {display:"flex", justifyContent: 'center', flexWrap:"wrap", gap:"20px", width:"80vw", /* backgroundColor:"#313130" */}}>
                 <Link to="https://www.behance.net/gallery/142252339/Medif-UXUI-project-Rediseno-de-app" target="_blank">
