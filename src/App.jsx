@@ -9,8 +9,9 @@ import Portfolio from './sections/Portfolio';
 import Bio from './sections/Bio';
 import Perfil from './sections/Perfil';
 import Home from './sections/Home';
-import Pruevis from './sections/Pruevis';
+import Contacto from './sections/Contacto';
 import PngGlow from './components/PngGlow';
+import Prueba1 from './sections/Prueba1';
 
 const App = () => {
   const [transicion, setTransicion] = useState(false);
@@ -51,7 +52,8 @@ const App = () => {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="perfil" element={<Perfil />} />
         <Route path="bio" element={<Bio />} />
-        <Route path="pruevis" element={<Pruevis />} />
+        <Route path="contacto" element={<Contacto />} />
+        <Route path="prueba1" element={<Prueba1 />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

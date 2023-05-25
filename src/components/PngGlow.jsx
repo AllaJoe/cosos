@@ -1,12 +1,14 @@
+import PropTypes from 'prop-types';
 import '../Styles/Logo.css';
 import { motion } from 'framer-motion';
 
-const PngGlow = () => {
+const PngGlow = (props) => {
     return (
         <div className="logo-container">
             
             <div className='h2_1'>
             <motion.span
+            style={props.size}
             className="glow"
             initial={{ color: '#FC62AD' }}
             animate={{ color: '#36C4F4' }}
@@ -31,5 +33,9 @@ const PngGlow = () => {
         </div>
     );
 }
+
+PngGlow.propTypes = {
+    size: PropTypes.number
+  }
 
 export default PngGlow;
