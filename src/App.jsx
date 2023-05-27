@@ -33,6 +33,9 @@ const App = () => {
     return () => clearTimeout(timeout);
   }, [transicion]);
 
+  const isLandingPage = location.pathname === '/' || location.pathname === '/Home';
+  
+  
   return (
     <>
       <AnimatePresence>
@@ -48,7 +51,9 @@ const App = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <NuevoNav />
+      {/* <NuevoNav /> */}
+      {!isLandingPage && <NuevoNav />}
+      
       {/* <ResponsiveAppBar /> */}
       <Routes>
         <Route path="/" element={<Landing />} />

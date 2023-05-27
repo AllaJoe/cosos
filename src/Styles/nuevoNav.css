@@ -32,14 +32,15 @@
     top: 0;
     left: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f200;
+    background-color: #0000001a;
     width: 20vw;
     height: 60px;
-    padding-left: 180px;
+    /* padding-left: 180px; */
     transition: width 0.3s;
     z-index: 1;
     border-top-right-radius: 50px;
@@ -50,7 +51,10 @@
   
   .navbar.open .navbar-menu {
     /* border: 2px solid green; */
-    width: 25vw;
+    width: 60vw;
+  }
+  .navbar-menu :hover {
+    background-color: #bf2ec92c;
   }
   
   .navbar-menu li {

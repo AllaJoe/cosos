@@ -28,7 +28,7 @@ const Home = () => {
         style={{
           position: "relative",
           width: "100vw",
-          height: "100vh",
+          height: "200vh",
           overflow: "hidden",
           backgroundColor: "black",
           
@@ -73,15 +73,18 @@ const Home = () => {
           transition={{ duration: 0 }} */
           
           style={{
+            
             width: '100vw',
-            height: '90vh',
+            height: '1500px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: "center",
+            justifyContent: "flex-start",
             alignItems: "center",
             gap: "2vh",
             flexWrap: "wrap",
-            marginTop:"100px"
+            marginTop:"100px",
+            marginBottom:"100px",
+            /* backgroundColor:"red" */
           }}
         >  
           <motion.div

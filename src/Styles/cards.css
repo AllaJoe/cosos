@@ -4,8 +4,8 @@
 
 
 .cardChica {
-    width: 350px;
-    height: 300px;
+    width: 500px;
+    height: 450px;
     flex-direction: column;
     overflow: hidden;
     position: relative;
@@ -62,8 +62,8 @@
 
 
 .cardGrande {
-    width: 550px;
-    height: 300px;
+    width: 700px;
+    height: 450px;
     flex-direction: column;
     overflow: hidden;
     position: relative;
