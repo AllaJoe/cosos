@@ -16,8 +16,8 @@ const Prueba1 = () => {
       };
 
     return (
-        <>
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center", width:"100%", backgroundColor:""}}>
+        < div style={{height:"200vh"}}>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center", width:"100%", backgroundColor:"", marginTop:"20vh"}}>
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", backgroundColor:"", height:"10vh"}}>
             <AnimPrueva />
         </div>
@@ -48,7 +48,7 @@ const Prueba1 = () => {
             </div>
         </motion.div>
         </div>
-        </>
+        </div>
     );
 }
 

@@ -30,7 +30,8 @@ const Home = () => {
           width: "100vw",
           height: "100vh",
           overflow: "hidden",
-          backgroundColor: "black"
+          backgroundColor: "black",
+          
         }}
       >
         <motion.div
@@ -80,6 +81,7 @@ const Home = () => {
             alignItems: "center",
             gap: "2vh",
             flexWrap: "wrap",
+            marginTop:"100px"
           }}
         >  
           <motion.div
@@ -95,7 +97,7 @@ const Home = () => {
               justifyContent: "center"
             }}
           >
-            <Link to="/Perfil">
+            <Link to="/Prueba1">
             <CardChica
               img="https://i.ibb.co/DDf3Wpk/Frame-542ttt.png"
               title="SOBRE MI"
@@ -133,7 +135,7 @@ const Home = () => {
             text="Ecá encontras mis habilidades que me califican para los diferentes trabajos"
             />
             </Link>
-            <Link to="/Bio">
+            <Link to="/Contacto">
             <CardChica
             img="https://i.ibb.co/wMG6gZj/Frame-529.png"
             title="ESCRIBIME"

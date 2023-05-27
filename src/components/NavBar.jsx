@@ -29,7 +29,7 @@ const theme = createTheme({
   });
   
 
-const pages = ['Home','Perfil', 'Portfolio', 'Bio', 'Contacto', 'Prueba1' ];
+const pages = ['Home','Perfil', 'Portfolio', 'Bio', 'Contacto', 'Prueba1', 'Mas' ];
 
 function ResponsiveAppBar() {
 

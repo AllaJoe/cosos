@@ -28,10 +28,12 @@ const Portfolio = () => {
     
     return(
         
-        <motion.div animate={controls}>
+        <motion.div animate={controls} style={{backgroundColor:"black"}}>
         <motion.div variants={cardVariants}
                     initial="hidden"
-                    animate="visible">
+                    animate="visible"
+                    style={{backgroundColor:"black"}}
+                    >
         <ChakraProvider>
             <motion.div initial={{ opacity: 0 }} 
                     animate={{ opacity: 1 }} 

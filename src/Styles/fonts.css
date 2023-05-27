@@ -34,6 +34,11 @@
     src: url('../fonts/HelveticaNowDisplay-Thin.ttf');
 }
 
+@font-face {
+    font-family: 'HelveticaNowDisplay-Medium';
+    src: url('../fonts/HelveticaNowDisplay-Medium.ttf');
+}
+
 .funete-practica {
     font-family: 'Cooper Black Regular';
     font-size:60px;
