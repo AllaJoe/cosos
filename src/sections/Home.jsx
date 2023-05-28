@@ -5,7 +5,7 @@ import CardGrande from '../components/CardGrande';
 import CardChica from '../components/CardChica';
 /* import CuadradosWeb from '../assets/CuadradosWeb.webm' */
 import { Link } from 'react-router-dom';
-import videoEspacio from '../assets/videoEspacio.webm'
+/* import videoEspacio from '../assets/videoEspacio.webm' */
 
 
 
@@ -27,10 +27,11 @@ const Home = () => {
       <div
         style={{
           position: "relative",
-          width: "100vw",
-          height: "200vh",
+          width: "100%",
+          height: "100%",
           overflow: "hidden",
           backgroundColor: "black",
+          
           
         }}
       >
@@ -49,19 +50,18 @@ const Home = () => {
             /* opacity:"30%", */
             objectFit:"cover"
           }}>
-        <video
-        src={videoEspacio}
-          autoPlay
-          loop
-          muted 
+        <img src="https://i.ibb.co/YNC6YKy/708oioyk76kk-gigapixel-standard-scale-4-00x.jpg" 
+        
           style={{
+            display:"none",
             position: "absolute",
             top: 0,
             left: 0,
             width: "100%",
-            height: "100%",
-            opacity:"70%",
-            objectFit:"cover"
+            /* height: "100%", */
+            opacity:"80%",
+            objectFit:"cover",
+            height:"100%",
           }}
           />
         </motion.div>
@@ -75,7 +75,7 @@ const Home = () => {
           style={{
             
             width: '100vw',
-            height: '1500px',
+            height: '100%',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: "flex-start",
@@ -102,19 +102,21 @@ const Home = () => {
           >
             <Link to="/Prueba1">
             <CardChica
-              img="https://i.ibb.co/DDf3Wpk/Frame-542ttt.png"
+              img="https://i.ibb.co/FxT8Dcq/Group.png"
               title="SOBRE MI"
               text="Conoceme, mira mi formacion y lo que tengo para dar"
               fontSize="16px"
-              width="100vw"
+              /* width="200px" */
             />
+            
             </Link>
             <Link to="/Portfolio">
             <CardGrande
-              img="https://i.ibb.co/tDws9Cs/Frame-530.png"
+              img="https://i.ibb.co/kXfzxGs/Frame-580.png"
               title="PORTFOLIO"
               text="Mirá mis trabajos para que veas mis capacidades y experiencia"
               fontSize="16px"
+              
             />
             </Link>
           </motion.div>
@@ -140,7 +142,7 @@ const Home = () => {
             </Link>
             <Link to="/Contacto">
             <CardChica
-            img="https://i.ibb.co/wMG6gZj/Frame-529.png"
+            img="https://i.ibb.co/jWMwL7y/Group-2.png"
             title="ESCRIBIME"
             text="Dejame un mensaje y te respondo k-po"
             fontSize="16px"

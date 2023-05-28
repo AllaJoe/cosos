@@ -16,7 +16,7 @@ const Prueba1 = () => {
       };
 
     return (
-        < div style={{height:"200vh"}}>
+        <div style={{height:"200vh"}}>
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", width:"100%", backgroundColor:"", marginTop:"20vh"}}>
         <div style={{display:"flex", justifyContent:"center", alignItems:"center", backgroundColor:"", height:"10vh"}}>
             <AnimPrueva />
@@ -36,7 +36,9 @@ const Prueba1 = () => {
         initial="hidden"
         animate="visible"
         >
-            <CardChica />
+            <CardChica 
+            img="https://i.ibb.co/GJ5fDwg/fff45422-1.png"
+            />
             <CardChica />
             <CardChica />
             <CardChica />

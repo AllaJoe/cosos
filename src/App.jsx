@@ -17,6 +17,8 @@ import NuevoNav from './components/NuevoNav';
 
 
 
+
+
 const App = () => {
   const [transicion, setTransicion] = useState(false);
   const location = useLocation();
@@ -54,7 +56,7 @@ const App = () => {
       {/* <NuevoNav /> */}
       {!isLandingPage && <NuevoNav />}
       
-      {/* <ResponsiveAppBar /> */}
+      
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="home" element={<Home />} />
@@ -66,6 +68,7 @@ const App = () => {
         <Route path="mas" element={<Mas />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      
     </>
   );
 };

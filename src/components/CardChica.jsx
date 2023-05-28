@@ -4,16 +4,18 @@ import '../Styles/cards.css';
 import PropTypes from 'prop-types';
 
 
+
 const CardChica = (props) => {
   return (
     <div className="cardChica">
       <motion.div
         className="imageContainer"
-        initial={{ scale: 1, opacity: 1, y: -180, x: 80 }}
-        whileHover={{ scale: 2, opacity: 1, y: -200, x: 0, transition: 'easeInOut'   }}
+        initial={{ scale: 1, opacity: 1, /* y: -180, x: 80 */ }}
+        whileHover={{ scale: 1, opacity: 1, /* y: -200, x: 0, */ transition: 'easeInOut'   }}
         transition={{ type: "Inertia", stiffness: 1000}}
         
       >
+
         <img
           style={{width:props.width}}
           className="imgCardChica"
@@ -21,7 +23,9 @@ const CardChica = (props) => {
           alt="00055-5555636378"
           border="0"
           
+          
         />
+        
       </motion.div>
       <motion.div
         className="content"

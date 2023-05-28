@@ -11,11 +11,15 @@ const Teleprompter = ({ texts, speed }) => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
     }, speed);
+    
 
     return () => {
       clearInterval(interval);
     };
   }, [texts, speed]);
+
+  
+  
 
   return (
     <div style={{ height: '30vh',marginTop:"10vh", overflow: 'hidden', backgroundColor:"rgba(0, 0, 0, 1)" }}>
