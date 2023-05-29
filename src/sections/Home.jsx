@@ -22,7 +22,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div style={{height:"200vh"}}>
     <ChakraProvider>
       <div
         style={{
@@ -154,7 +154,7 @@ const Home = () => {
 </div>
 </ChakraProvider>
 
-</>
+</div>
 );
 }
 
