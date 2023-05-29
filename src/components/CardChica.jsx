@@ -7,7 +7,13 @@ import PropTypes from 'prop-types';
 
 const CardChica = (props) => {
   return (
-    <div className="cardChica">
+    <div style={{
+      width:props.widthCard, 
+      height:props.heightCard, 
+      borderRadius:props.radiusCard,
+
+      }} className="cardChica">
+        
       <motion.div
         className="imageContainer"
         initial={{ scale: 1, opacity: 1, /* y: -180, x: 80 */ }}
@@ -17,7 +23,7 @@ const CardChica = (props) => {
       >
 
         <img
-          style={{width:props.width}}
+          style={{width:props.width, height:props.height}}
           className="imgCardChica"
           src={props.img}
           alt="00055-5555636378"
@@ -55,6 +61,10 @@ CardChica.propTypes = {
     text: PropTypes.string,
     fontSize: PropTypes.string,
     width: PropTypes.number,
+    height: PropTypes.number,
+    widthCard: PropTypes.number,
+    heightCard: PropTypes.number,
+    radiusCard: PropTypes.number,
 };
 
 export default CardChica;

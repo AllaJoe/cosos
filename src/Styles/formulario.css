@@ -20,6 +20,7 @@ textarea::placeholder {
     flex-direction:column; 
     justify-content:center;
     align-items:center;
+    gap: 10vh;
     /* background-color: white; */
     margin-bottom:10vh;
   }
@@ -39,8 +40,8 @@ textarea::placeholder {
   
   .texttext {
     background-color: rgba(0, 0, 0, 0);
-    border:none; 
-    border-bottom: solid 3px #FF58F8; 
+    border:solid 3px #FF58F8; 
+    /* border-bottom: solid 3px #FF58F8;  */
     outline:none; 
     /* minWidth:"50em", */ 
     width:750px;
@@ -59,8 +60,9 @@ textarea::placeholder {
     background-color:#FF58F8;
     border:none;
     font-weight:bold;
-    font-size: 2em;
+    font-size: 1.5em;
     color:white;
+    cursor: pointer;
   }
 
   .tele_style {

@@ -27,7 +27,7 @@ const NuevoNav = () => {
     };
   }, [isClickOutside]);
 
-  const secciones = ['Home', 'Perfil', 'Portfolio', 'Bio', 'Contacto', 'Prueba1', 'Mas'];
+  const secciones = ['HOME', 'PERFIL', 'PORFOLIO', 'BIO', 'CONTACTO', 'PRUEBA1', 'MAS'];
 
   const navVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },
@@ -98,7 +98,7 @@ const NuevoNav = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
 
-              style={{fontFamily:"HelveticaNowDisplay-Medium", fontWeight:"normal"}}
+              style={{fontFamily:"HelveticaNowDisplay-Medium", fontSize:"0.8em", fontWeight:"normal"}}
             >
             <Link to={`/${seccion}`}>
               {seccion}
