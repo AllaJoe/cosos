@@ -6,9 +6,9 @@ const PngGlow = (props) => {
     return (
         <div className="logo-container">
             
-            <div className='h2_1'>
+            <div className='h2_1' style={{width:props.width}}>
             <motion.span
-            style={props.size}
+            style={{ }}
             className="glow"
             initial={{ color: '#FC62AD' }}
             animate={{ color: '#36C4F4' }}
@@ -35,7 +35,8 @@ const PngGlow = (props) => {
 }
 
 PngGlow.propTypes = {
-    size: PropTypes.number
+    size: PropTypes.number,
+    width: PropTypes.string,
   }
 
 export default PngGlow;

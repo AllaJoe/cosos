@@ -22,12 +22,12 @@ const Teleprompter = ({ texts, speed }) => {
   
 
   return (
-    <div style={{ height: '30vh',marginTop:"10vh", overflow: 'hidden', backgroundColor:"rgba(0, 0, 0, 1)" }}>
+    <div style={{ height: '30vh',marginTop:"10vh", overflow: 'hidden', backgroundColor:"#202020" }}>
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}
           initial={{ opacity: 0.2, y: '0%' }}
-          animate={{ opacity: 0, y: '100%', rotate: 10 }}
+          animate={{ opacity: 0, y: '100%', rotate: 0 }}
           exit={{ opacity: 5, y: '-8%', /* x: '10%' */ }}
           transition={{ duration: 0.9, type: 'spring', stiffness: 80,  }}
           style={{ width: '100%', overflow: 'hidden' }}

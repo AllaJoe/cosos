@@ -11,6 +11,7 @@ const CardChica = (props) => {
       width:props.widthCard, 
       height:props.heightCard, 
       borderRadius:props.radiusCard,
+      backgroundColor:props.backgroundColor,
 
       }} className="cardChica">
         
@@ -65,6 +66,7 @@ CardChica.propTypes = {
     widthCard: PropTypes.number,
     heightCard: PropTypes.number,
     radiusCard: PropTypes.number,
+    backgroundColor: PropTypes.string,
 };
 
 export default CardChica;

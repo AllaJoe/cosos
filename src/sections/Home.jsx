@@ -30,7 +30,7 @@ const Home = () => {
           width: "100%",
           height: "100%",
           overflow: "hidden",
-          backgroundColor: "black",
+          backgroundColor: "#202020",
           
           
         }}
@@ -102,7 +102,7 @@ const Home = () => {
           >
             <Link to="/Prueba1">
             <CardChica
-              img="https://i.ibb.co/FxT8Dcq/Group.png"
+              img="https://i.ibb.co/XXp4b7Q/Group-1.png"
               title="SOBRE MI"
               text="Conoceme, mira mi formacion y lo que tengo para dar"
               fontSize="16px"
@@ -142,7 +142,7 @@ const Home = () => {
             </Link>
             <Link to="/Contacto">
             <CardChica
-            img="https://i.ibb.co/jWMwL7y/Group-2.png"
+            img="https://i.ibb.co/bKvz29D/Group-3.png"
             title="ESCRIBIME"
             text="Dejame un mensaje y te respondo k-po"
             fontSize="16px"

@@ -1,11 +1,11 @@
 input::placeholder {
-    color: rgb(255, 224, 224);
+    color: #D9D9D9;
     font-size: 1em;
     opacity: 30%;
   }
 
 textarea::placeholder {
-    color: rgb(255, 224, 224);
+    color: #D9D9D9;
     font-size: 1em;
     opacity: 30%;
   }
@@ -28,19 +28,19 @@ textarea::placeholder {
   .nombre {
     background-color: rgba(0, 0, 0, 0);
     border:none; 
-    border-bottom: solid 3px #FF58F8; 
+    border-bottom: solid 3px #A75476; 
     outline:none; 
     /* minWidth:"50em", */ 
     width:750px;
     height:10vh; 
     /* padding:"5px",  */
     font-size:30px;
-    color:white
+    color:#D9D9D9
   }
   
   .texttext {
     background-color: rgba(0, 0, 0, 0);
-    border:solid 3px #FF58F8; 
+    border:solid 3px #A75476; 
     /* border-bottom: solid 3px #FF58F8;  */
     outline:none; 
     /* minWidth:"50em", */ 
@@ -48,7 +48,7 @@ textarea::placeholder {
     height:40vh; 
     /* padding:"5px",  */
     font-size:30px;
-    color:white;
+    color:#D9D9D9;
     resize: none;
   }
 
@@ -57,11 +57,11 @@ textarea::placeholder {
     height:10vh; 
     margin-top:30px;
     padding:5px;
-    background-color:#FF58F8;
+    background-color:#A75476;
     border:none;
     font-weight:bold;
     font-size: 1.5em;
-    color:white;
+    color:#D9D9D9;
     cursor: pointer;
   }
 
@@ -71,7 +71,7 @@ textarea::placeholder {
     overflow:hidden; 
     font-size: 3em; 
     font-family: IBMPlexMono-Light; 
-    color:rgba(255,232,243,1)
+    color: #D9D9D9
   }
 
   @media (max-width: 800px) {

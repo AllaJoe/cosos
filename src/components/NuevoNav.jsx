@@ -1,8 +1,10 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion, useCycle } from 'framer-motion';
-import { /* FaBars, */ FaTimes } from 'react-icons/fa';
+import { /* FaBars, */ /* FaTimes  */} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../Styles/nuevoNav.css';
+
+
 
 
 const NuevoNav = () => {
@@ -27,7 +29,7 @@ const NuevoNav = () => {
     };
   }, [isClickOutside]);
 
-  const secciones = ['HOME', 'PERFIL', 'PORFOLIO', 'BIO', 'CONTACTO', 'PRUEBA1', 'MAS'];
+  const secciones = ['Home', 'Perfil', 'Portfolio', 'Bio', 'Contacto', 'Prueba1', 'Mas'];
 
   const navVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },
@@ -57,7 +59,13 @@ const NuevoNav = () => {
             exit={{ opacity: 0, rotate: 0 }}
             transition={{ duration: 0.3}}
           >
-            <FaTimes />
+            <svg width="25" height="25" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="66.1479" y="18.7734" width="14.2553" height="67" transform="rotate(45 66.1479 18.7734)" fill="#D9D9D9"/>
+            <rect x="76.228" y="66.1484" width="14.2553" height="67" transform="rotate(135 76.228 66.1484)" fill="#D9D9D9"/>
+            </svg>
+
+
+            {/* <FaTimes /> */}
           </motion.div>
         ) : (
           <motion.div
@@ -67,11 +75,11 @@ const NuevoNav = () => {
             exit={{ opacity: 0, rotate: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            
-            <path d="M11.3 17.5H23.7" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M17.5 23.7008V11.3008" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg width="20" height="20" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="27.2485" y="0.875" width="14.2553" height="67" fill="#D9D9D9"/>
+            <rect x="67.8762" y="27.2461" width="14.2553" height="67" transform="rotate(90 67.8762 27.2461)" fill="#D9D9D9"/>
             </svg>
+
 
 
 
@@ -89,7 +97,9 @@ const NuevoNav = () => {
           transition={{ duration: 0.3, easing: [0.30, 0, 0.20, 1]}}
         >
           <Link to="/">
-          <img src="https://i.ibb.co/Tmv7zZj/nuevo-para-el-nav.png" alt="" />
+            
+
+            <img style={{width:"80px", paddingRight:"20px"}} src="https://i.ibb.co/Hgp0r5b/nuevo-logo-nuevo.png" alt="" /> 
           </Link>
           {secciones.map((seccion, index) => (
             <motion.li
@@ -98,7 +108,7 @@ const NuevoNav = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
 
-              style={{fontFamily:"HelveticaNowDisplay-Medium", fontSize:"0.8em", fontWeight:"normal"}}
+              style={{fontFamily:"HelveticaNowDisplay-Medium", textTransform: "uppercase", fontSize:"0.8em", fontWeight:"normal"}}
             >
             <Link to={`/${seccion}`}>
               {seccion}
