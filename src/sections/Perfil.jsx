@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Styles/estilitos.css';
-import videoEspacio from '../assets/videoEspacio.webm'
+/* import videoEspacio from '../assets/videoEspacio.webm' */
 import FlechitaPrev from '../components/FlechitaPrev';
 import FlechitaNext from '../components/FlechitaNext';
 /* import Regresar from '../components/Regresar'; */
@@ -113,7 +113,7 @@ const Perfil = () => {
       <Regresar />
       </Link>  
     </div> */}
-      <video
+      {/* <video
         src={videoEspacio}
           autoPlay
           loop
@@ -126,8 +126,8 @@ const Perfil = () => {
             height: "100%",
             opacity:"70%",
             objectFit:"cover",
-            /* zIndex: 1 */
-          }}/>
+           
+          }}/> */}
       
       <motion.div
       variants={carouselVariants}

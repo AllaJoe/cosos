@@ -4,11 +4,11 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import '../Styles/fonts.css';
 import AnimatedTypingH1 from '../components/TextoAnimado';
-import videoEspacio from '../assets/videoEspacio.webm'
+/* import videoEspacio from '../assets/videoEspacio.webm' */
 import { Link } from 'react-router-dom';
 import TextoDeColor from '../components/TextoDeColor';
 import '../Styles/Landing.css';
-
+import nuevoGlichWeb from '../assets/nuevoGlichWeb.webm'
 
 const Landing = () => {
   
@@ -30,18 +30,18 @@ const Landing = () => {
         <ChakraProvider>
           <div
 
-          style={{ position: "relative", backgroundColor:"#4B0F4D" }}>
+          style={{ position: "relative", backgroundColor:"#202020" }}>
             <div
               className="video-container"
               style={{ position: "relative", overflow: "hidden" }}
             >
               <video
-                src={videoEspacio}
+                src={nuevoGlichWeb}
                 autoPlay
                 loop
                 muted
-                style={{ width: "100%", height: "100%", objectFit: "cover", opacity:"50%" }}
-              />
+                style={{ width: "100%", height: "100%", objectFit: "cover", opacity:"10%" }}
+              /> 
             </div>
 
             <motion.div
@@ -66,7 +66,7 @@ const Landing = () => {
                   text="😊 Hola, me llamo Damián, soy diseñador UX/UI. Entrá a mi web 👇"
                   duration={2000}
                   element="h1"
-                  style={{ color: "#FFE8FE" }}
+                  style={{ color: "#D9D9D9", fontFamily:"Montserrat-Regular" }}
                 /> 
               </h4>
               

@@ -11,14 +11,14 @@
     font-family:IBMPlexMono-Light;
     letter-spacing:10px;
       /* background-color:rgba(255,255,255,0.3); */
-    background-color:rgba(0, 0, 0, 0.3);
+    background-color:#fee4ef48;
     transition: background-color 0.3s ease;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     
 }
 .buttonLanding:hover {
     
-    background-color: rgba(0,0,0,0.2);
+    background-color: #fee4ef40;
     transition: ease-in-out;
   }
 
@@ -30,11 +30,11 @@
   top: 20vh;
   left: 29%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 40%);
+  background-color: #0000003b;
   display: flex;
   align-items: center;
-  border:solid 0.5px rgba(255, 255, 255, 40%);
-  border-radius: 10px;
+  border:solid 3px #A75476;
+  /* border-radius: 10px; */
   justify-content: center;
   flex-direction: column;
 }
