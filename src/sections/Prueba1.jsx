@@ -45,12 +45,8 @@ const Prueba1 = () => {
                 style={{
                   height: "20vh",
                   width: "300px",
-                  /* textAlign: "center", */
                   display: "flex",
-                  /* justifyContent: "flex-end", */
                   fontFamily: "Montserrat-Regular",
-                  /* paddingBottom: "6vw", */
-                  /* backgroundColor:"green" */
                   position:"fixed"
                 }}
               >

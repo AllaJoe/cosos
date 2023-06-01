@@ -54,7 +54,18 @@
     font-family: 'Montserrat-Black';
     src: url('../fonts/Montserrat-Black.ttf');
 }
-
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+}
 
 
 .funete-practica {

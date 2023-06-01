@@ -100,7 +100,7 @@ const Home = () => {
               justifyContent: "center"
             }}
           >
-            <Link to="/Prueba1">
+            <Link to="/Mas">
             <CardChica
               img="https://i.ibb.co/XXp4b7Q/Group-1.png"
               title="SOBRE MI"
