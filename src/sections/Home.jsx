@@ -1,5 +1,5 @@
 
-import { ChakraProvider } from '@chakra-ui/react';
+/* import { ChakraProvider } from '@chakra-ui/react'; */
 import { motion } from 'framer-motion';
 import CardGrande from '../components/CardGrande';
 import CardChica from '../components/CardChica';
@@ -22,11 +22,11 @@ const Home = () => {
   };
 
   return (
-    <div style={{height:"200vh"}}>
-    <ChakraProvider>
+    <div style={{/* height:"100vh" */}}>
+    
       <div
         style={{
-          position: "relative",
+          /* position: "relative", */
           width: "100%",
           height: "100%",
           overflow: "hidden",
@@ -35,7 +35,7 @@ const Home = () => {
           
         }}
       >
-        <motion.div
+        {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -47,10 +47,9 @@ const Home = () => {
             left: 0,
             width: "100%",
             height: "100%",
-            /* opacity:"30%", */
             objectFit:"cover"
-          }}>
-        <img src="https://i.ibb.co/YNC6YKy/708oioyk76kk-gigapixel-standard-scale-4-00x.jpg" 
+          }}> */}
+        {/* <img src="https://i.ibb.co/YNC6YKy/708oioyk76kk-gigapixel-standard-scale-4-00x.jpg" 
         
           style={{
             display:"none",
@@ -58,13 +57,13 @@ const Home = () => {
             top: 0,
             left: 0,
             width: "100%",
-            /* height: "100%", */
+            
             opacity:"80%",
             objectFit:"cover",
             height:"100%",
           }}
-          />
-        </motion.div>
+          /> */}
+        {/* </motion.div> */}
   
         <motion.div
           /* initial={{ opacity: 0 }}
@@ -152,7 +151,7 @@ const Home = () => {
 </motion.div>
 </motion.div>
 </div>
-</ChakraProvider>
+
 
 </div>
 );
