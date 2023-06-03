@@ -78,6 +78,10 @@
     font-family: 'AmaticSC-Regular';
     src: url('../fonts/AmaticSC-Regular.ttf');
 }
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('../fonts/Montserrat-Thin.ttf');
+}
 
 
 .funete-practica {

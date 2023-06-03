@@ -1,0 +1,86 @@
+
+.otra_container {
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
+}
+
+.dark_frame {
+    z-index: 1000;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+}
+.h_card2:hover .dark_frame  {
+    opacity: 0.0;
+}
+
+.cont_cards1 {
+    
+    background-color: #202020;
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.h_card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A75476;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+}
+
+.h_card2 {
+    background-color: #4A8898;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+}
+
+.h_card2 img {
+    width: 100%;
+}
+
+
+
+.cont_cards2 {
+    background-color: #202020;
+    display: flex;
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.h_card3 {
+    background-color: rgb(173, 110, 46);
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+}
+/* .h_card4 {
+    background-color: rgb(136, 58, 220);
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+} */

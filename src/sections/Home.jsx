@@ -109,9 +109,9 @@ const Home = () => {
             />
             
             </Link>
-            <Link to="/Portfolio">
+            <Link to="/Otra">
             <CardGrande
-              img="https://i.ibb.co/kXfzxGs/Frame-580.png"
+              img="https://i.ibb.co/c6jhJJv/Frame-607.png"
               title="PORTFOLIO"
               text="Mirá mis trabajos para que veas mis capacidades y experiencia"
               fontSize="16px"

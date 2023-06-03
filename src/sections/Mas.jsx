@@ -7,6 +7,7 @@ import AnimatedTypingH1 from '../components/TextoAnimado';
 import '../Styles/mas.css'
 import ScrollToTop from '../components/ScrollToTop';
 import nuevoGlichWeb from '../assets/nuevoGlichWeb.webm'
+import yoVideo from '../assets/yo2.webm'
 
 const Mas = () => {
 
@@ -54,6 +55,8 @@ const Mas = () => {
                 <div style={{display:"flex", gap:"20px", justifyContent:"center", flexDirection:"row", flexWrap:"wrap",marginTop:"20px"}}>
                     <div style={{display:"flex", gap:"20px", flexWrap:"wrap", flexDirection:"column" }}>
                         
+                    {/* ----------------------- CARD 1 --------------- */}
+                        
                     <motion.div className='cardFlip' style={{width:"390px", height:"700px", backgroundColor:"", overflow:"hidden"}}
                         initial="hidden"
                         animate="visible" 
@@ -61,12 +64,15 @@ const Mas = () => {
                         >
                             <ScrollToTop 
                              /* "https://i.ibb.co/C046f2Y/chica-para.gif" */
-                            video={nuevoGlichWeb}
+                            video={yoVideo}
+                            video2={nuevoGlichWeb}
                             height="100%"
+                            width= "200%"
                             />
 
-                        </motion.div>
+                    </motion.div>
                         
+                   {/* ------------------------------ CARD 2 ------------------------     */}
                         <motion.div
                         initial="hidden"
                         animate="visible" 
@@ -74,8 +80,10 @@ const Mas = () => {
                         style={{width:"390px", height:"410px", backgroundColor:"",overflow:"hidden"}}
                         >
                         <ScrollToTop 
-                        img="https://i.ibb.co/mvB01kT/h333dhd-1-removebg-preview-4.png"
-                        width="100%"
+                        video=""
+                        img="https://i.ibb.co/DGFpgdg/nuevas-piernas.png"
+                        width="150%"
+                        height="100%"
                         img2="https://i.ibb.co/VQ2bhLD/h333dhd-1-removebg-preview-3.png"
                         width2="100%"
                         />
@@ -83,8 +91,12 @@ const Mas = () => {
 
                     </div>
 
+                    {/* ---------------------CARDS DE LA IZQUIERDA------------------ */}
 
                     <div style={{display:"flex", flexDirection:"column", gap:"15px", marginTop:"10px"}}>
+
+                       {/* ------------------------------------- CARD 3 ------------------------------------ */}
+
                         <motion.div 
                         initial="hidden"
                         animate="visible"
@@ -93,7 +105,7 @@ const Mas = () => {
                         style={{
                                 width: "390px",
                                 display: "flex",
-                                fontFamily: "Montserrat-ExtraLight",
+                                fontFamily: "Montserrat-Thin",
                                 backgroundColor:"",
                                 height:"400px",
                                 border:"1px solid rgb(217,217,217)",
@@ -118,6 +130,8 @@ const Mas = () => {
                             heightCard="700px"
                             />
                         </motion.div> */}
+
+                       {/* -------------------------------------- CARD 4 ----------------------------------- */}
 
                         <motion.div className='cardFlip' style={{width:"390px", height:"700px", backgroundColor:"#4A8898", overflow:"hidden"}}
                         initial="hidden"
