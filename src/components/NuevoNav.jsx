@@ -29,7 +29,7 @@ const NuevoNav = () => {
     };
   }, [isClickOutside]);
 
-  const secciones = ['Home', /* 'Perfil', */ /* 'Portfolio', */'Otra', 'Bio', 'Contacto', /* 'Prueba1', */ 'Mas'];
+  const secciones = ['Otra', 'LasPrueb', /* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ 'Bio', 'Contacto', /* 'Prueba1', */ 'Mas'];
 
   const navVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },
@@ -59,7 +59,7 @@ const NuevoNav = () => {
             exit={{ opacity: 0, rotate: 0 }}
             transition={{ duration: 0.3}}
           >
-            <svg width="25" height="25" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='svg-toggle' width="25" height="25" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="66.1479" y="18.7734" width="14.2553" height="67" transform="rotate(45 66.1479 18.7734)" fill="#D9D9D9"/>
             <rect x="76.228" y="66.1484" width="14.2553" height="67" transform="rotate(135 76.228 66.1484)" fill="#D9D9D9"/>
             </svg>

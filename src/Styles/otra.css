@@ -1,24 +1,45 @@
 
 .otra_container {
-    padding-top: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    /* padding-top: 150px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #202020;
 }
 
 .dark_frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     z-index: 1000;
-    opacity: 0.4;
+    opacity: 0.0;
+    /* opacity: 0.6; */
     transition: opacity 0.3s ease-in-out;
 }
 .h_card2:hover .dark_frame  {
-    opacity: 0.0;
+    /* opacity: 0.0; */
+    opacity: 0.8;
+}
+
+.h_card1:hover .dark_frame  {
+    /* opacity: 0.0; */
+    opacity: 0.8;
+}
+.h_card3:hover .dark_frame  {
+    /* opacity: 0.0; */
+    opacity: 0.8;
+}
+.h_card4:hover .dark_frame  {
+    /* opacity: 0.0; */
+    opacity: 0.8;
 }
 
 .cont_cards1 {
@@ -28,18 +49,24 @@
     /* height: 300px; */
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .h_card1 {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     background-color: #A75476;
+    flex-wrap: wrap;
     overflow: hidden;
     width: 400px;
     height: 300px;
+}
+.h_card1 img {
+    width: 70%;
 }
 
 .h_card2 {
@@ -47,6 +74,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     overflow: hidden;
     width: 500px;
@@ -73,14 +101,65 @@
 }
 
 .h_card3 {
-    background-color: rgb(173, 110, 46);
+    display: flex;
+    position: relative;
+    background-color: #4A8898;
+    flex-wrap: wrap;
     overflow: hidden;
     width: 500px;
     height: 300px;
 }
-/* .h_card4 {
-    background-color: rgb(136, 58, 220);
+.h_card4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #A75476;
+    flex-wrap: wrap;
     overflow: hidden;
     width: 400px;
     height: 300px;
-} */
+}
+.h_card4 img {
+    width: 70%;
+    /* height: 70%; */
+}
+
+
+@media (max-width: 920px) {
+    .h_card1 {
+        width: 400px;
+        height: 300px;
+    }
+    .h_card2 {
+        width: 400px;
+        height: 300px;
+    }
+    .h_card3 {
+        width: 400px;
+        height: 300px;
+    }
+    .h_card4 {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 395px) {
+    .h_card1 {
+        width: 300px;
+        height: 300px;
+    }
+    .h_card2 {
+        width: 300px;
+        height: 300px;
+    }
+    .h_card3 {
+        width: 300px;
+        height: 300px;
+    }
+    .h_card4 {
+        width: 300px;
+        height: 300px;
+    }
+}

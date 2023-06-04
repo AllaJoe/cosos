@@ -70,7 +70,7 @@ const Landing = () => {
                 /> 
               </h4>
               
-              <Link to="/Home">
+              <Link to="/Otra">
               <button className='buttonLanding' type='submit'>
               <TextoDeColor 
               text1="ENTRA YA" 

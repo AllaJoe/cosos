@@ -76,3 +76,17 @@
     text-decoration: none;
   }
   
+
+@media (max-width: 500px){
+  .navbar.open .navbar-menu {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  .navbar-toggle {
+    justify-content: flex-start;
+    
+  }
+  .navbar-toggle .svg-toggle {
+    width: 20px;
+  }
+}

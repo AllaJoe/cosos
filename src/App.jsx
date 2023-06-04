@@ -9,11 +9,13 @@ import Bio from './sections/Bio';
 import Perfil from './sections/Perfil';
 import Home from './sections/Home';
 import Contacto from './sections/Contacto';
-import PngGlow from './components/PngGlow';
+
 import Prueba1 from './sections/Prueba1';
 import Mas from './sections/Mas';
 import NuevoNav from './components/NuevoNav';
 import Otra from './sections/Otra';
+import LasPrueb from './sections/LasPrueb';
+import NuevoLogo from './components/NuevoLogo';
 
 const App = () => {
   const [transicion, setTransicion] = useState(false);
@@ -54,7 +56,7 @@ const App = () => {
     return () => clearTimeout(timeout);
   }, [transicion]);
 
-  const isLandingPage = location.pathname === '/' || location.pathname === '/Home';
+  const isLandingPage = location.pathname === '/' || location.pathname === '/Otra';
 
   return (
     <>
@@ -67,7 +69,8 @@ const App = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <PngGlow />
+            <NuevoLogo />
+            
           </motion.div>
         )}
       </AnimatePresence>
@@ -91,6 +94,7 @@ const App = () => {
         <Route path="prueba1" element={<Prueba1 />} />
         <Route path="mas" element={<Mas />} />
         <Route path="otra" element={<Otra />} />
+        <Route path="lasPrueb" element={<LasPrueb />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
