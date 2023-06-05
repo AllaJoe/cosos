@@ -1,21 +1,13 @@
-/* import { ChakraProvider } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import TextoAnimado from '../components/TextoAnimado'; */
+
 import { motion } from 'framer-motion';
 import Modalcito from '../components/Modalcito';
-/* import Regresar from '../components/Regresar';
-import { Link } from 'react-router-dom'; */
 
-/* import { Link } from 'react-router-dom'; */
-/* import TextoDeColor from '../components/TextoDeColor'; */
 
 
 const Bio = () => {
     return (
-        <>
-        {/* <Link to="/Home">
-           <Regresar /> 
-        </Link>  */}
+        <div style={{display:"flex", justifyContent:"center"}}>
+        
 
         <motion.div
         
@@ -28,43 +20,59 @@ const Bio = () => {
             /* position:"fixed", */
             display:"flex",
             flexWrap:"wrap",
-            width:"100vw",
+            marginTop:"200px",
+            width:"1100px",
             flexDirection:"row",
             justifyContent:"center",
             alignItems:"center",
-            gap:"40px",
-            height:"100vh",
-            backgroundColor:"#343434"
+            gap:"20px",
+            height:"100%",
+            backgroundColor:"#202020"
             }}>
              
+            <div style={{display:"flex", gap:"20px", flexWrap:"wrap"}}>
             <Modalcito  
-            img1="https://i.ibb.co/tCvjB6m/00007-322222213778-1.png"
-            img="https://i.ibb.co/m9XxwSV/00011-556346363-gigapixel-standard-scale-4-00x.jpg"
-            h3="TITULONCITO CARD 1"
+            img1="https://i.ibb.co/bJKcJx9/Frame-619.png"
+            img="https://i.ibb.co/bJKcJx9/Frame-619.png"
+            h3="REDISEÑO APP MEDIFÉ"
+            /* width="500px" */
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
 
             <Modalcito  
-            img1="https://i.ibb.co/fQmPYdt/00056-5555636379.png"
+            img1="https://i.ibb.co/ys1RBFs/Pantallazo-11-05-2023-01-36-09.png"
             img="https://i.ibb.co/N6Dq3Cv/00005-3354756848346-gigapixel-standard-scale-4-00x-gigapixel-standard-scale-1-00x.jpg" 
             h3="TITULONCITO CARD 2"
+            imgWid="110%"
+            /* width="500px" */
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
+            </div>
             
             
             <Modalcito  
             img1="https://i.ibb.co/8cHcgxY/00055-5555636378.png"
             img="https://i.ibb.co/Ld3BcR5/00019-88805685333-gigapixel-standard-scale-6-00x.jpg" redit="https://i.ibb.co/Ld3BcR5/00019-88805685333-gigapixel-standard-scale-6-00x.jpg"
             h3="TITULONCITO CARD 3"
+           /*  width="500px" */
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
             
-            <Modalcito  
-            img1="https://i.ibb.co/RzXQk39/00054-5555636377.png"
+            <div style={{display:"flex", justifyContent:"center", fontFamily:"Montserrat-Thin", fontSize:"1.5rem", border:"1px solid white", alignItems:"center", color:"white", width:"500px", height:"50vh", backgroundColor:"#202020"}}>
+                <h2>MAS PRONTO</h2>
+            </div>
+
+            {/* <Modalcito  
+            img1=""
+            colorBg="#202020"
             img="https://i.ibb.co/ys1RBFs/Pantallazo-11-05-2023-01-36-09.png" 
-            h3="TITULONCITO CARD 4"
-            p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"            
-            />
+            h3="MAS PRONTO"
+            border="1px solid white"
+            p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"           
+            opacity="100%"
+            bgDiv="#202020"
+            
+            /> */}
 
             <div style={{width:"300px", height:"50vh"}}>
 
@@ -75,7 +83,7 @@ const Bio = () => {
 
             
         </motion.div>
-        </>
+        </div>
     );
     };
 

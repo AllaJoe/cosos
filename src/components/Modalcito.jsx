@@ -30,14 +30,17 @@ const Modalcito = (props) => {
       <div  onClick={handleOpenModal}>
         <Cardsita
         img={props.img1}
+        width={props.width}
         h3={props.h3}
         p={props.p}
+        colorBg={props.colorBg}
+        border={props.border}
+        opacity={props.opacity}
+        bgDiv={props.bgDiv}
+        imgWid={props.imgWid}
         />
       </div>  
-      {/* <div className="card" onClick={handleOpenModal}>
-        <h3>Título de la tarjeta</h3>
-        <p>Descripción de la tarjeta</p>
-      </div> */}
+
       {showModal && (
         <animated.div className="modal" style={modalAnimation} >
           <div className="modal-content">
@@ -50,7 +53,8 @@ const Modalcito = (props) => {
               >
                 ❌ 
               </div>
-          </div>   
+          </div>
+            <div style={{position:"absolute"}}><h2>este es lo que va arriba</h2></div>
             <img src={props.img} alt="modalimg" />
           </div>
         </animated.div>
@@ -66,6 +70,12 @@ Modalcito.propTypes = {
   h3: PropTypes.string,
   text1: PropTypes.string,
   p: PropTypes.string,
+  width: PropTypes.number,
+  colorBg: PropTypes.string,
+  border: PropTypes.string,
+  opacity: PropTypes.number,
+  bgDiv: PropTypes.string,
+  imgWid: PropTypes.number,
 };
 
 export default Modalcito;

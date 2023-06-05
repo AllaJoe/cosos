@@ -2,7 +2,7 @@
 import '../Styles/otra.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'
-
+import nuevoGlichWeb from '../assets/nuevoGlichWeb.webm'
 
 const Otra = () => {
     
@@ -36,24 +36,27 @@ const Otra = () => {
                 animate="visible"
                 variants={variantCard1}
                 >
+                    <video src={nuevoGlichWeb} loop autoPlay muted ></video>
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Thin", fontSize:"40px", textTransform: "uppercase"}}>SOBRE MI</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"40px", textTransform: "uppercase"}}>SOBRE MI</h1>
                     </div>
                     <img src="https://i.ibb.co/XXp4b7Q/Group-1.png" alt="" />
                 </motion.div>
                 </Link>
-
+                
+                <Link to="/Bio">
                 <motion.div className='h_card2'
                 initial="hidden"
                 animate="visible"
                 variants={variantCard2}
                 >
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Thin", fontSize:"40px", textTransform: "uppercase"}}>PORTFOLIO</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"40px", textTransform: "uppercase"}}>PORTFOLIO</h1>
                     </div>
                     
                     <img src="https://i.ibb.co/c6jhJJv/Frame-607.png" alt="" />
                 </motion.div>
+                </Link>
             </div>
 
             <div className='cont_cards2'>
@@ -62,9 +65,11 @@ const Otra = () => {
                 animate="visible"
                 variants={variantCard3}
                 >
+                    {/* <video src={nuevoGlichWeb} loop autoPlay muted ></video> */}
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Thin", fontSize:"40px", textTransform: "uppercase"}}>APTITUDES</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"40px", textTransform: "uppercase"}}>APTITUDES</h1>
                     </div>
+                    <img src="https://i.ibb.co/RB7d7cp/Frame-624.png" alt="" />
 
                 </motion.div>
                 <Link to="/Contacto">
@@ -74,7 +79,7 @@ const Otra = () => {
                 variants={variantCard4}
                 >
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Thin", fontSize:"40px", textTransform: "uppercase"}}>CONTACTO</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"40px", textTransform: "uppercase"}}>CONTACTO</h1>
                     </div>
                         <img src="https://i.ibb.co/0BsMPfW/Group-5.png" alt="" />
                     
