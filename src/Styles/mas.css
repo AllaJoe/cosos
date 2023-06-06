@@ -1,0 +1,23 @@
+.h2_Sobre {
+    display:"flex";
+    height:"60px";
+    align-items:"center";
+    justify-content: center;
+    /* padding:0;  */
+    background-color:"pink";
+    /* width: 100vw; */
+}
+.h2_class {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 76px;
+    font-family:Montserrat-Medium;
+    height: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .h2_class {
+        justify-content: center;
+    }
+}

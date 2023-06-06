@@ -31,6 +31,7 @@ const Modalcito = (props) => {
         <Cardsita
         img={props.img1}
         width={props.width}
+        height={props.height}
         h3={props.h3}
         p={props.p}
         colorBg={props.colorBg}
@@ -76,6 +77,7 @@ Modalcito.propTypes = {
   opacity: PropTypes.number,
   bgDiv: PropTypes.string,
   imgWid: PropTypes.number,
+  height: PropTypes.number,
 };
 
 export default Modalcito;

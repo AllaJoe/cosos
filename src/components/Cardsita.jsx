@@ -7,7 +7,7 @@ const Cardsita = (props) => {
         <div style={{
             display: 'flex',
             flexDirection: 'column',
-            width:"500px", 
+            width:props.width, 
             height:props.height, 
             backgroundColor: props.colorBg,
             border:props.border,

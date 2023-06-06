@@ -35,21 +35,21 @@ const Mas = () => {
 
     return (
         
-        <div style={{display:"flex", width:"", justifyContent:"center", backgroundColor:"#171717", height:"200vh" }}>
-            <div style={{ display:"flex", flexDirection:"column", width:"802px", height:"100%", backgroundColor: "" , marginTop:"20vh"}}>
-
-                <motion.div style={{display:"flex", height:"60px", alignItems:"center", padding:0, backgroundColor:""}}
+        <div style={{display:"flex", width:"100%", justifyContent:"center", backgroundColor:"#171717", height:"200vh" }}>
+            <div style={{ display:"flex", flexDirection:"column", width:"802px", /* height:"100%", */ backgroundColor: "" , marginTop:"20vh",}}>
+                <div style={{display:"flex", /* overflow:"hidden", */ width:"100%", justifyContent:"center" , height:"160px", flexDirection:"column", backgroundColor:"/* green */"}}>
+                <motion.div className='h2_Sobre'
                 initial="hidden"
                 animate="visible"
                 variants={lasVariants}
                 >
-                    <h2 style={{color:"#D9D9D9", fontFamily:"Montserrat-Medium", fontSize:/* "65px" */"76px", paddingBottom:"20px"}}>SOBRE MI</h2>
+                    <h2 className='h2_class' style={{ color:"#D9D9D9", /* textAlign:"center", */  backgroundColor:""}}>SOBRE MI</h2>
                 </motion.div>
                 
-                <div style={{display:"flex", overflow:"hidden", backgroundColor:"/* red */"}}>
+                <div style={{display:"flex", /* height:"120px", */ overflow:"hidden", backgroundColor:"/* red */"}}>
                     <AnimPrueva />
                 </div>
-                
+                </div>
                 {/* ---------------  CARDS  ----------------------- */}
 
                 <div style={{display:"flex", gap:"20px", justifyContent:"center", flexDirection:"row", flexWrap:"wrap",marginTop:"20px"}}>
