@@ -86,14 +86,25 @@
 .nav-respons-modal {
   display: none;
   background-color: rgba(36, 36, 36, 0.0);
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   padding-top: 20px;
   padding-left: 20px;
 
 }
+.modalcito1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: aqua; */
+  padding-right: 35px;
+}
 
-
-
+.modal {
+  background-color: #171717;
+  height: 300vh ;
+  width: 100%;
+}
 
 /* ---------------------------------------------------------------- */
 @media (max-width: 500px){
@@ -116,5 +127,12 @@
   }
   .nav-respons-modal {
     display: flex;
+  }
+  
+}
+
+@media (min-width: 1022px) {
+  .modal {
+    display: none;
   }
 }

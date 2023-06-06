@@ -28,7 +28,7 @@ const Bio = () => {
             alignItems:"center",
             gap:"20px",
             height:"100%",
-            backgroundColor:"#202020"
+            backgroundColor:"#171717"
             }}>
              
             <div style={{display:"flex", gap:"20px", flexWrap:"wrap"}}>
@@ -59,7 +59,7 @@ const Bio = () => {
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
             
-            <div style={{display:"flex", justifyContent:"center", fontFamily:"Montserrat-Thin", fontSize:"1.5rem", border:"1px solid white", alignItems:"center", color:"white", width:"500px", height:"50vh", backgroundColor:"#202020"}}>
+            <div style={{display:"flex", justifyContent:"center", fontFamily:"Montserrat-Thin", fontSize:"1.5rem", border:"1px solid white", alignItems:"center", color:"white", width:"500px", height:"50vh", backgroundColor:"#171717"}}>
                 <h2>MAS PRONTO</h2>
             </div>
 

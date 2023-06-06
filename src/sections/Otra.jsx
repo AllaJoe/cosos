@@ -27,6 +27,7 @@ const Otra = () => {
 
 
     return (
+        
         <div className="otra_container">
 
             <div className='cont_cards1'>
@@ -88,6 +89,7 @@ const Otra = () => {
             </div>
 
         </div>
+        
     );
 }
 

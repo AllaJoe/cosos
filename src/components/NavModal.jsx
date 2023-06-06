@@ -46,13 +46,13 @@ const NavModal = (props) => {
 
       {showModal && (
         <animated.div className="modal" style={modalAnimation} >
-          <div className="modal-content">
-          <div style={{display:"flex", justifyContent:"flex-end", backgroundColor:"", paddingRight:"150px" }}> 
+          <div className="modalcito1">
+          <div style={{display:"flex", justifyContent:"center", alignItems:"center", backgroundColor:"", paddingRight:"140px" }}> 
               
               <div onClick={handleCloseModal}
-              style={{cursor:"pointer", display:"flex",justifyContent:"flex-start", backgroundColor:""}}
+              style={{cursor:"pointer", display:"flex",justifyContent:"center", backgroundColor:""}}
               >
-                <svg className='' width="50" height="50" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='' width="70" height="70" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="66.1479" y="18.7734" width="14.2553" height="67" transform="rotate(45 66.1479 18.7734)" fill="#D9D9D9"/>
                 <rect x="76.228" y="66.1484" width="14.2553" height="67" transform="rotate(135 76.228 66.1484)" fill="#D9D9D9"/>
                 </svg>
@@ -60,7 +60,7 @@ const NavModal = (props) => {
           </div>
             {/* <div style={{position:"absolute"}}><h2>este es lo que va arriba</h2></div> */}
 
-        <ul style={{display:"flex", flexDirection:"column", gap:"50px", textDecoration:"none", listStyle:"none"}} className="">
+        <ul style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column", gap:"50px", textDecoration:"none", listStyle:"none"}} className="">
 
           <Link to="/">
             <img style={{width:"300px", }} src="https://i.ibb.co/Hgp0r5b/nuevo-logo-nuevo.png" alt="" /> 

@@ -35,7 +35,7 @@ const Mas = () => {
 
     return (
         
-        <div style={{display:"flex", width:"", justifyContent:"center", backgroundColor:"#202020", height:"200vh" }}>
+        <div style={{display:"flex", width:"", justifyContent:"center", backgroundColor:"#171717", height:"200vh" }}>
             <div style={{ display:"flex", flexDirection:"column", width:"802px", height:"100%", backgroundColor: "" , marginTop:"20vh"}}>
 
                 <motion.div style={{display:"flex", height:"60px", alignItems:"center", padding:0, backgroundColor:""}}
