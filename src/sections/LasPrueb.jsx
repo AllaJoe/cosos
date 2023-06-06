@@ -1,12 +1,16 @@
 /* import CuadradoSvg from "../components/CuadradoSvg"; */
-import NuevoLogo from "../components/NuevoLogo";
+/* import NuevoLogo from "../components/NuevoLogo"; */
+
+/* import NavModal from "../components/NavModal"; */
 
 
 const LasPrueb = () => {
     return (
         <div>
-            
-            <NuevoLogo />
+            {/* <NavModal
+            width="30%"
+            /> */}
+            {/* <NuevoLogo /> */}
         </div>
     );
 }

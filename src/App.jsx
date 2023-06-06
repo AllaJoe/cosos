@@ -16,6 +16,7 @@ import NuevoNav from './components/NuevoNav';
 import Otra from './sections/Otra';
 import LasPrueb from './sections/LasPrueb';
 import NuevoLogo from './components/NuevoLogo';
+import NavModal from './components/NavModal';
 
 const App = () => {
   const [transicion, setTransicion] = useState(false);
@@ -81,7 +82,7 @@ const App = () => {
           transition={{ duration: 0.3 }}
           style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 999 }}
         >
-          {showNavbar && <NuevoNav />}
+          {showNavbar && <NuevoNav /> } || <NavModal />
         </motion.div>
       )}
       <Routes>

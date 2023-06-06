@@ -1,6 +1,7 @@
 
 import { motion } from 'framer-motion';
 import Modalcito from '../components/Modalcito';
+/* import NuevaCard from '../components/PracticaAnimacion'; */
 
 
 
@@ -83,6 +84,7 @@ const Bio = () => {
 
             
         </motion.div>
+        {/* <NuevaCard /> */}
         </div>
     );
     };
