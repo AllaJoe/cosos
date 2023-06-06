@@ -64,8 +64,8 @@ const Mas = () => {
                         >
                             <ScrollToTop 
                              /* "https://i.ibb.co/C046f2Y/chica-para.gif" */
-                            video={yoVideo}
-                            video2={nuevoGlichWeb}
+                            video={nuevoGlichWeb}
+                            video2={yoVideo}
                             height="100%"
                             width= "200%"
                             />

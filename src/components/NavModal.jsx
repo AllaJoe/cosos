@@ -48,9 +48,7 @@ const NavModal = (props) => {
         <animated.div className="modal" style={modalAnimation} >
           <div className="modal-content">
           <div style={{display:"flex", justifyContent:"flex-end", backgroundColor:"", paddingRight:"150px" }}> 
-              {/* <Link to={props.redit} target="_blank">
-                ☝
-              </Link> */}
+              
               <div onClick={handleCloseModal}
               style={{cursor:"pointer", display:"flex",justifyContent:"flex-start", backgroundColor:""}}
               >
