@@ -12,24 +12,24 @@ import yoVideo from '../assets/yo2.webm'
 const Mas = () => {
 
     const lasVariants = {
-        hidden: { y: -150, x: 40, opacity: 0, scale: 1.2 },
+        hidden: { y: -150, /* x: 40, */ opacity: 0, scale:1/* 1.2 */ },
         visible: { y: 0, x:0, opacity: 1, scale: 1, transition: { duration: 0.6, delay: 3.8, ease: [0.30, 0, 0.20, 1] } }
       };
     const lasVariantsP = {
-        hidden: { y: 150, opacity: 0, scale: 1.2 },
+        hidden: { y: 150, opacity: 0, scale: 1/* 1.2 */ },
         visible: { y: -10, opacity: 1, scale: 1, transition: { duration: 0.6, delay: 3, ease: [0.30, 0, 0.20, 1] } }
       };
 
       const cardsVarians = {
-        hidden: { y: 150, opacity: 0, scale: 1.5 },
+        hidden: { y: 150, opacity: 0, scale: 1/* 1.5 */ },
         visible: { y: 0, opacity: 1, scale: 1, transition: { duration:1, delay: 3.2, ease: [0.30, 0, 0.20, 1] } }
       };
       const cardsVarians1 = {
-        hidden: { y: 150, opacity: 0, scale: 1.2 },
+        hidden: { y: 150, opacity: 0, scale:1 /* 1.2 */ },
         visible: { y: 0, opacity: 1, scale: 1, transition: { duration:1, delay: 3.4, ease: [0.30, 0, 0.20, 1] } }
       };
       const cardsVarians2 = {
-        hidden: { y: 150, opacity: 0, scale: 1.2 },
+        hidden: { y: 150, opacity: 0, scale:1 /* 1.2 */ },
         visible: { y: 0, opacity: 1, scale: 1, transition: { duration:1, delay: 3.6, ease: [0.30, 0, 0.20, 1] } }
       };
 

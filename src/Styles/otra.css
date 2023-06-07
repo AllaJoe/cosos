@@ -62,8 +62,8 @@
     background-color: #A75476;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
 .h_card1 img {
     width: 70%;
@@ -77,8 +77,8 @@
     flex-wrap: wrap;
     align-items: center;
     overflow: hidden;
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
 
 .h_card2 img {
@@ -108,8 +108,8 @@
     background-color: #4A8898;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
 .h_card3 img {
     width: 100%;
@@ -122,8 +122,8 @@
     background-color: #A75476;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
 .h_card4 img {
     width: 70%;

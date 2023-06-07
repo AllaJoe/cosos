@@ -62,7 +62,7 @@ const App = () => {
   return (
     <>
       <AnimatePresence>
-        {/* Aquí puedes agregar la lógica y componentes para la transición */}
+        
         {transicion && (
           <motion.div
             className="transicion-imagen"

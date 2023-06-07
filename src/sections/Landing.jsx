@@ -1,6 +1,6 @@
 
 
-import { ChakraProvider } from '@chakra-ui/react';
+
 import { motion } from 'framer-motion';
 import '../Styles/fonts.css';
 import AnimatedTypingH1 from '../components/TextoAnimado';
@@ -27,7 +27,7 @@ const Landing = () => {
         transition={{ duration: 1.5 }}
 
       >
-        <ChakraProvider>
+        
           <div
 
           style={{ position: "relative", backgroundColor:"#202020" }}>
@@ -90,7 +90,7 @@ const Landing = () => {
               
             </motion.div>
           </div>
-        </ChakraProvider>
+        
       </motion.div>
     );
   };

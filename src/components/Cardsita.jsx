@@ -5,8 +5,8 @@ import '../Styles/Modalcito.css';
 const Cardsita = (props) => {
     return (
         <div style={{
-            display: 'flex',
-            flexDirection: 'column',
+            /* display: 'flex', */
+            /* flexDirection: 'column', */
             width:props.width, 
             height:props.height, 
             backgroundColor: props.colorBg,

@@ -27,7 +27,7 @@ const Bio = () => {
             justifyContent:"center",
             alignItems:"center",
             gap:"20px",
-            /* height:"100%", */
+            height:"100%",
             marginBottom:"30px",
             backgroundColor:"#171717"
             }}>
@@ -37,8 +37,8 @@ const Bio = () => {
             img1="https://i.ibb.co/bJKcJx9/Frame-619.png"
             img="https://i.ibb.co/bJKcJx9/Frame-619.png"
             h3="REDISEÑO APP MEDIFÉ"
-            width="700px"
-            height="500px"
+            /* width="700px"
+            height="500px" */
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
 
@@ -47,8 +47,8 @@ const Bio = () => {
             img="https://i.ibb.co/N6Dq3Cv/00005-3354756848346-gigapixel-standard-scale-4-00x-gigapixel-standard-scale-1-00x.jpg" 
             h3="TITULONCITO CARD 2"
             imgWid="110%"
-            width="700px"
-            height="500px"
+            /* width="700px"
+            height="500px" */
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
             </div>
@@ -58,12 +58,12 @@ const Bio = () => {
             img1="https://i.ibb.co/8cHcgxY/00055-5555636378.png"
             img="https://i.ibb.co/Ld3BcR5/00019-88805685333-gigapixel-standard-scale-6-00x.jpg" redit="https://i.ibb.co/Ld3BcR5/00019-88805685333-gigapixel-standard-scale-6-00x.jpg"
             h3="TITULONCITO CARD 3"
-            width="700px"
-            height="500px"
+            /* width="700px"
+            height="500px" */
             p="Textito para la card que va abajo de la imagen y el titulo que se rellena con lo que sea y asi lo estoy hacieno"
             />
             
-            <div style={{display:"flex", justifyContent:"center", fontFamily:"Montserrat-Thin", fontSize:"1.5rem", border:"1px solid white", alignItems:"center", color:"white", width:"700px", height:"500px", backgroundColor:"#171717"}}>
+            <div className='cardsita2' style={{display:"flex", justifyContent:"center", fontFamily:"Montserrat-Thin", fontSize:"1.5rem", border:"1px solid white", alignItems:"center", color:"white", /* width:"700px", height:"500px", */ backgroundColor:"#171717"}}>
                 <h2>MAS PRONTO</h2>
             </div>
 
