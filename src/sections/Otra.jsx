@@ -39,7 +39,7 @@ const Otra = () => {
                 >
                     <video className='video_card1' src={nuevoGlichWeb} loop autoPlay muted ></video>
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>SOBRE MI</h1>
+                        <h1 style={{fontFamily: "ChesnaGrotesk-ExtraBold",/* "Montserrat-Medium", */ /* fontSize:"4rem", */ textTransform: "uppercase"}}>SOBRE MI</h1>
                     </div>
                     {/* <img src="https://i.ibb.co/XXp4b7Q/Group-1.png" alt="" /> */}
                 </motion.div>
@@ -52,7 +52,7 @@ const Otra = () => {
                 variants={variantCard2}
                 >
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>PORTFOLIO</h1>
+                        <h1 style={{fontFamily:"ChesnaGrotesk-ExtraBold",/* "Montserrat-Medium", */ /* fontSize:"4rem", */ textTransform: "uppercase"}}>PORTFOLIO</h1>
                     </div>
 
                     <div className='containImg2'>
@@ -70,7 +70,7 @@ const Otra = () => {
                 >
                     
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>APTITUDES</h1>
+                        <h1 style={{fontFamily: "ChesnaGrotesk-ExtraBold",/* "Montserrat-Medium", */ /* fontSize:"4rem", */ textTransform: "uppercase"}}>APTITUDES</h1>
                     </div>
                     <img src="https://i.ibb.co/RB7d7cp/Frame-624.png" alt="" />
 
@@ -82,7 +82,7 @@ const Otra = () => {
                 variants={variantCard4}
                 >
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>CONTACTO</h1>
+                        <h1 style={{fontFamily: "ChesnaGrotesk-ExtraBold",/* "Montserrat-Medium", */ /* fontSize:"4rem", */ textTransform: "uppercase"}}>CONTACTO</h1>
                     </div>
                     <div className='img_clas_card4'>
                         <img src="https://i.ibb.co/0BsMPfW/Group-5.png" alt="" />

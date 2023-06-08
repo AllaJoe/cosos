@@ -82,7 +82,34 @@
     font-family: 'Montserrat-Thin';
     src: url('../fonts/Montserrat-Thin.ttf');
 }
-
+@font-face {
+    font-family: 'SharpGrotesk-SemiBold20';
+    src: url('../fonts/SharpGrotesk-SemiBold20.otf');
+}
+@font-face {
+    font-family: 'SharpGrotesk-Book20';
+    src: url('../fonts/SharpGrotesk-Book20.otf');
+}
+@font-face {
+    font-family: 'SharpGrotesk-Light20';
+    src: url('../fonts/SharpGrotesk-Light20.otf');
+}
+@font-face {
+    font-family: 'SharpGrotesk-Thin20';
+    src: url('../fonts/SharpGrotesk-Thin20.otf');
+}
+@font-face {
+    font-family: 'ChesnaGrotesk-ExtraBold';
+    src: url('../fonts/ChesnaGrotesk-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'ChesnaGrotesk-Thin';
+    src: url('../fonts/ChesnaGrotesk-Thin.ttf');
+}
+@font-face {
+    font-family: 'ChesnaGrotesk-Book';
+    src: url('../fonts/ChesnaGrotesk-Book.ttf');
+}
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

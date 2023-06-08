@@ -10,8 +10,8 @@
 .h2_class {
     display: flex;
     justify-content: flex-start;
-    font-size: 76px;
-    font-family:Montserrat-Medium;
+    font-size:5rem  /* 76px */;
+    font-family:ChesnaGrotesk-ExtraBold/* Montserrat-Medium */;
     height: 20px;
 }
 

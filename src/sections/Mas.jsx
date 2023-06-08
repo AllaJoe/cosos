@@ -106,7 +106,7 @@ const Mas = () => {
                         style={{
                                 width: "390px",
                                 display: "flex",
-                                fontFamily: "Montserrat-Thin",
+                                fontFamily: "ChesnaGrotesk-Thin" /* "Montserrat-Thin" */,
                                 backgroundColor:"",
                                 height:"400px",
                                 border:"1px solid rgb(217,217,217)",

@@ -108,7 +108,7 @@ const NuevoNav = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
 
-              style={{fontFamily:"Montserrat-light", textTransform: "uppercase", fontSize:"0.8em", fontWeight:"normal"}}
+              style={{fontFamily: "ChesnaGrotesk-Book",/* "Montserrat-light", */ textTransform: "uppercase", fontSize:"1em", fontWeight:"normal"}}
             >
             <Link to={`/${seccion}`}>
               {seccion}
