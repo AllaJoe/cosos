@@ -37,11 +37,11 @@ const Otra = () => {
                 animate="visible"
                 variants={variantCard1}
                 >
-                    <video src={nuevoGlichWeb} loop autoPlay muted ></video>
+                    <video className='video_card1' src={nuevoGlichWeb} loop autoPlay muted ></video>
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"4rem", textTransform: "uppercase"}}>SOBRE MI</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>SOBRE MI</h1>
                     </div>
-                    <img src="https://i.ibb.co/XXp4b7Q/Group-1.png" alt="" />
+                    {/* <img src="https://i.ibb.co/XXp4b7Q/Group-1.png" alt="" /> */}
                 </motion.div>
                 </Link>
                 
@@ -52,10 +52,12 @@ const Otra = () => {
                 variants={variantCard2}
                 >
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"4rem", textTransform: "uppercase"}}>PORTFOLIO</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>PORTFOLIO</h1>
                     </div>
-                    
-                    <img src="https://i.ibb.co/c6jhJJv/Frame-607.png" alt="" />
+
+                    <div className='containImg2'>
+                    <img className='img_card2' src="https://i.ibb.co/c6jhJJv/Frame-607.png" alt="" />
+                    </div>
                 </motion.div>
                 </Link>
             </div>
@@ -66,9 +68,9 @@ const Otra = () => {
                 animate="visible"
                 variants={variantCard3}
                 >
-                    {/* <video src={nuevoGlichWeb} loop autoPlay muted ></video> */}
+                    
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"4rem", textTransform: "uppercase"}}>APTITUDES</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>APTITUDES</h1>
                     </div>
                     <img src="https://i.ibb.co/RB7d7cp/Frame-624.png" alt="" />
 
@@ -80,10 +82,11 @@ const Otra = () => {
                 variants={variantCard4}
                 >
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <h1 style={{fontFamily:"Montserrat-Medium", fontSize:"4rem", textTransform: "uppercase"}}>CONTACTO</h1>
+                        <h1 style={{fontFamily:"Montserrat-Medium", /* fontSize:"4rem", */ textTransform: "uppercase"}}>CONTACTO</h1>
                     </div>
+                    <div className='img_clas_card4'>
                         <img src="https://i.ibb.co/0BsMPfW/Group-5.png" alt="" />
-                    
+                    </div>
                 </motion.div>
                 </Link>
             </div>

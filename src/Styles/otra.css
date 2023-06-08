@@ -21,9 +21,13 @@
     flex-direction: column;
     z-index: 1000;
     opacity: 0.0;
+    
     /* opacity: 0.6; */
     transition: opacity 0.3s ease-in-out;
 }
+/* .h_card1 h1 {
+    font-size:4rem;
+} */
 .h_card2:hover .dark_frame  {
     /* opacity: 0.0; */
     opacity: 0.9;
@@ -62,11 +66,28 @@
     background-color: #A75476;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 700px;
-    height: 500px;
+    /* width: 700px;
+    height: 500px; */
+    width: 45vw;
+    height: 70vh;
+    font-size: 4rem;
+    
 }
-.h_card1 img {
-    width: 70%;
+.h_card1 h1 {
+    font-size: 4rem;
+}
+.video_card1 {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.h_card1 video {
+    max-width: 170vw;
+    max-height: 100%;
+    object-fit: cover;
+    /* width: 70%; */
 }
 
 .h_card2 {
@@ -77,14 +98,22 @@
     flex-wrap: wrap;
     align-items: center;
     overflow: hidden;
-    width: 700px;
-    height: 500px;
+    /* width: 700px;
+    height: 500px; */
+    width: 45vw;
+    height: 70vh;
 }
-
-.h_card2 img {
+.h_card2 h1 {
+    font-size: 4rem;
+}
+.containImg2 {
     width: 100%;
+    object-fit: cover;
 }
-
+.img_card2 {
+    width: 1100px;
+    height: 750px;
+}
 
 
 .cont_cards2 {
@@ -108,11 +137,19 @@
     background-color: #4A8898;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 700px;
-    height: 500px;
+    /* width: 700px;
+    height: 500px; */
+    width: 45vw;
+    height: 70vh;
+}
+.h_card3 h1 {
+    font-size: 4rem;
 }
 .h_card3 img {
-    width: 100%;
+    max-width: 70vw;
+    max-height: 100%;
+    object-fit: cover;
+    
 }
 .h_card4 {
     display: flex;
@@ -122,49 +159,247 @@
     background-color: #A75476;
     flex-wrap: wrap;
     overflow: hidden;
-    width: 700px;
-    height: 500px;
+    /* width: 700px;
+    height: 500px; */
+    width: 45vw;
+    height: 70vh;
 }
-.h_card4 img {
+.h_card4 h1 {
+    font-size: 4rem;
+}
+.img_clas_card4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.img_clas_card4 img {
     width: 70%;
-    /* height: 70%; */
 }
 
-
-@media (max-width: 920px) {
+@media (max-width: 1400px) {
     .h_card1 {
-        width: 400px;
-        height: 300px;
+        width: 600px;
+        height: 600px;
     }
     .h_card2 {
+        width: 600px;
+        height: 600px;
+    }
+    .h_card3 {
+        width: 600px;
+        height: 600px;
+    }
+    .h_card4 {
+        width: 600px;
+        height: 600px;
+    }
+}
+@media (max-width: 1220px) {
+    .h_card1 {
+        width: 1000px;
+        height: 900px;
+    }
+    .h_card2 {
+        width:1000px;
+        height: 900px;
+    }
+    .h_card3 {
+        width:1000px;
+        height: 900px;
+    }
+    .h_card4 {
+        width: 1000px;
+        height: 900px;
+    }
+
+
+    .dark_frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+        opacity: 0.9;
+        /* opacity: 0.6; */
+        transition: opacity 0.3s ease-in-out;
+        
+    }
+    .h_card2:hover .dark_frame  {
+        /* opacity: 0.0; */
+        opacity: 1;
+        font-size: 140px;
+    }
+    
+    .h_card1:hover .dark_frame  {
+        /* opacity: 0.0; */
+        opacity:1;
+    }
+    .h_card3:hover .dark_frame  {
+        /* opacity: 0.0; */
+        opacity: 1;
+    }
+    .h_card4:hover .dark_frame  {
+        /* opacity: 0.0; */
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .h_card1 {
+        width: 600px;
+        height: 500px;
+    }
+    .h_card2 {
+        width: 600px;
+        height: 500px;
+    }
+    .h_card3 {
+        width: 600px;
+        height: 500px;
+    }
+    .h_card4 {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 820px) {
+    .h_card1 {
+        width: 600px;
+        height: 500px;
+    }
+    .video_card1 {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .h_card2 {
+        
+        width: 600px;
+        height: 500px;
+    }
+    .img_card2 {
+        width: 1100px;
+    }
+    .h_card3 {
+        width: 600px;
+        height: 500px;
+    }
+    .h_card4 {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 620px) {
+    .h_card1 {
+        width: 500px;
+        height: 700px;
+    }
+    .video_card1 {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .h_card2 {
+        
+        width: 500px;
+        height: 700px;
+    }
+    .img_card2 {
+        width: 1100px;
+    }
+    .h_card3 {
+        width: 500px;
+        height: 700px;
+    }
+    .h_card4 {
+        width: 500px;
+        height: 700px;
+    }
+}
+
+@media (max-width: 520px) {
+    .h_card1 {
         width: 400px;
-        height: 300px;
+        height: 600px;
+    }
+    .h_card1 h1 {
+        font-size: 3rem;
+    }
+    .video_card1 {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .h_card2 {
+        width: 400px;
+        height: 600px;
+    }
+    .h_card2 h1 {
+        font-size: 3rem;
+    }
+    .img_card2 {
+        width: 1100px;
     }
     .h_card3 {
         width: 400px;
-        height: 300px;
+        height: 600px;
+    }
+    .h_card3 h1 {
+        font-size: 3rem;
     }
     .h_card4 {
         width: 400px;
-        height: 300px;
+        height: 600px;
+    }
+    .h_card4 h1 {
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 395px) {
+    /* .h_card2 {
+        width: 100%;
+        
+    } */
     .h_card1 {
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+    .h_card1 h1 {
+        font-size: 2rem;
+    }
+    .video_card1 {
+        width: 100%;
     }
     .h_card2 {
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+    .h_card2 h1 {
+        font-size: 2rem;
+    }
+    .img_card2 {
+        width: 100%;
+        height: 100%;
     }
     .h_card3 {
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+    .h_card3 h1 {
+        font-size: 2rem;
     }
     .h_card4 {
         width: 300px;
-        height: 300px;
+        height: 400px;
+    }
+    .h_card4 h1 {
+        font-size: 2rem;
     }
 }

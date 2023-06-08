@@ -7,7 +7,7 @@ import Modalcito from '../components/Modalcito';
 
 const Bio = () => {
     return (
-        <div style={{display:"flex", justifyContent:"center",/*  flexDirection:"column", */ alignItems:"center"}}>
+        <div style={{display:"flex", justifyContent:"center",/*  flexDirection:"column", */ alignItems:"center",marginTop:"150px"}}>
         
 
         <motion.div

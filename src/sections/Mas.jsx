@@ -36,7 +36,7 @@ const Mas = () => {
     return (
         
         <div style={{display:"flex", width:"100%", justifyContent:"center", backgroundColor:"#171717", height:"200vh" }}>
-            <div style={{ display:"flex", flexDirection:"column", width:"802px", /* height:"100%", */ backgroundColor: "" , marginTop:"20vh",}}>
+            <div style={{ display:"flex", flexDirection:"column", width:"802px", /* height:"100%", */ backgroundColor: "" , marginTop:"150px",}}>
                 <div style={{display:"flex", /* overflow:"hidden", */ width:"100%", justifyContent:"center" , height:"160px", flexDirection:"column", backgroundColor:"/* green */"}}>
                 <motion.div className='h2_Sobre'
                 initial="hidden"
@@ -68,6 +68,7 @@ const Mas = () => {
                             video2={yoVideo}
                             height="100%"
                             width= "200%"
+                            texth1="CLICKEA ACÁ Y VEME LA JETA"
                             />
 
                     </motion.div>

@@ -15,7 +15,7 @@ const Contacto = () => {
     const speed = 1500;
 
     return (
-        <div style={{width:"100vw", height:"200vh", marginTop:"20vh"}}>
+        <div style={{width:"100vw", height:"200vh", marginTop:"150px"}}>
         
         <motion.div
         variants={formVariant}
