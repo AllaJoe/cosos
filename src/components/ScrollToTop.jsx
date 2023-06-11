@@ -23,12 +23,12 @@ const ScrollToTop = (props) => {
         <div className="front">
            <div className='frontPantalla' style={{position:"absolute", zIndex:"1000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}><h1 style={{zIndex:10000, fontFamily:"Montserrat-Thin"}}>{props.texth1} </h1> </div>
 
-          <img style={{width:props.width, height: props.height, margin:"0"}} src={props.img} alt="" />
-          <video src={props.video} autoPlay loop muted></video>
+          {/* <img style={{width:props.width, height: props.height, margin:"0"}} src={props.img} alt="" /> */}
+          <video style={{/* width:"100vw", */ height:"900px"}} src={props.video} autoPlay loop muted></video>
         </div>
         <animated.div className="back" style={{ opacity }}>
-          <img style={{width:props.width2}} src={props.img2} alt="" />
-          <video src={props.video2} autoPlay loop muted></video>
+          {/* <img style={{width:props.width2}} src={props.img2} alt="" /> */}
+          <video style={{/* width:"800px", */ height:"160vh"}}  src={props.video2} autoPlay loop muted></video>
         </animated.div>
       </animated.div>
     </div>

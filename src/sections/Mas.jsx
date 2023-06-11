@@ -36,17 +36,17 @@ const Mas = () => {
     return (
         
         <div style={{display:"flex", width:"100%", justifyContent:"center", backgroundColor:"#171717", height:"200vh" }}>
-            <div style={{ display:"flex", flexDirection:"column", width:"802px", /* height:"100%", */ backgroundColor: "" , marginTop:"150px",}}>
-                <div style={{display:"flex", /* overflow:"hidden", */ width:"100%", justifyContent:"center" , height:"160px", flexDirection:"column", backgroundColor:"/* green */"}}>
+            <div style={{ display:"flex", flexDirection:"column", width: "922px" /* "802px" */, height:"100%", backgroundColor: "/* grey */" , marginTop:"150px",}}>
+                <div style={{display:"flex", /* overflow:"hidden", */ width:"100%", justifyContent:"center" , height:"165px", flexDirection:"column", backgroundColor:"/* green */",}}>
                 <motion.div className='h2_Sobre'
                 initial="hidden"
                 animate="visible"
                 variants={lasVariants}
                 >
-                    <h2 className='h2_class' style={{ color:"#D9D9D9", /* textAlign:"center", */  backgroundColor:""}}>SOBRE MI</h2>
+                    <h2 className='h2_class' style={{ color:"#D9D9D9", /* textAlign:"center", */  backgroundColor:"", textTransform:"uppercase"}}>SOBRE MI</h2>
                 </motion.div>
                 
-                <div style={{display:"flex", /* height:"120px", */ overflow:"hidden", backgroundColor:"/* red */"}}>
+                <div style={{display:"flex", height:"120px", overflow:"hidden", backgroundColor:" "}}>
                     <AnimPrueva />
                 </div>
                 </div>
@@ -57,7 +57,7 @@ const Mas = () => {
                         
                     {/* ----------------------- CARD 1 --------------- */}
                         
-                    <motion.div className='cardFlip' style={{width:"390px", height:"700px", backgroundColor:"", overflow:"hidden"}}
+                    <motion.div className='cardFlip' 
                         initial="hidden"
                         animate="visible" 
                         variants={cardsVarians}
@@ -78,7 +78,8 @@ const Mas = () => {
                         initial="hidden"
                         animate="visible" 
                         variants={cardsVarians1}
-                        style={{width:"390px", height:"410px", backgroundColor:"",overflow:"hidden"}}
+                        className='cardFlip2'
+                        
                         >
                         <ScrollToTop 
                         video=""
@@ -102,17 +103,8 @@ const Mas = () => {
                         initial="hidden"
                         animate="visible"
                         variants={lasVariantsP}
-                        
-                        style={{
-                                width: "390px",
-                                display: "flex",
-                                fontFamily: "ChesnaGrotesk-Thin" /* "Montserrat-Thin" */,
-                                backgroundColor:"",
-                                height:"400px",
-                                border:"1px solid rgb(217,217,217)",
-
-                                
-                                }}>
+                        className='cardFlip3'
+                        >
                             <AnimatedTypingH1
                             text="Soy un diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end. Me apasiona crear experiencias digitales únicas y atractivas."
                             duration={2000}
@@ -121,20 +113,9 @@ const Mas = () => {
                             /> 
                         </motion.div>
 
-                        {/* <motion.div
-                        initial="hidden"
-                        animate="visible" 
-                        variants={cardsVarians2}
-                        >
-                            <CardChica 
-                            widthCard="390px"
-                            heightCard="700px"
-                            />
-                        </motion.div> */}
-
                        {/* -------------------------------------- CARD 4 ----------------------------------- */}
 
-                        <motion.div className='cardFlip' style={{width:"390px", height:"700px", backgroundColor:"#4A8898", overflow:"hidden"}}
+                        <motion.div className='cardFlip4' 
                         initial="hidden"
                         animate="visible" 
                         variants={cardsVarians2}
