@@ -3,95 +3,34 @@
 
 import { motion } from 'framer-motion';
 import '../Styles/fonts.css';
-import AnimatedTypingH1 from '../components/TextoAnimado';
+/* import AnimatedTypingH1 from '../components/TextoAnimado'; */
 /* import videoEspacio from '../assets/videoEspacio.webm' */
 import { Link } from 'react-router-dom';
-import TextoDeColor from '../components/TextoDeColor';
+/* import TextoDeColor from '../components/TextoDeColor'; */
 import '../Styles/Landing.css';
 import nuevoGlichWeb from '../assets/nuevoGlichWeb.webm'
+import NuevaPresentacion from '../components/NuevaPresentacion';
 
 const Landing = () => {
   
+  const presVariant = {
+    hidden: { y: 0, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 3, delay:3.3, type: "Inertia", stiffness: 250 } }
+};
     
-    const cardVariants = {
-      hidden: { y: 150, opacity: 0 },
-      visible: { y: 0, opacity: 1, transition: { duration: 0.5, delay:2.5, type: "Inertia", stiffness: 250 } }
-    };
 
     return (
+      <Link style={{textDecoration:"none"}} to="/Otra">
       <motion.div
-      className='landing-css'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
-
+      variants={presVariant}
+        initial="hidden"
+        animate="visible"
+        style={{position:"relative", display:"flex", justifyContent:"center", alignItems:"center",  backgroundColor: "#171717", /* width:"100%", */ height:"100vh"}}
       >
-        
-          <div
-
-          style={{ position: "relative", backgroundColor:"#202020" }}>
-            <div
-              className="video-container"
-              style={{ position: "relative", overflow: "hidden" }}
-            >
-              <video
-                src={nuevoGlichWeb}
-                autoPlay
-                loop
-                muted
-                style={{ width: "100%", height: "100%", objectFit: "cover", opacity:"10%" }}
-              /> 
-            </div>
-
-            <motion.div
-            className='contLand'
-              variants={cardVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              <h4
-                style={{
-                  height: "20vh",
-                  width: "80%",
-                  textAlign: "center",
-                  display: "flex",
-                  justifyContent: "center",
-                  fontFamily: "IBMPlexMono-Light",
-                  /* paddingBottom: "6vw", */
-                  /* backgroundColor:"green" */
-                }}
-              >
-                <AnimatedTypingH1
-                  text="😊 Hola, me llamo Damián, soy diseñador UX/UI. Entrá a mi web 👇"
-                  duration={2000}
-                  element="h1"
-                  style={{ color: "#D9D9D9", fontFamily:"Montserrat-Regular" }}
-                /> 
-              </h4>
-              
-              <Link to="/Otra">
-              <button className='buttonLanding' type='submit'>
-              <TextoDeColor 
-              text1="ENTRA YA" 
-              size="1.2rem"
-              color1="white"
-              textShadow="0 0 8px white"
-              color2="#B7E9FF"
-              textShadow2="0 0 8px white"
-              color3="white"
-              textShadow3="0 0 8px white"
-              />
-              </button> 
-              {/* <div>
-                <TextoDeColor text1="BOTONASO" />
-              </div> */}
-              </Link>
-              
-            </motion.div>
-          </div>
-        
-      </motion.div>
+        <video style={{position:"absolute", width:"100%", objectFit:"cover", height:"100%"}} src={nuevoGlichWeb} autoPlay loop muted></video>
+          <NuevaPresentacion />
+     </motion.div>
+     </Link>
     );
   };
 
