@@ -28,7 +28,7 @@ const ScrollToTop = (props) => {
         </div>
         <animated.div className="back" style={{ opacity }}>
           {/* <img style={{width:props.width2}} src={props.img2} alt="" /> */}
-          <video style={{/* width:"800px", */ height:"160vh"}}  src={props.video2} autoPlay loop muted></video>
+          <video className='videoBackClass'   src={props.video2} autoPlay loop muted></video>
         </animated.div>
       </animated.div>
     </div>
