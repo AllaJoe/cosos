@@ -41,13 +41,14 @@ const Formulario = () => {
         >
         <form className='form_cont' ref={form} onSubmit={sendEmail} >
 
-
+            
+            <textarea className='texttext' placeholder="ESCRIBIME" name="message"  required/>
             {/* <label style={ {color:"white", fontFamily:"IBMPlexMono-Light"}}>Name</label> */}
             <input className='nombre' placeholder="TU NOMBRE" type="text" name="user_name" required/>
             {/* <label style={ {color:"white", fontFamily:"IBMPlexMono-Light"}}>Email</label> */}
             <input className='nombre' placeholder="TU EMAIL" type="email" name="user_email" required/>
             {/* <label style={ {color:"white", fontFamily:"IBMPlexMono-Light"}}>Message</label> */}
-            <textarea className='texttext' placeholder="ESCRIBIME" name="message"  required/>
+            
             <input className='input_submit' type="submit" value="Send"/>
         </form>
         </motion.div>

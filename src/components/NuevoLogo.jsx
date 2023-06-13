@@ -35,7 +35,7 @@ const NuevoLogo = () => {
           y: 0,
           opacity: 1,
           
-          scale: 0.7,
+          scale: 0.5,
           transition: {
             duration: 1.7,
             delay: 0.2,
@@ -55,7 +55,7 @@ const NuevoLogo = () => {
           y: 0,
           opacity: 1,
           
-          scale: 0.7,
+          scale: 0.5,
           transition: {
             duration: 1.7,
             delay: 0.3,
@@ -84,7 +84,7 @@ const NuevoLogo = () => {
         visible: {
           y: 0,
           opacity: 1,
-          scale: 0.7,
+          scale: 0.5,
     
           transition: {
             duration: 1.7,

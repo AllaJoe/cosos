@@ -368,8 +368,8 @@
         
     } */
     .h_card1 {
-        width: 300px;
-        height: 400px;
+        width: 95vw;
+        height: 500px;
     }
     .h_card1 h1 {
         font-size: 2rem;
@@ -378,8 +378,8 @@
         width: 100%;
     }
     .h_card2 {
-        width: 300px;
-        height: 400px;
+        width: 95vw /* 300px */;
+        height: 500px;
     }
     .h_card2 h1 {
         font-size: 2rem;
@@ -389,15 +389,15 @@
         height: 100%;
     }
     .h_card3 {
-        width: 300px;
-        height: 400px;
+        width: 95vw /* 300px */;
+        height: 500px;
     }
     .h_card3 h1 {
         font-size: 2rem;
     }
     .h_card4 {
-        width: 300px;
-        height: 400px;
+        width: 95vw /* 300px */;
+        height: 500px;
     }
     .h_card4 h1 {
         font-size: 2rem;

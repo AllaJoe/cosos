@@ -1,3 +1,4 @@
+
 .modal {
     position: fixed;
     top: 50%;
@@ -186,5 +187,19 @@
   .img_div img {
     
     width: 120%;
+  }
+}
+
+@media (max-width: 426px) {
+  .cardsita1 {
+    width: 95vw;
+    height: 400px;
+  }.img_div img {
+    
+    width: 800px;
+  }
+  .cardsita2 {
+    width: 95vw;
+    height: 400px;
   }
 }

@@ -43,7 +43,8 @@ const Modalcito = (props) => {
       </div>  
 
       {showModal && (
-        <animated.div className="modal" style={modalAnimation} >
+        <div style={{display: props.display}}>
+        <animated.div className="modal" style={modalAnimation}>
           <div className="modal-content">
           <div style={{display:"flex", gap:"10vw",}}> 
               <Link to={props.redit} target="_blank">
@@ -59,6 +60,7 @@ const Modalcito = (props) => {
             <img src={props.img} alt="modalimg" />
           </div>
         </animated.div>
+        </div>
       )}
     </>
   );
@@ -78,6 +80,7 @@ Modalcito.propTypes = {
   bgDiv: PropTypes.string,
   imgWid: PropTypes.number,
   height: PropTypes.number,
+  display: PropTypes.bool,
 };
 
 export default Modalcito;

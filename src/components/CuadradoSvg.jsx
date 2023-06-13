@@ -18,9 +18,9 @@ const CuadradoSvg = () => {
              fill="none"
              xmlns="http://www.w3.org/2000/svg"
              style={{ /* width: "100%",  */width: "1450px" }}>
-        <motion.path d=" M515 15V259H15L15 15.0123L520 15.0123" stroke="#D9D9D9" strokeWidth="10"
+        <motion.path d=" M515 15V259H15L15 15.0123L516 15.0123" stroke="#D9D9D9" strokeWidth="3"
         initial={{ pathLength: 0, pathOffset: 1, opacity:3, scale:1.2 }}
-        animate={{ pathLength: inView ? 1 : 0, pathOffset: inView ? 0 : 1, opacity: 1, scale:0.5 }}
+        animate={{ pathLength: inView ? 1 : 0, pathOffset: inView ? 0 : 1, opacity: 1, scale:0.3 }}
         transition={{ duration: 1.2 , delay:0.4, ease: [0.10, 0.30, 0.12, 0.2], /* type: "tween" */}}
         exit= { {opacity:0}  }
         />
