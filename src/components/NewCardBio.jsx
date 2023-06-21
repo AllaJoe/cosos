@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import '../Styles/NewCardBio.css'
+import '../Styles/newCardBio.css'
 
 const NewCarsBio = (props) => {
     return (
