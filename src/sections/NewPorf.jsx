@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import NewCarsBio from "../components/NewCardBio";
-import '../Styles/NewCardBio.css'
+import '../Styles/newCardBio.css'
 
 
 
