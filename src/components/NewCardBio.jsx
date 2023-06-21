@@ -9,7 +9,7 @@ const NewCarsBio = (props) => {
             </div>
             <div className='blackDiv'>
                 <h2 className="h2Blackdiv">{props.titleCard} </h2>
-                <p>{props.pCard} </p>
+                <p style={{fontFamily:"ChesnaGrotesk-Thin"}}>{props.pCard} </p>
             </div>
             
             

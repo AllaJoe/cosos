@@ -45,7 +45,7 @@ const Otra = () => {
                 </motion.div>
                 </Link>
                 
-                <Link to="/Bio">
+                <Link to="/NewPorf">
                 <motion.div className='h_card2'
                 initial="hidden"
                 animate="visible"

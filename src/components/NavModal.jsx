@@ -88,7 +88,7 @@ const NavModal = (props) => {
                     alignItems: "center",
                     backgroundColor: "",
                     textDecoration: "none",
-                    fontFamily: "Montserrat-light",
+                    fontFamily: "ChesnaGrotesk-ExtraBold",
                     textTransform: "uppercase",
                     fontSize: "1.8em",
                     fontWeight: "normal",

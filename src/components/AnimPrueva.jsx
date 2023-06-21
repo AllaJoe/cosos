@@ -13,7 +13,7 @@ const AnimPrueva = () => {
         <motion.line x1="1870px" y1="7" x2="1" y2="7" stroke="#D9D9D9" strokeWidth="13"
         initial={{ pathLength: 0, pathOffset: 1 }}
         animate={{ pathLength: inView ? 1 : 0, pathOffset: inView ? 0 : 1, opacity: 1 }}
-        transition={{ duration: 1.5, delay:2.6, ease: [0.52, 0.2, 0.32, 0.2], /* type: "tween" */}}
+        transition={{ duration: 1.5, delay:2.6, ease: [0.5,0.1,0.3,0.0] /* [0.52, 0.2, 0.32, 0.2] */, /* type: "tween" */}}
         exit= { {opacity:0}  }
         
         />

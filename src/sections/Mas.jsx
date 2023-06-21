@@ -13,10 +13,10 @@ const Mas = () => {
 
     const lasVariants = {
         hidden: { y: -150, /* x: 40, */ opacity: 0, scale:1/* 1.2 */ },
-        visible: { y: 0, x:0, opacity: 1, scale: 1, transition: { duration: 0.6, delay: 3.8, ease: [0.30, 0, 0.20, 1] } }
+        visible: { y: 0, x:0, opacity: 1, scale: 1, transition: { duration: 0.6, delay: 3.4 /* 3.8 */, ease: [0.30, 0, 0.20, 1] } }
       };
     const lasVariantsP = {
-        hidden: { y: 150, opacity: 0, scale: 1/* 1.2 */ },
+        hidden: { y: 150, opacity: 0, scale: 1 },
         visible: { y: -10, opacity: 1, scale: 1, transition: { duration: 0.6, delay: 3, ease: [0.30, 0, 0.20, 1] } }
       };
 
