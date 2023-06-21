@@ -1,0 +1,186 @@
+
+
+.CardsBio {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+    background-color: rgb(166, 244, 244);
+}
+.cardsSizes {
+    width:700px;
+    height:500px;
+    background-color:pink;
+    display:flex;
+    overflow:hidden;
+}
+.cuartaCard {
+    width:700px; 
+    height:500px;
+    background-color:"green";
+}
+
+
+.blackDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: beige; */
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    transition: opacity 0.4s ease-in-out;
+}
+.blackDiv h2 {
+    font-family: SharpGrotesk-SemiBold20;
+    color: white;
+    height: 20px;
+    /* z-index: 100; */
+    font-size:3rem;
+    text-transform: uppercase;
+}
+.blackDiv p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.imgCardBio {
+    width: 100%;
+}
+
+/* .h2Blackdiv {
+    font-size: 2rem;
+} */
+
+.CardsBio:hover .blackDiv {
+    opacity: 0.8;
+}
+
+
+
+/* ------------------CARDS EN LA SECCION NewPorf--------------- */
+
+.contBioCards1 {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    /* background-color: azure; */
+    gap: 20px;
+}
+.contBioCards2 {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    /* background-color: beige; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/*----------------- MEDIA QUERIES ---------------*/
+
+@media (max-width: 1420px) {
+    .CardsBio {
+        width: 600px;
+        height: 500px;
+    }
+    .cardsSizes {
+        background-color:pink;
+    display:flex;
+    overflow:hidden;
+        width: 600px;
+        height: 500px;
+    }
+    .cuartaCard {
+        display:flex;
+    overflow:hidden;
+        width: 600px;
+        height: 500px;
+    }
+    .imgCardBio {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .CardsBio {
+        width: 95vw;
+        height: 500px;
+        object-fit: cover;
+    }
+    .cardsSizes {
+        background-color:pink;
+    display:flex;
+    overflow:hidden;
+        width: 95vw;
+        height: 500px;
+
+    }
+    .cuartaCard {
+        display:flex;
+    overflow:hidden;
+        width: 95vw;
+        height: 500px;
+    }
+    .imgCardBio {
+        width: 1120px;
+        height: 700px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        
+    }
+}
+
+@media (max-width: 824px) {
+    .imgCardBio {
+        width: 800px;
+        height: 500px;
+        
+        
+    }
+}
+
+@media (max-width: 566px) {
+    .imgCardBio {
+        width: 520px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 446px) {
+    .imgCardBio {
+        width: 405px;
+        height: 400px;
+    }
+    .CardsBio {
+        width: 95vw;
+        height: 400px;
+        object-fit: cover;
+    }
+    .cardsSizes {
+        background-color:pink;
+    display:flex;
+    overflow:hidden;
+        width: 95vw;
+        height: 400px;
+
+    }
+    .cuartaCard {
+        display:flex;
+    overflow:hidden;
+        width: 95vw;
+        height: 400px;
+    }
+}

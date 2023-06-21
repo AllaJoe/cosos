@@ -29,7 +29,7 @@ const NuevoNav = () => {
     };
   }, [isClickOutside]);
 
-  const secciones = ['Otra', 'LasPrueb', /* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ 'Bio', 'Contacto', /* 'Prueba1', */ 'Mas'];
+  const secciones = ['Otra', 'LasPrueb',"NewPorf",/* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ /* 'Bio',  */'Contacto', /* 'Prueba1', */ 'Mas'];
 
   const navVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },

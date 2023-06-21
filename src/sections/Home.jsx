@@ -8,9 +8,6 @@ import { Link } from 'react-router-dom';
 /* import videoEspacio from '../assets/videoEspacio.webm' */
 
 
-
-
-
 const Home = () => {
   const cardVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },

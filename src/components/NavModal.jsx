@@ -23,7 +23,7 @@ const NavModal = (props) => {
     config: { tension: 100, friction: 25 },
   });
 
-  const secciones = ['Otra', 'LasPrueb', /* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ 'Bio', 'Contacto', /* 'Prueba1', */ 'Mas'];
+  const secciones = ['Otra', 'LasPrueb', 'NewPorf', /* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ /* 'Bio', */ 'Contacto', /* 'Prueba1', */ 'Mas'];
 
   const navmodVariant = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },

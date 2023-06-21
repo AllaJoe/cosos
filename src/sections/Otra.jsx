@@ -41,7 +41,7 @@ const Otra = () => {
                     <div className='dark_frame' style={{position:"absolute", zIndex:"10000", top:"0%", width:"100%", height:"100%", backgroundColor:"#000000", display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <h1 style={{fontFamily: "ChesnaGrotesk-ExtraBold",/* "Montserrat-Medium", */ /* fontSize:"4rem", */ textTransform: "uppercase"}}>SOBRE MI</h1>
                     </div>
-                    {/* <img src="https://i.ibb.co/XXp4b7Q/Group-1.png" alt="" /> */}
+                    
                 </motion.div>
                 </Link>
                 

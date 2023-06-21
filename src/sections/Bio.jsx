@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 const Bio = () => {
     return (
         <div style={{display:"flex", justifyContent:"center",/*  flexDirection:"column", */ alignItems:"center",marginTop:"150px"}}>
-        
 
         <motion.div
         
@@ -19,12 +18,9 @@ const Bio = () => {
         transition={{ duration: 3 }}
     
         style={{
-            /* position:"fixed", */
             display:"flex",
             flexWrap:"wrap",
-            /* marginTop:"200px", */
             width:"1500px",
-            /* flexDirection:"column", */
             justifyContent:"center",
             alignItems:"center",
             gap:"20px",

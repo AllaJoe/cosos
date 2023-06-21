@@ -17,6 +17,7 @@ import Otra from './sections/Otra';
 import LasPrueb from './sections/LasPrueb';
 import NuevoLogo from './components/NuevoLogo';
 import NavModal from './components/NavModal';
+import NewPorf from './sections/NewPorf';
 
 const App = () => {
   const [transicion, setTransicion] = useState(false);
@@ -96,6 +97,7 @@ const App = () => {
         <Route path="mas" element={<Mas />} />
         <Route path="otra" element={<Otra />} />
         <Route path="lasPrueb" element={<LasPrueb />} />
+        <Route path="newPorf" element={<NewPorf />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -57,15 +57,19 @@
     /* border: 2px solid green; */
     width: 60vw;
   }
-  .navbar-menu :hover {
-    background-color: #bf2ec92c;
-  }
+  /* .navbar-menu :hover {
+    background-color: #b5b5b50c;
+  } */
   
   .navbar-menu li {
     margin-right: 1rem;
     padding: 0.5rem;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-color: #ff000000;
+  }
+  .navbar-menu li:hover {
+    box-shadow: inset 0 0 0 2px #e7e7e71d;
+    /* background-color: #a754773c; */
   }
   
   .navbar-menu li:last-child {
