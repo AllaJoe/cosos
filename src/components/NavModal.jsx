@@ -17,6 +17,10 @@ const NavModal = (props) => {
     setShowModal(false);
   };
 
+  const handleSectionClick = () => {    /* PARA CERRAR EL MODAL CUANDO CLICKEO UNA SECCION */
+    setShowModal(false);
+  };
+
   const modalAnimation = useSpring({
     transform: showModal ? 'translate(-50%, -50%)' : 'translate(-50%, -150%)',
     from: { transform: 'translate(-50%, -150%)' },
@@ -68,6 +72,8 @@ const NavModal = (props) => {
                   <rect x="66.1479" y="18.7734" width="14.2553"                   height="67" transform="rotate(45 66.1479 18.7734)" fill="#D9D9D9" />
                   <rect x="76.228" y="66.1484" width="14.2553" height="67" transform="rotate(135 76.228 66.1484)" fill="#D9D9D9" />
                 </svg>
+
+                
                 
               </div>
             </div>
@@ -95,6 +101,9 @@ const NavModal = (props) => {
                     color: "white",
                     height:"3px"
                   }}
+
+                  onClick={handleSectionClick}       /* PARA CERRAR EL MODAL CUANDO CLICKEO UNA SECCION */
+
                 >
                   <Link
                     to={`/${seccion}`}
