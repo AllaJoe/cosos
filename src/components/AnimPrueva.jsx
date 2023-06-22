@@ -14,7 +14,7 @@ const AnimPrueva = () => {
         initial={{ pathLength: 0, pathOffset: 1 }}
         animate={{ pathLength: inView ? 1 : 0, pathOffset: inView ? 0 : 1, opacity: 1 }}
         transition={{ duration: 1.5, delay:2.6, ease: [0.5,0.1,0.3,0.0] /* [0.52, 0.2, 0.32, 0.2] */, /* type: "tween" */}}
-        exit= { {opacity:0}  }
+        exit= {{opacity:0}}
         
         />
         </svg>

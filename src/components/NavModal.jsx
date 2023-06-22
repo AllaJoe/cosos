@@ -90,9 +90,10 @@ const NavModal = (props) => {
                     textDecoration: "none",
                     fontFamily: "ChesnaGrotesk-ExtraBold",
                     textTransform: "uppercase",
-                    fontSize: "1.8em",
+                    fontSize: "1.5em",
                     fontWeight: "normal",
                     color: "white",
+                    height:"3px"
                   }}
                 >
                   <Link
