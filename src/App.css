@@ -10,11 +10,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px; /* Tamaño de la barra de desplazamiento */
+  width: 2px; /* Tamaño de la barra de desplazamiento */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F4A2C4; /* Color de la barra de desplazamiento */
+  background-color: #dcdcdc; /* Color de la barra de desplazamiento */
   border-radius: 30px;
 }
 

@@ -3,9 +3,12 @@ import '../Styles/otra.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import nuevoGlichWeb from '../assets/nuevoGlichWeb.webm'
+import BannerOtra from '../components/BannerOtra';
+import '../Styles/bannerOtra.css'
 
 const Otra = () => {
     
+
     const variantCard1 = {
         hidden: { y: 150, opacity: 0, scale:0.4 /* 1.2 */ },
         visible: { y: 0, opacity: 1, scale: 1, transition: { duration: 0.6, delay: 3, ease: [0.30, 0, 0.20, 1] } }
@@ -28,7 +31,12 @@ const Otra = () => {
 
     return (
         
+        
+
         <div className="otra_container">
+            
+            <BannerOtra />
+            
 
             <div className='cont_cards1'>
                 <Link to="/Mas">
@@ -92,6 +100,7 @@ const Otra = () => {
             </div>
 
         </div>
+        
         
     );
 }

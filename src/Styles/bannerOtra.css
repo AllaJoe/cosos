@@ -1,0 +1,150 @@
+
+/* .estos_links_clase {
+    display: flex;
+    gap: 10px;
+    
+    margin-top: 540px;
+    align-items: end;
+    margin-right: 20px;
+    height: 50px;
+    justify-content: flex-end;
+    background-color: #bf70ad;
+
+} */
+
+.animStyleCositas {
+    /* display: flex; */
+    
+    padding-left:50px; 
+    width:80%;
+    font-family: Montserrat-Thin; 
+    font-size: 4rem; 
+    line-height: 90px; 
+    text-transform: uppercase;
+    
+}
+
+
+.svgLinkedin {
+    transition: fill 0.3s ease;
+}
+
+.svgLinkedin:hover {
+    fill: #75757561;
+}
+.pathSvg {
+    fill: #DCDCDC;
+}
+/* .pathSvg:hover {
+    fill: #2e2e2e;
+} */
+
+.animTextStyle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background-color: #212121; */
+    width: 91.5vw;
+    height: 700px;
+    box-shadow: inset 0 0 0 2px #e7e7e7;
+}
+.textAnimClass {
+    display: none;
+    width: 10vw;
+    
+}
+
+@media (max-width: 1473px) {
+    .animTextStyle {
+        
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .animTextStyle {
+        width: 1220px;
+        height: 1000px;
+    }
+    .estos_links_clase {
+        margin-top: 320px;
+        align-items: flex-start;
+        
+    }
+}
+@media (max-width: 1220px) {
+    .animTextStyle {
+        
+        width: 1000px;
+        height: 1100px;
+    }
+    .estos_links_clase {
+        margin-top: 520px;
+        align-items: flex-start;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .animTextStyle {
+        
+        width: 600px;
+        height: 800px;
+    }
+    .animStyleCositas {
+        font-size: 2.5rem;
+        line-height: 60px; 
+    }
+    .estos_links_clase {
+        margin-top: 715px;
+        align-items: flex-start;
+        
+    }
+}
+
+@media (max-width: 620px) {
+    .animTextStyle {
+        width: 500px;
+        height: 700px;
+    }
+    .animStyleCositas {
+        font-size: 2rem;
+        line-height: 53px; 
+    }
+    .estos_links_clase {
+        margin-top: 315px;
+        align-items: flex-start;
+        
+    }
+}
+
+@media (max-width: 520px) {
+    .animTextStyle {
+        width: 400px;
+        height: 600px;
+    }
+    .animStyleCositas {
+        font-size: 1.8rem;
+        padding-left: 15px;
+        line-height: 45px; 
+    }
+    .estos_links_clase {
+        margin-top: 315px;
+    }
+}
+@media (max-width: 425px) {
+    .animStyleCositas {
+        font-size: 1.6rem;
+        padding-left: 15px;
+        line-height: 40px; 
+    }
+}
+@media (max-width: 395px) {
+    .animTextStyle {
+        width: 95vw;
+        height: 700px;
+    }
+    .estos_links_clase {
+        margin-top: 415px;
+    }
+}
