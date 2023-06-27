@@ -3,6 +3,7 @@ import { motion, useCycle } from 'framer-motion';
 import { /* FaBars, */ /* FaTimes  */} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../Styles/nuevoNav.css';
+import '../Styles/fonts.css'
 
 
 
@@ -29,7 +30,7 @@ const NuevoNav = () => {
     };
   }, [isClickOutside]);
 
-  const secciones = ['Otra', 'LasPrueb',"NewPorf",/* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ /* 'Bio',  */'Contacto', /* 'Prueba1', */ 'Mas'];
+  const secciones = ['LasPrueb',"NewPorf",/* 'Perfil', */ /* 'Portfolio', *//* 'Otra', */ /* 'Bio',  */'Contacto', /* 'Prueba1', */ 'Mas'];
 
   const navVariants = {
     hidden: { y: 150, opacity: 0, scale: 1.2 },
@@ -65,7 +66,7 @@ const NuevoNav = () => {
             </svg>
 
 
-            {/* <FaTimes /> */}
+            
           </motion.div>
         ) : (
           <motion.div
@@ -80,10 +81,6 @@ const NuevoNav = () => {
             <rect x="67.8762" y="27.2461" width="14.2553" height="67" transform="rotate(90 67.8762 27.2461)" fill="#D9D9D9"/>
             </svg>
 
-
-
-
-            {/* <FaBars /> */}
           </motion.div>
         )}
       </motion.div>
@@ -97,8 +94,6 @@ const NuevoNav = () => {
           transition={{ duration: 0.3, easing: [0.30, 0, 0.20, 1]}}
         >
           <Link to="/">
-            
-
             <img style={{width:"80px", paddingRight:"20px"}} src="https://i.ibb.co/Hgp0r5b/nuevo-logo-nuevo.png" alt="" /> 
           </Link>
           {secciones.map((seccion, index) => (

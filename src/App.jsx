@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
-import Landing from './sections/Landing';
+/* import Landing from './sections/Landing'; */
 import NotFound from './sections/NotFound';
 import Portfolio from './sections/Portfolio';
 import Bio from './sections/Bio';
@@ -87,7 +87,7 @@ const App = () => {
         </motion.div>
       )}
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<Otra />} />
         <Route path="HOME" element={<Home />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="perfil" element={<Perfil />} />

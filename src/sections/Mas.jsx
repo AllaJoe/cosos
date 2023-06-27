@@ -109,7 +109,7 @@ const Mas = () => {
                             text="Soy un diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end. Me apasiona crear experiencias digitales únicas y atractivas."
                             duration={2000}
                             element="h1"
-                            style={{padding:"20px", color: "#D9D9D9", fontSize: /* "16px" */"30px", lineHeight: "35px", textTransform: "uppercase"}}
+                            style={{padding:"20px", fontFamily:"resolve-sans-w05-thin-wd", color: "#D9D9D9", fontSize: /* "16px" */"30px", lineHeight: "35px", textTransform: "uppercase"}}
                             /> 
                         </motion.div>
 

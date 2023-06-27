@@ -14,7 +14,7 @@ const BannerOtra = () => {
             <AnimatedTypingH1
             
                             text="diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end."
-                            duration={2000}
+                            duration={13000}
                             element="h1"
                             style={{color:"#DCDCDC", zIndex:10000, position: "relative"}}
                             /> 

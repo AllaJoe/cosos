@@ -110,6 +110,10 @@
     font-family: 'ChesnaGrotesk-Book';
     src: url('../fonts/ChesnaGrotesk-Book.ttf');
 }
+@font-face {
+    font-family: 'resolve-sans-w05-thin-wd';
+    src: url('../fonts/resolve-sans-w05-thin-wd.Otf');
+}
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

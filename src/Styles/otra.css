@@ -49,7 +49,7 @@
 }
 
 .cont_cards1 {
-    
+    margin-top: 20px;
     background-color: #171717;
     width: 100%;
     /* height: 300px; */
@@ -87,7 +87,7 @@
 
 
 .h_card1 h1 {
-    font-size: 4rem;
+    font-size: 5rem /* 4rem */;
 }
 .video_card1 {
     width: 100%;
@@ -117,7 +117,7 @@
     height: 70vh;
 }
 .h_card2 h1 {
-    font-size: 4rem;
+    font-size: 5rem/* 4rem */;
 }
 .containImg2 {
     width: 100%;
@@ -156,7 +156,7 @@
     height: 70vh;
 }
 .h_card3 h1 {
-    font-size: 4rem;
+    font-size: 5rem /* 4rem */;
 }
 .h_card3 img {
     max-width: 70vw;
@@ -178,7 +178,7 @@
     height: 70vh;
 }
 .h_card4 h1 {
-    font-size: 4rem;
+    font-size: 5rem /* 4rem */;
 }
 .img_clas_card4 {
     display: flex;
