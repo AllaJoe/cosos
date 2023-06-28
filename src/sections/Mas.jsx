@@ -37,7 +37,9 @@ const Mas = () => {
         
         <div style={{display:"flex", width:"100%", justifyContent:"center", backgroundColor:"#171717", height:"200vh" }}>
             <div style={{ display:"flex", flexDirection:"column", width: "922px" /* "802px" */, height:"100%", backgroundColor: "/* grey */" , marginTop:"150px",}}>
+                
                 <div style={{display:"flex", /* overflow:"hidden", */ width:"100%", justifyContent:"center" , height:"165px", flexDirection:"column", backgroundColor:"/* green */",}}>
+                
                 <motion.div className='h2_Sobre'
                 initial="hidden"
                 animate="visible"

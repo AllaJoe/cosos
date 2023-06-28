@@ -114,6 +114,18 @@
     font-family: 'resolve-sans-w05-thin-wd';
     src: url('../fonts/resolve-sans-w05-thin-wd.otf');
 }
+@font-face {
+    font-family: 'MonumentExtended-Ultrabold';
+    src: url('../fonts/MonumentExtended-Ultrabold.otf');
+}
+@font-face {
+    font-family: 'MonumentExtended-Regular';
+    src: url('../fonts/MonumentExtended-Regular.otf');
+}
+@font-face {
+    font-family: 'resolve-sans-w05-semilight-ext';
+    src: url('../fonts/resolve-sans-w05-semilight-ext.otf');
+}
 
 .funete-practica {
     font-family: 'Cooper Black Regular';

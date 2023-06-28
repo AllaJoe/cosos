@@ -8,9 +8,7 @@ const BannerOtra = () => {
         <div className="animTextStyle" >
             <video style={{position:'absolute', width:"100%", height:"100%", objectFit:"fill", opacity:"50%"}} src={videito1} autoPlay loop muted></video>
             <div className="animStyleCositas">
-            
-            
-            
+
             <AnimatedTypingH1
             
                             text="diseñador UX/UI con tres años de experiencia en el campo del desarrollo front-end."

@@ -7,6 +7,8 @@ import BannerOtra from '../components/BannerOtra';
 import '../Styles/bannerOtra.css'
 import '../Styles/fonts.css'
 
+/* import FlechitaNext from '../components/FlechitaNext'; */
+
 const Otra = () => {
     const variantBannerOtra = {
         hidden: { y: 0, opacity: 0, scale:1 /* 1.2 */ },
@@ -43,9 +45,11 @@ const Otra = () => {
             animate="visible"
             variants={variantBannerOtra}>
             <BannerOtra />
-            <div style={{marginTop:"20px", padding:"20px", overflow:"hidden", height:"70px", alignItems:"center", display:"flex", gap:"20px", justifyContent:"space-between", width:"", border:"1px solid #DCDCDC", backgroundColor:""}}>
-            <div>
-            <h2 style={{fontFamily:"resolve-sans-w05-thin-wd", paddingLeft:"40px", fontSize:"2.5rem", color:"#CDCDCD", textTransform:"uppercase"}}>Activo es estas plataformas.</h2>
+
+            <div className='estos_links_clase' style={{/* marginTop:"40px", padding:"20px", overflow:"hidden", height:"70px", alignItems:"center", display:"flex", gap:"20px", justifyContent:"space-between", width:"", borderTop:"1px solid #DCDCDC", borderBottom:"1px solid #DCDCDC", backgroundColor:"" */}}>
+            <div style={{display:"flex", justifyContent:"center", gap:"30px", alignItems:"center"}}>
+            <h2 style={{ /* fontSize:"2.5rem", */ color:"#CDCDCD", textTransform:"uppercase"}}>Activo es estas plataformas.</h2>
+            
             </div>
             <div style={{display:"flex", gap:"10px", paddingRight:"40px"}}> 
             <Link  to="https://www.linkedin.com/in/damian-h-a6678b224/" target="blank">

@@ -5,13 +5,15 @@
     justify-content: center;
     /* padding:0;  */
     background-color:"pink";
+    
     /* width: 100vw; */
 }
 .h2_class {
     display: flex;
     justify-content: flex-start;
     font-size:5rem  /* 76px */;
-    font-family:ChesnaGrotesk-ExtraBold/* Montserrat-Medium */;
+    letter-spacing: 1px;
+    font-family: /* resolve-sans-w05-semilight-ext */ChesnaGrotesk-ExtraBold/* Montserrat-Medium */;
     height: 20px;
 }
 
