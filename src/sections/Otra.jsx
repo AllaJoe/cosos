@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import nuevoGlichWeb from '../assets/nuevoGlichWeb.webm'
 import BannerOtra from '../components/BannerOtra';
 import '../Styles/bannerOtra.css'
+import '../Styles/fonts.css'
 
 const Otra = () => {
     const variantBannerOtra = {
